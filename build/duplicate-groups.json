@@ -1,0 +1,286 @@
+{
+    "schema_version":  1,
+    "exact_duplicate_groups":  [
+                                   {
+                                       "group_id":  "D001",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0801",
+                                       "source_ids":  [
+                                                          "S0801",
+                                                          "S0804"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "0a6aef8bef35d63503c747de59ab8eee798edf1b24154159d561f4287548cc42"
+                                   },
+                                   {
+                                       "group_id":  "D002",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0931",
+                                       "source_ids":  [
+                                                          "S0931",
+                                                          "S0939"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "11ee657c3d73106a30ceec42f575f011fdc16d7b078a6e6d0516a06e05fc9471"
+                                   },
+                                   {
+                                       "group_id":  "D003",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0685",
+                                       "source_ids":  [
+                                                          "S0685",
+                                                          "S0693"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "15afadf966a5a5a76d1de8ec6464e970b091bfa61cd229a94ef52f62fcb5fd0e"
+                                   },
+                                   {
+                                       "group_id":  "D004",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0849",
+                                       "source_ids":  [
+                                                          "S0849",
+                                                          "S0851"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "2a9f165729e7ce161909038d293dfefb1b8195f3dabe11dd6c3588d780b7f203"
+                                   },
+                                   {
+                                       "group_id":  "D005",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0696",
+                                       "source_ids":  [
+                                                          "S0696",
+                                                          "S0699"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "3375fdcc566c2f1871fa5cbfb272e7113f53bd71af98317703423020f238c52f"
+                                   },
+                                   {
+                                       "group_id":  "D006",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0329",
+                                       "source_ids":  [
+                                                          "S0329",
+                                                          "S0496"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "37de4d856a1113ff305329700db573603c841995d5ae1c14e7b3593c004d96a5"
+                                   },
+                                   {
+                                       "group_id":  "D007",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0681",
+                                       "source_ids":  [
+                                                          "S0681",
+                                                          "S0683"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "452e8fbd1d0dc673d40fe8d30eb7baf26a5b03ca5b31eb128c03160a8666aedc"
+                                   },
+                                   {
+                                       "group_id":  "D008",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0686",
+                                       "source_ids":  [
+                                                          "S0686",
+                                                          "S0694"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "58e8e25189d0cc3b32e02f3d820b697d2671935f83ca4d0201cbe59a6a95dbc3"
+                                   },
+                                   {
+                                       "group_id":  "D009",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0313",
+                                       "source_ids":  [
+                                                          "S0313",
+                                                          "S0399"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+                                   },
+                                   {
+                                       "group_id":  "D010",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0850",
+                                       "source_ids":  [
+                                                          "S0850",
+                                                          "S0852"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "5efb4b826dfa09aaeeff10656bffd8f322d966c5b5701c96c92c07f752bc8db5"
+                                   },
+                                   {
+                                       "group_id":  "D011",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0680",
+                                       "source_ids":  [
+                                                          "S0680",
+                                                          "S0682"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "649955136392fa2bae865a4028afafbfa82fccd1cd38c063914c104d91711129"
+                                   },
+                                   {
+                                       "group_id":  "D012",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0678",
+                                       "source_ids":  [
+                                                          "S0678",
+                                                          "S0679"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "6f37dbb551289c499746f9eca063dbd7c43b24f206c3ee1636dcba04f18e1488"
+                                   },
+                                   {
+                                       "group_id":  "D013",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0406",
+                                       "source_ids":  [
+                                                          "S0406",
+                                                          "S0789",
+                                                          "S0803"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "79764c0fc999ee99b2f034b04a7c1375f8b719212f725ffe8c9d402bd9c7d32c"
+                                   },
+                                   {
+                                       "group_id":  "D014",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0697",
+                                       "source_ids":  [
+                                                          "S0697",
+                                                          "S0700"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "98e64a46abd812e83ae656a53a94b7ff837850d635ae6168023506548e7f947c"
+                                   },
+                                   {
+                                       "group_id":  "D015",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0684",
+                                       "source_ids":  [
+                                                          "S0684",
+                                                          "S0692"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "9995c796834e04455c77e068f25f60f5ae6ce34848c12f81e67ec512cdaae86f"
+                                   },
+                                   {
+                                       "group_id":  "D016",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0691",
+                                       "source_ids":  [
+                                                          "S0691",
+                                                          "S0695"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "aebcf294da8d46a4a0891560cc06afd2cf0a1d4f658e5a95e048777e79ad1987"
+                                   },
+                                   {
+                                       "group_id":  "D017",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0006",
+                                       "source_ids":  [
+                                                          "S0006",
+                                                          "S0059",
+                                                          "S0532",
+                                                          "S1029"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "b3910ba413cc702465f0a0fdc946f2a2cffc67f143a4f854eaa3273f941d44bb"
+                                   },
+                                   {
+                                       "group_id":  "D018",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0855",
+                                       "source_ids":  [
+                                                          "S0855",
+                                                          "S0856"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "b4df8998b36d576609cb62a01b84f0f1cc70d55c2d0c44632217507d8dc3f5e7"
+                                   },
+                                   {
+                                       "group_id":  "D019",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S1122",
+                                       "source_ids":  [
+                                                          "S1122",
+                                                          "S1159"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "c033e62aeeff8a6cafd910cfecd1c161afaf01a9b3d3e09499bc794d19af84e9"
+                                   },
+                                   {
+                                       "group_id":  "D020",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0832",
+                                       "source_ids":  [
+                                                          "S0832",
+                                                          "S0833"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "cbaf3932dccf2e91810d43aa01ad23217afb39905e2111af74c9696adb2192bc"
+                                   },
+                                   {
+                                       "group_id":  "D021",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0698",
+                                       "source_ids":  [
+                                                          "S0698",
+                                                          "S0701"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "d6fdcbcef70ba6411e673aed1975e8d0c56e9e364ab712221af9cefa8d4647af"
+                                   },
+                                   {
+                                       "group_id":  "D022",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S1577",
+                                       "source_ids":  [
+                                                          "S1577",
+                                                          "S1578"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "dc9905461c0509da245aeb2d72033213a99b0b114c47aa2542cf75c1aa467606"
+                                   },
+                                   {
+                                       "group_id":  "D023",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0373",
+                                       "source_ids":  [
+                                                          "S0373",
+                                                          "S0954"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "ea58cc0e4a230935ec00362b32ab6b6ee4000e221b48fe04f519b1ea8e5d33f3"
+                                   },
+                                   {
+                                       "group_id":  "D024",
+                                       "type":  "exact",
+                                       "canonical_source_id":  "S0401",
+                                       "source_ids":  [
+                                                          "S0401",
+                                                          "S0848"
+                                                      ],
+                                       "normalized_content_hash_sha256":  "f0d25ee343a7c1a03320553fc84de17ef5d873ff7adcd5e6fbd59e61eece0cce"
+                                   }
+                               ],
+    "near_duplicate_pairs":  [
+                                 {
+                                     "type":  "near",
+                                     "source_id_a":  "S1489",
+                                     "source_id_b":  "S1492",
+                                     "shingle_jaccard_similarity":  0.823
+                                 },
+                                 {
+                                     "type":  "near",
+                                     "source_id_a":  "S1490",
+                                     "source_id_b":  "S1493",
+                                     "shingle_jaccard_similarity":  0.868
+                                 },
+                                 {
+                                     "type":  "near",
+                                     "source_id_a":  "S1491",
+                                     "source_id_b":  "S1494",
+                                     "shingle_jaccard_similarity":  0.864
+                                 },
+                                 {
+                                     "type":  "near",
+                                     "source_id_a":  "S1496",
+                                     "source_id_b":  "S1500",
+                                     "shingle_jaccard_similarity":  1
+                                 },
+                                 {
+                                     "type":  "near",
+                                     "source_id_a":  "S1497",
+                                     "source_id_b":  "S1501",
+                                     "shingle_jaccard_similarity":  0.896
+                                 },
+                                 {
+                                     "type":  "near",
+                                     "source_id_a":  "S1498",
+                                     "source_id_b":  "S1502",
+                                     "shingle_jaccard_similarity":  0.971
+                                 }
+                             ]
+}

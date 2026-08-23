@@ -1,0 +1,22 @@
+{
+    "schema_version":  1,
+    "generated_at":  "2026-08-23T09:50:31.1047869Z",
+    "source_directories":  [
+                               "data/texts",
+                               "data/transcripts"
+                           ],
+    "input_file_count":  1701,
+    "included_record_count":  1678,
+    "excluded_empty_count":  23,
+    "canonical_synthesis_record_count":  1651,
+    "exact_duplicate_group_count":  24,
+    "exact_duplicate_copy_count":  27,
+    "near_duplicate_pair_count":  6,
+    "association_pair_count":  21,
+    "association_link_count":  42,
+    "files":  {
+                  "manifest":  "build/source-manifest.jsonl",
+                  "excluded_sources":  "build/excluded-sources.jsonl",
+                  "duplicate_groups":  "build/duplicate-groups.json"
+              }
+}
