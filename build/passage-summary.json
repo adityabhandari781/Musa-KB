@@ -1,0 +1,145 @@
+{
+    "schema_version":  1,
+    "generated_at":  "2026-08-23T10:14:46.5673401Z",
+    "input_canonical_source_count":  1651,
+    "sources_with_passages":  1651,
+    "passage_count":  2101,
+    "review_required_count":  1321,
+    "non_substantive_primary_count":  710,
+    "confidence":  {
+                       "high":  559,
+                       "medium":  914,
+                       "low":  628
+                   },
+    "topic_counts":  [
+                         {
+                             "topic_id":  1,
+                             "primary_passage_count":  70,
+                             "secondary_passage_count":  23
+                         },
+                         {
+                             "topic_id":  2,
+                             "primary_passage_count":  64,
+                             "secondary_passage_count":  30
+                         },
+                         {
+                             "topic_id":  3,
+                             "primary_passage_count":  94,
+                             "secondary_passage_count":  56
+                         },
+                         {
+                             "topic_id":  4,
+                             "primary_passage_count":  30,
+                             "secondary_passage_count":  23
+                         },
+                         {
+                             "topic_id":  5,
+                             "primary_passage_count":  35,
+                             "secondary_passage_count":  37
+                         },
+                         {
+                             "topic_id":  6,
+                             "primary_passage_count":  35,
+                             "secondary_passage_count":  29
+                         },
+                         {
+                             "topic_id":  7,
+                             "primary_passage_count":  39,
+                             "secondary_passage_count":  34
+                         },
+                         {
+                             "topic_id":  8,
+                             "primary_passage_count":  168,
+                             "secondary_passage_count":  104
+                         },
+                         {
+                             "topic_id":  9,
+                             "primary_passage_count":  141,
+                             "secondary_passage_count":  104
+                         },
+                         {
+                             "topic_id":  10,
+                             "primary_passage_count":  42,
+                             "secondary_passage_count":  33
+                         },
+                         {
+                             "topic_id":  11,
+                             "primary_passage_count":  32,
+                             "secondary_passage_count":  63
+                         },
+                         {
+                             "topic_id":  12,
+                             "primary_passage_count":  21,
+                             "secondary_passage_count":  24
+                         },
+                         {
+                             "topic_id":  13,
+                             "primary_passage_count":  72,
+                             "secondary_passage_count":  67
+                         },
+                         {
+                             "topic_id":  14,
+                             "primary_passage_count":  23,
+                             "secondary_passage_count":  32
+                         },
+                         {
+                             "topic_id":  15,
+                             "primary_passage_count":  60,
+                             "secondary_passage_count":  68
+                         },
+                         {
+                             "topic_id":  16,
+                             "primary_passage_count":  73,
+                             "secondary_passage_count":  98
+                         },
+                         {
+                             "topic_id":  17,
+                             "primary_passage_count":  46,
+                             "secondary_passage_count":  80
+                         },
+                         {
+                             "topic_id":  18,
+                             "primary_passage_count":  38,
+                             "secondary_passage_count":  76
+                         },
+                         {
+                             "topic_id":  19,
+                             "primary_passage_count":  37,
+                             "secondary_passage_count":  63
+                         },
+                         {
+                             "topic_id":  20,
+                             "primary_passage_count":  71,
+                             "secondary_passage_count":  69
+                         },
+                         {
+                             "topic_id":  21,
+                             "primary_passage_count":  49,
+                             "secondary_passage_count":  78
+                         },
+                         {
+                             "topic_id":  22,
+                             "primary_passage_count":  35,
+                             "secondary_passage_count":  48
+                         },
+                         {
+                             "topic_id":  23,
+                             "primary_passage_count":  35,
+                             "secondary_passage_count":  93
+                         },
+                         {
+                             "topic_id":  24,
+                             "primary_passage_count":  81,
+                             "secondary_passage_count":  78
+                         },
+                         {
+                             "topic_id":  25,
+                             "primary_passage_count":  710,
+                             "secondary_passage_count":  0
+                         }
+                     ],
+    "files":  {
+                  "passage_manifest":  "build/passage-manifest.jsonl",
+                  "source_manifest":  "build/source-manifest.jsonl"
+              }
+}
