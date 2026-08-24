@@ -11,7 +11,7 @@ source_scope:
 # Resilience and adversity
 
 ## Overview  
-The source material presents resilience as a relentless, combat‑style pursuit in which adversity is deliberately courted, reframed, and weaponized. Persistence, pain, and a fierce personal identity are repeatedly cast as the primary engines of success, while comfort, external validation, and self‑doubt are portrayed as obstacles that must be annihilated. The creator’s narrative blends empowerment rhetoric with militaristic metaphors, urging readers to treat setbacks as puzzles, fuel, or “gatekeepers of destiny” that, when faced head‑on, amplify one’s drive and purpose [S0008][S0424][S0469].
+The source material presents resilience as a relentless, combat‑style pursuit in which adversity is deliberately courted, reframed, and weaponized. Persistence, pain, and a fierce personal identity are repeatedly cast as the primary engines of success, while comfort, external validation, and self‑doubt are portrayed as obstacles that must be annihilated. Musa's narrative blends empowerment rhetoric with militaristic metaphors, urging readers to treat setbacks as puzzles, fuel, or “gatekeepers of destiny” that, when faced head‑on, amplify one’s drive and purpose [S0008][S0424][S0469].
 
 ## Core ideas  
 - **Persistence as the sole path to achievement** – “Persist until you succeed” recurs across the texts, positioning continual effort as the only legitimate route to respect and goal attainment [S0008][S0280][S0303][S0644].  
@@ -42,9 +42,9 @@ The source material presents resilience as a relentless, combat‑style pursuit 
 - **Use daily micro‑actions to build momentum** – Perform consistent small tasks that compound over time, treating momentum as a rewarding partner [S0453].  
 
 ## Examples and stories  
-- **Worm vs. ants** – The creator cites a worm battling a swarm of ants as a metaphor for tenacity, suggesting that even a small, outmatched being can persist through pain and emerge stronger [S1207].  
+- **Worm vs. ants** – Musa cites a worm battling a swarm of ants as a metaphor for tenacity, suggesting that even a small, outmatched being can persist through pain and emerge stronger [S1207].  
 - **Disrespect as fuel** – A personal anecdote describes being dismissed by a college admissions officer; the lingering sting of that disrespect continues to motivate high achievement [S1262].  
-- **Pit‑bull metaphor** – The creator likens unwavering commitment to a pit‑bull that never lets go, even amid chaos or criticism [S1271].  
+- **Pit‑bull metaphor** – Musa likens unwavering commitment to a pit‑bull that never lets go, even amid chaos or criticism [S1271].  
 - **Dragon Ball “Zenkai boost”** – Severe injury is compared to a fictional power‑up that, after recovery, yields greater resilience and strategic strength [S1664].  
 
 ## Tensions and contradictions  
@@ -53,7 +53,7 @@ The source material presents resilience as a relentless, combat‑style pursuit 
 - **Dismissal of powerlessness vs. acknowledgment of suffering** – The narrative dismisses those who feel powerless, asserting that “peace requires power,” yet simultaneously admits the emotional toll of being a “piñata” of suffering [S0471][S1185].  
 
 ## Caveats  
-- **Speculative claims** – Assertions that a strong “WHY” can overcome forces three times stronger, or that pain universally unlocks a “terrifying drive,” lack empirical verification and should be treated as the creator’s personal theory rather than proven fact.  
+- **Speculative claims** – Assertions that a strong “WHY” can overcome forces three times stronger, or that pain universally unlocks a “terrifying drive,” lack empirical verification and should be treated as Musa's personal theory rather than proven fact.  
 - **Potential for unsafe behavior** – Encouraging readers to “kill the whore,” “respawn with full HP,” or to continuously push through severe pain without professional guidance may lead to physical or psychological harm.  
 - **Gendered and militaristic framing** – The heavy use of combat and aggressive animal metaphors may alienate or marginalize audiences who do not identify with such framing, and could reinforce toxic masculinity narratives.  
 - **Overgeneralization of trauma** – Positioning childhood wounds as assets for power overlooks the complex, individualized nature of trauma recovery and may invalidate those for whom such experiences are not readily convertible into strength.

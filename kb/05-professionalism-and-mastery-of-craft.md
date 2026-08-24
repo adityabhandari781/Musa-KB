@@ -11,7 +11,7 @@ source_scope:
 # Professionalism and mastery of craft
 
 ## Overview  
-Professionalism and mastery of craft are presented as intertwined attitudes that shape how individuals show up in any field of work. The creator distinguishes a “professional” identity—defined by self‑imposed standards, relentless attention to quality, and a commitment to continual improvement—from “amateurism,” which is framed as an “ambition killer” that manifests in avoidance, fear, and self‑sabotage [S0066][S0067][S1551]. Mastery is described as the product of obsessive, deliberate practice coupled with feedback loops, while the value of all ethical work is affirmed regardless of its perceived status [S0437][S1395].
+Professionalism and mastery of craft are presented as intertwined attitudes that shape how individuals show up in any field of work. Musa distinguishes a “professional” identity—defined by self‑imposed standards, relentless attention to quality, and a commitment to continual improvement—from “amateurism,” which is framed as an “ambition killer” that manifests in avoidance, fear, and self‑sabotage [S0066][S0067][S1551]. Mastery is described as the product of obsessive, deliberate practice coupled with feedback loops, while the value of all ethical work is affirmed regardless of its perceived status [S0437][S1395].
 
 ## Core ideas  
 - **Professionalism as self‑definition:** It is not a formal title but a personal stance on how one presents oneself and engages with work [S1552].  
@@ -43,16 +43,16 @@ Professionalism and mastery of craft are presented as intertwined attitudes that
 - **Maintain pride in all ethical work**, treating each task as an opportunity to refine detail awareness, regardless of external prestige [S1395][S1396].  
 
 ## Examples and stories  
-- A missed opportunity arose when the creator delayed a response, labeling the behavior “amateur,” and subsequently cut off the contact permanently [S1182].  
-- The creator cites Robert Greene’s *Mastery* and *48 Laws of Power* as intellectual influences that shaped the strategic approach of faceless YouTube channels [S1355].  
+- A missed opportunity arose when Musa delayed a response, labeling the behavior “amateur,” and subsequently cut off the contact permanently [S1182].  
+- Musa cites Robert Greene’s *Mastery* and *48 Laws of Power* as intellectual influences that shaped the strategic approach of faceless YouTube channels [S1355].  
 - Repeatedly practicing a throwing technique 10,000 times is presented as a concrete illustration of how obsessive craft work outperforms chasing quick wins [S0130].  
 
 ## Tensions and contradictions  
-- The creator simultaneously claims that “any ethical, legal, productive work is sacred” while also asserting that “sloppy work has no marketplace value,” creating tension between the moral elevation of all work and the market‑driven dismissal of low quality [S0047][S0437].  
+- Musa simultaneously claims that “any ethical, legal, productive work is sacred” while also asserting that “sloppy work has no marketplace value,” creating tension between the moral elevation of all work and the market‑driven dismissal of low quality [S0047][S0437].  
 - Professionalism is described as a self‑assigned identity, yet the same narrative emphasizes external enforcement of standards (e.g., confronting disrespect), suggesting a blend of internal and external validation mechanisms [S1552][S1515].  
 
 ## Caveats  
-- The distinction between “professional” and “amateur” is a creator‑specific framing and may not align with broader industry definitions; readers should adapt the terminology to their context [S0066][S0067].  
+- The distinction between “professional” and “amateur” is a Musa‑specific framing and may not align with broader industry definitions; readers should adapt the terminology to their context [S0066][S0067].  
 - Claims about the absolute correlation between craft obsession and market success lack empirical verification and should be treated as anecdotal guidance rather than universal law [S0047].  
 - The advice to “cut off” contacts after perceived amateur behavior may be socially risky; consider proportional responses and potential relational costs before applying [S1182].
 

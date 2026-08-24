@@ -11,7 +11,7 @@ source_scope:
 # Discipline, execution, and productivity
 
 ## Overview
-Discipline, execution, and productivity are framed as interlinked practices that rely on habit formation, systems, and mindset. The creator emphasizes consistency over perfection, the importance of actionable systems, and the role of self‑discipline as a tool for maintaining focus.
+Discipline, execution, and productivity are framed as interlinked practices that rely on habit formation, systems, and mindset. Musa emphasizes consistency over perfection, the importance of actionable systems, and the role of self‑discipline as a tool for maintaining focus.
 
 ## Core ideas
 - Consistency is the key metric; once a target is met, it becomes a hygiene standard that should never fall below that level [S0063][S0064].
@@ -36,17 +36,17 @@ Discipline, execution, and productivity are framed as interlinked practices that
 - Prioritize and execute high‑impact tasks quickly rather than spending excessive time planning [S0266].
 
 ## Examples and stories
-- The creator shares personal practice of giving away $5,000 when consistency is broken, illustrating punitive reflection [S0634].
-- The creator’s own habit of punishing himself for missed consistency demonstrates the application of identity‑based discipline [S1188].
-- The creator cites listening to Jocko Willink’s podcasts as an influence on leadership style, showing how external models inform personal discipline [S1490][S1493].
+- Musa shares personal practice of giving away $5,000 when consistency is broken, illustrating punitive reflection [S0634].
+- Musa's own habit of punishing himself for missed consistency demonstrates the application of identity‑based discipline [S1188].
+- Musa cites listening to Jocko Willink’s podcasts as an influence on leadership style, showing how external models inform personal discipline [S1490][S1493].
 
 ## Tensions and contradictions
-- The creator claims discipline is only needed to build habits, yet also stresses that discipline is the art of not betraying oneself, implying ongoing effort [S1067][S0634].
-- While advocating for action‑generated motivation, the creator also warns against relying solely on external motivation, suggesting a balance between internal drive and discipline [S1423].
-- The emphasis on consistency conflicts with the idea that perfection is unnecessary; the creator promotes an 85 % completion target, yet also warns against over‑optimizing every detail [S1260][S1502].
+- Musa claims discipline is only needed to build habits, yet also stresses that discipline is the art of not betraying oneself, implying ongoing effort [S1067][S0634].
+- While advocating for action‑generated motivation, Musa also warns against relying solely on external motivation, suggesting a balance between internal drive and discipline [S1423].
+- The emphasis on consistency conflicts with the idea that perfection is unnecessary; Musa promotes an 85 % completion target, yet also warns against over‑optimizing every detail [S1260][S1502].
 
 ## Caveats
-- Claims about the effectiveness of punitive self‑discipline are the creator’s personal observations and may not generalize to all individuals [S0634][S1093].
+- Claims about the effectiveness of punitive self‑discipline are Musa's personal observations and may not generalize to all individuals [S0634][S1093].
 - The assertion that action generates motivation is presented as a personal principle; it is not established scientific fact [S1089].
 - The recommendation to give away large sums of money for missed consistency is a personal anecdote and may not be safe or appropriate for everyone [S0634].
 

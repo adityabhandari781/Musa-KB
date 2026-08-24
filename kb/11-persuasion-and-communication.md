@@ -37,13 +37,13 @@ Persuasion and communication are framed as decisive, almost magical competencies
 - **Practice self‑persuasion:** Before trying to convince others, convince yourself of the value of your message [S1467].  
 
 ## Examples and stories  
-- **Sales learning through rejection:** The speaker recounts learning sales by repeatedly facing rejection and “connecting the dots of what makes people tick” [S1117].  
+- **Sales learning through rejection:** Musa recounts learning sales by repeatedly facing rejection and “connecting the dots of what makes people tick” [S1117].  
 - **Influencer tactics:** Andrew Tate’s “ghostwriter” tweets are cited as a method that grows an audience despite lacking factual authorship [S1074].  
 - **Political framing:** Trump’s claim “Mexicans will pay for the wall” is described as moving past a simple sale to make the wall feel inevitable [S1338].  
 - **High‑status impression:** Demonstrating strong body language, firm handshake, and fandom of a notable’s *work* (not the person) is suggested to avoid being labeled “Mr. Nobody” [S1355].  
 
 ## Tensions and contradictions  
-- **Authenticity vs. scripted charisma:** The speaker extols “speaking from the heart” and raw authenticity while simultaneously promoting highly engineered persuasion techniques and charisma drills [S1014] [S1028] [S1325].  
+- **Authenticity vs. scripted charisma:** Musa extols “speaking from the heart” and raw authenticity while simultaneously promoting highly engineered persuasion techniques and charisma drills [S1014] [S1028] [S1325].  
 - **Emotional manipulation warning:** While advocating emotional triggers, the material also flags emotional manipulation as a control tactic (“When she tries emotional manipulation to control you”) [S0368].  
 - **Teleprompter dismissal:** Authenticity is claimed to stem from “speaking from the soul,” yet the same source encourages rehearsed framing and scripted questions [S1325].  
 

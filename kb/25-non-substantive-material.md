@@ -40,7 +40,7 @@ Some source items mix commentary with a possible lesson. The source map assigns 
 
 ## Caveats
 
-This category may contain unverified medical, political, financial, interpersonal, or strongly gendered claims. None should be treated as established fact or followed literally without appropriate independent evidence and context. The category is descriptive of corpus handling, not an endorsement of the creator's rhetoric.
+This category may contain unverified medical, political, financial, interpersonal, or strongly gendered claims. None should be treated as established fact or followed literally without appropriate independent evidence and context. The category is descriptive of corpus handling, not an endorsement of Musa's rhetoric.
 
 ## Sources
 

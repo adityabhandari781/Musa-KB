@@ -32,8 +32,8 @@ Technology and algorithms shape attention by filtering content, rewarding engage
 - Use RAS‑focused techniques (e.g., setting clear goals) to align attention with desired outcomes, while acknowledging the lack of robust evidence. [S0696]
 
 ## Examples and stories
-- A creator recounts a phone theft incident where bystanders filmed instead of helping, illustrating how phone culture can override real‑world empathy. [S1383]
-- Anecdotal advice from a creator’s mother about embracing “rough edges” to gain social media traction. [S1669]
+- A Musa recounts a phone theft incident where bystanders filmed instead of helping, illustrating how phone culture can override real‑world empathy. [S1383]
+- Anecdotal advice from a Musa's mother about embracing “rough edges” to gain social media traction. [S1669]
 
 ## Tensions and contradictions
 - While creators claim algorithms are inherently manipulative, some argue that user agency can mitigate their effects; the evidence for effective counter‑strategies is mixed. [S1363][S1364]

@@ -11,7 +11,7 @@ source_scope:
 # Learning and thinking skills
 
 ## Overview
-The speaker presents a framework for accelerating learning and thinking that blends mindset tricks, meta‑skills, and unconventional habits. Central to the message is the idea that inspiration, skill stacking, and self‑directed “higher education” are more powerful than formal schooling or passive content consumption. By actively seeking inspiration, cultivating a suite of complementary abilities, and using role‑model archetypes as a personal “board of directors,” individuals can transform their learning velocity and influence both themselves and others.[S0115][S1207][S0427][S1489]
+Musa presents a framework for accelerating learning and thinking that blends mindset tricks, meta‑skills, and unconventional habits. Central to the message is the idea that inspiration, skill stacking, and self‑directed “higher education” are more powerful than formal schooling or passive content consumption. By actively seeking inspiration, cultivating a suite of complementary abilities, and using role‑model archetypes as a personal “board of directors,” individuals can transform their learning velocity and influence both themselves and others.[S0115][S1207][S0427][S1489]
 
 ## Core ideas
 1. **Inspiration as a skill** – Treat finding inspiration like any other ability; train your “eyes” to see the free energy of inspiration everywhere and use it to fuel motivation.[S0116]
@@ -41,11 +41,11 @@ The speaker presents a framework for accelerating learning and thinking that ble
 
 ## Examples and stories
 - **Conor McGregor & Donald Trump** – Cited as examples of skill stackers who blend charisma, storytelling, and strategic positioning to dominate disparate arenas.[S0427]
-- **Instagram growth** – The speaker’s rapid follower increase after adopting a beginner’s mindset and a distinct self‑image illustrates how authenticity plus rapid skill acquisition can attract large audiences.[S1660]
+- **Instagram growth** – Musa's rapid follower increase after adopting a beginner’s mindset and a distinct self‑image illustrates how authenticity plus rapid skill acquisition can attract large audiences.[S1660]
 - **Paid courses regret** – Investing in many courses that delivered little value, coupled with social ridicule, underscores the risk of unvetted educational programs.[S1651]
 
 ## Tensions and contradictions
-- The speaker **dismisses TikTok as learning** while simultaneously encouraging the consumption of high‑level founders’ content, creating a tension between rejecting short‑form platforms and valuing curated expertise.[S1364]
+- Musa **dismisses TikTok as learning** while simultaneously encouraging the consumption of high‑level founders’ content, creating a tension between rejecting short‑form platforms and valuing curated expertise.[S1364]
 - Claiming that **leadership is unnecessary for freedom** conflicts with the emphasis on persuasion and influence as top life skills, suggesting an unresolved balance between autonomy and social impact.[S1571]
 - Labeling terms like *confirmation bias* as “negative labels” contradicts the broader advocacy for critical thinking and meta‑cognition, potentially downplaying useful scientific concepts.[S1500]
 

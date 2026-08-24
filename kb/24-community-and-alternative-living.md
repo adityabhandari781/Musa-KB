@@ -11,7 +11,7 @@ source_scope:
 # Community and alternative living
 
 ## Overview  
-The “Far From Weak” (FFW) movement is presented by its creator as a tightly‑bound community that seeks to escape perceived governmental and algorithmic domination by establishing a physical enclave—often described as a “village” or tax‑haven—where members can live, raise families, and maintain a brotherhood of “real” individuals [S0259][S0285][S0376][S0410][S0419][S0420][S0430][S0459][S0461][S0483][S0570][S0579][S0594][S0608][S0670][S0687][S0689][S0816][S0819][S0827][S0897][S0953][S0993][S0994][S1056]. The narrative intertwines anti‑algorithmic rhetoric, exclusionary identity language, and promises of economic autonomy, positioning the community as both a cultural counter‑culture and a practical refuge from “digital enslavement.”  
+The “Far From Weak” (FFW) movement is presented by its Musa as a tightly‑bound community that seeks to escape perceived governmental and algorithmic domination by establishing a physical enclave—often described as a “village” or tax‑haven—where members can live, raise families, and maintain a brotherhood of “real” individuals [S0259][S0285][S0376][S0410][S0419][S0420][S0430][S0459][S0461][S0483][S0570][S0579][S0594][S0608][S0670][S0687][S0689][S0816][S0819][S0827][S0897][S0953][S0993][S0994][S1056]. The narrative intertwines anti‑algorithmic rhetoric, exclusionary identity language, and promises of economic autonomy, positioning the community as both a cultural counter‑culture and a practical refuge from “digital enslavement.”  
 
 ## Core ideas  
 1. **Unchaining from digital control** – Members are urged to “be unchained” by rejecting algorithmic influence, ghosting, and doom‑scrolling, framing these practices as acts of resistance [S0350][S0402][S0447][S0456].  
@@ -29,21 +29,21 @@ The “Far From Weak” (FFW) movement is presented by its creator as a tigh
 
 ## Recommended practices  
 1. **Digital disengagement** – Adopt “ghosting” tactics: limit exposure to algorithmic feeds, avoid doom‑scrolling, and deliberately post content that “disgusts” the algorithm [S0350][S0402][S0447][S0456].  
-2. **Community contribution** – Participate in paid knowledge‑vault projects, ensuring content remains in the creator’s original wording to preserve “authentic” voice [S0687][S0689].  
+2. **Community contribution** – Participate in paid knowledge‑vault projects, ensuring content remains in Musa's original wording to preserve “authentic” voice [S0687][S0689].  
 3. **Physical relocation planning** – Investigate tax‑haven jurisdictions (e.g., North Cyprus) for potential settlement, aligning with the movement’s vision of a self‑sustaining village [S1323].  
 4. **Daily “steps” regimen** – Follow prescribed routines (e.g., physical training, income‑generating tasks) to build momentum and reinforce group identity [S1404][S1654].  
 5. **Embrace dual identity** – Cultivate both “savage” confidence and intellectual growth as advocated by the movement’s ethos [S1604].  
 
 ## Examples and stories  
 - A member recounts completing “a thousand burpees” and sharing the footage as “authentic content” to contrast with AI‑generated videos, illustrating the community’s emphasis on raw, human effort [S1326].  
-- The creator describes a “real‑life” village already built, citing recruitment of two investors each worth “over 9 figures,” to demonstrate tangible progress toward the enclave [S0483][S0579][S0594].  
+- Musa describes a “real‑life” village already built, citing recruitment of two investors each worth “over 9 figures,” to demonstrate tangible progress toward the enclave [S0483][S0579][S0594].  
 - Participants in the “75‑day Far From Week” report heightened cohesion and a sense of purpose, framing the program as a collective rite of passage [S1654].  
 
 ## Tensions and contradictions  
 - **Exclusion vs. universal appeal** – While the movement claims a massive base (“1.2 million men”), it simultaneously enforces explicit ethnic exclusions (“no Indians allowed”), creating a paradox between claimed inclusivity and practiced racism [S1209][S1352].  
 - **Anti‑algorithm stance vs. platform reliance** – The call to “disgust the algorithm” relies on the very platforms the movement seeks to escape, raising questions about the feasibility of sustained disengagement [S0350][S0402][S0447][S0456].  
 - **Economic promises vs. speculative reality** – Promises of high earnings and tax‑haven benefits are presented without verifiable evidence, potentially misleading participants about financial viability [S1430][S0483][S0579][S0594].  
-- **Divine mission framing vs. profit motives** – The creator invokes divine guidance while simultaneously offering paid projects, blending spiritual rhetoric with monetization in a way that may obscure true incentives [S1319].  
+- **Divine mission framing vs. profit motives** – Musa invokes divine guidance while simultaneously offering paid projects, blending spiritual rhetoric with monetization in a way that may obscure true incentives [S1319].  
 
 ## Caveats  
 - The movement’s rhetoric includes **racially charged and exclusionary language** that may foster hate or discrimination; such content should be approached critically and not normalized [S0019][S0024][S1209].  

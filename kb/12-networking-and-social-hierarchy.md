@@ -11,7 +11,7 @@ source_scope:
 # Networking and social hierarchy
 
 ## Overview  
-Networking operates within implicit social hierarchies that shape who is heard, trusted, and granted opportunities. The creator repeatedly warns against “yes‑men” circles, pedestal‑building, and status‑induced deference, arguing that these dynamics both limit personal growth and reinforce power imbalances [S0043][S0078][S0079][S1171]. Effective networking, in the creator’s view, requires strategic self‑presentation, genuine value provision, and an awareness of one’s relative position in the hierarchy [S0599][S0601][S1355][S1468].
+Networking operates within implicit social hierarchies that shape who is heard, trusted, and granted opportunities. Musa repeatedly warns against “yes‑men” circles, pedestal‑building, and status‑induced deference, arguing that these dynamics both limit personal growth and reinforce power imbalances [S0043][S0078][S0079][S1171]. Effective networking, in Musa's view, requires strategic self‑presentation, genuine value provision, and an awareness of one’s relative position in the hierarchy [S0599][S0601][S1355][S1468].
 
 ## Core ideas  
 - **Avoid echo chambers:** Surrounding yourself with only agreeable voices curtails insight and accelerates decline [S0043].  
@@ -38,12 +38,12 @@ Networking operates within implicit social hierarchies that shape who is heard, 
 - **Avoid dual loyalties:** Recognize that serving two competing masters can erode trust; choose alliances that align with your core trajectory [S0985].
 
 ## Examples and stories  
-- The creator recounts a “secret networking technique” where subtly mentioning a stay in a Spanish penthouse while focusing the conversation on the high‑status person made the creator memorable and likable [S1355].  
-- In a mentorship scenario, the creator helped a follower secure a collaboration with a popular streamer by providing genuine, actionable advice rather than relying on status leverage [S1375].  
+- Musa recounts a “secret networking technique” where subtly mentioning a stay in a Spanish penthouse while focusing the conversation on the high‑status person made Musa memorable and likable [S1355].  
+- In a mentorship scenario, Musa helped a follower secure a collaboration with a popular streamer by providing genuine, actionable advice rather than relying on status leverage [S1375].  
 - A described approach involved framing oneself as already successful (“I’m on a winning trajectory”) when approaching a wealthy businessperson, shifting the dynamic from needy to mutually beneficial [S1468].
 
 ## Tensions and contradictions  
-- While the creator condemns pedestal‑building, they also advise projecting an image of significance, which can be perceived as a form of self‑promotion [S1355][S1171].  
+- While Musa condemns pedestal‑building, they also advise projecting an image of significance, which can be perceived as a form of self‑promotion [S1355][S1171].  
 - The emphasis on “playing your cards right” suggests strategic manipulation, yet the same advice stresses authenticity and genuine value provision, creating a potential conflict between calculated image‑craft and sincere contribution [S0172][S1468].  
 - The claim that men are less socially forgiven for deference to status than women is presented as an observation but lacks supporting data, highlighting a gendered generalization that may not hold universally [S1171].
 

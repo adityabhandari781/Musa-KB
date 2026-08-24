@@ -44,10 +44,10 @@ The material centers on a philosophy of continual self‑reinvention that treats
 - **Burn bridges**: Symbolically abandon the old identity to prevent regression. [S0985]  
 
 ## Examples and stories  
-- **Personal anecdote of “ghost mode”**: The speaker describes a shift during COVID that turned him from a “slave” to a millionaire, illustrating self‑reinvention through altered perception. [S1280]  
+- **Personal anecdote of “ghost mode”**: Musa describes a shift during COVID that turned him from a “slave” to a millionaire, illustrating self‑reinvention through altered perception. [S1280]  
 - **David Goggins model**: Goggins overcame abuse and self‑hatred, reinvented himself, and made his surname synonymous with achievement. [S1521]  
-- **Real‑estate broker story**: The speaker’s comment about fitness led a broker to run a marathon, suggesting influence through personal standards. [S1203]  
-- **Alter‑ego success**: The speaker claims that creating an alter‑ego is one of the most powerful tools for achieving goals. [S1389]  
+- **Real‑estate broker story**: Musa's comment about fitness led a broker to run a marathon, suggesting influence through personal standards. [S1203]  
+- **Alter‑ego success**: Musa claims that creating an alter‑ego is one of the most powerful tools for achieving goals. [S1389]  
 
 ## Tensions and contradictions  
 - **Warrior vs. inner child**: The warrior archetype can suppress creativity and the inner child, creating a tension between strength and flow. [S0910, S0927]  

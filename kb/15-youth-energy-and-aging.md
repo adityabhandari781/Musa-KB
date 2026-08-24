@@ -17,7 +17,7 @@ Youth is portrayed as a finite resource that fuels energy, risk‑taking, and cr
 - **Energy as a finite asset**: Physical and mental energy diminish with age, making youth a precious period for high‑risk, high‑reward activities. [S0265]  
 - **Identity shaping energy**: Statements beginning with “I am…” become part of one’s self‑concept and can either empower or limit future behavior. Choosing empowering identities (e.g., “high energy person”) is recommended over limiting ones (e.g., “tired”). [S0369]  
 - **Energy reframing**: Replacing self‑descriptive labels that signal low energy with proactive language (“I can summon energy”) helps maintain a high‑energy mindset. Practical tactics include cold showers, burpees, and other brief physical activations. [S0508–S0517]  
-- **High energy attracts positive outcomes**: The creator claims that sustained high energy leads to fresh ideas, charisma, and financial success, and that it can be cultivated through training, sunlight, gratitude, and surrounding oneself with high performers. [S0566]  
+- **High energy attracts positive outcomes**: Musa claims that sustained high energy leads to fresh ideas, charisma, and financial success, and that it can be cultivated through training, sunlight, gratitude, and surrounding oneself with high performers. [S0566]  
 - **Stamina as a key asset**: Stamina is highlighted as the most valuable resource, with high energy being a primary driver of wealth and influence. [S0583–S0594]  
 - **Role models across ages**: Observing older individuals who maintain high energy (e.g., a 79‑year‑old, Donald Trump at 80) demonstrates that age does not preclude vitality, encouraging the rejection of binary moral judgments about aging. [S0589–S0591]  
 - **Ignoring low‑energy critics**: Using the example of Goku, the material advises ignoring detractors who label one as low energy, thereby preserving high energy. [S0592–S0593]  
@@ -43,12 +43,12 @@ Youth is portrayed as a finite resource that fuels energy, risk‑taking, and cr
 - **Goku’s example**: The fictional character ignores critics labeling him as low energy, maintaining his power level. [S0592–S0593]  
 
 ## Tensions and contradictions  
-- **Claim vs. evidence**: The creator asserts that high energy directly leads to wealth and charisma, yet no empirical data is provided to substantiate this causal link.  
+- **Claim vs. evidence**: Musa asserts that high energy directly leads to wealth and charisma, yet no empirical data is provided to substantiate this causal link.  
 - **Risk tolerance**: While youth is framed as a safe period for risk, the material does not address potential long‑term health consequences of reckless behavior.  
 - **Identity fixation**: Emphasizing a fixed identity (“high energy person”) may conflict with the fluid nature of self‑concepts and could lead to self‑fulfilling failure if energy dips.  
 
 ## Caveats  
-- The claims about energy’s direct impact on financial success and charisma are presented as the creator’s perspective and are not supported by peer‑reviewed research.  
+- The claims about energy’s direct impact on financial success and charisma are presented as Musa's perspective and are not supported by peer‑reviewed research.  
 - Practices such as cold showers and intense physical bursts may not be suitable for everyone; individuals with medical conditions should consult professionals before adopting them.  
 - The emphasis on risk‑taking during youth should be balanced with an awareness of potential long‑term health risks.
 

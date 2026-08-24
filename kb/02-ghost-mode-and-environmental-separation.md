@@ -11,12 +11,12 @@ source_scope:
 # Ghost Mode and environmental separation
 
 ## Overview  
-“Ghost Mode” is presented by the creator as an intentional withdrawal from one’s immediate social and digital environment in order to sharpen focus, protect ego, and accelerate personal achievement. Framed as an “underrated” alternative to flamboyant self‑promotion, the strategy is described as a continual, life‑long practice rather than a short‑term hack, and is linked to a broader “mission‑driven” mindset that prioritizes inner drive over external validation [S0012][S0014][S1263][S1288].
+“Ghost Mode” is presented by Musa as an intentional withdrawal from one’s immediate social and digital environment in order to sharpen focus, protect ego, and accelerate personal achievement. Framed as an “underrated” alternative to flamboyant self‑promotion, the strategy is described as a continual, life‑long practice rather than a short‑term hack, and is linked to a broader “mission‑driven” mindset that prioritizes inner drive over external validation [S0012][S0014][S1263][S1288].
 
 ## Core ideas  
 1. **Environmental Illusion (Genjutsu)** – Most people are trapped in a self‑reinforcing illusion (“Genjutsu”) that keeps 99 % of individuals stuck in the same social circles and habits, turning them into “products of their environment” [S0190].  
 2. **Isolation for Clarity** – Detaching from friends, “bums,” and digital distractions is said to keep ego in check and allow “seeing things clearly.” Semi‑Ghost and Silent periods are promoted as times when patience yields “big things.” [S0205][S0236]  
-3. **Addition by Subtraction** – Removing two non‑serving items (relationships, apps, habits) creates a breakthrough, a principle the creator calls the “addition by subtraction” challenge [S0845].  
+3. **Addition by Subtraction** – Removing two non‑serving items (relationships, apps, habits) creates a breakthrough, a principle Musa calls the “addition by subtraction” challenge [S0845].  
 4. **Mission‑First Hierarchy** – Lacking a clear mission is labeled cowardice; therefore, any relationship that does not serve the mission should be cut, even if it means confronting perceived “bets” on one’s failure [S1104][S1402][S0899].  
 5. **Permanent Lifestyle** – Ghost Mode is not a temporary hack but a lifelong mode of operating, applicable to varied goals such as privacy, faith, authenticity, and “alter‑ego awakening.” [S1263][S1298][S1298].
 
@@ -36,22 +36,22 @@ source_scope:
 6. **Balance Flexibility** – Alternate between “move solo” (full isolation) and “move balanced” (selective collaboration) based on current goals [S0438].
 
 ## Examples and stories  
-- During COVID, the creator claims Ghost Mode enabled a personal push toward millionaire status, framing societal expectations as “slavery” that was escaped through isolation [S0216].  
+- During COVID, Musa claims Ghost Mode enabled a personal push toward millionaire status, framing societal expectations as “slavery” that was escaped through isolation [S0216].  
 - A failed crypto‑trading venture led to a pivot toward hustling and later faceless YouTube channels; success was attributed to “drive” rather than the specific vehicle [S1115].  
-- The creator recounts a “bum” lifestyle transformation that earned praise but provoked family criticism labeling the success as greed, reinforcing the need to break free from limiting environments [S1670].  
-- A “lion in a zoo” metaphor illustrates how confinement weakens potential, prompting the creator to abandon proximity‑based circles (school, gym, work) in favor of goal‑aligned networks [S0764][S0628].
+- Musa recounts a “bum” lifestyle transformation that earned praise but provoked family criticism labeling the success as greed, reinforcing the need to break free from limiting environments [S1670].  
+- A “lion in a zoo” metaphor illustrates how confinement weakens potential, prompting Musa to abandon proximity‑based circles (school, gym, work) in favor of goal‑aligned networks [S0764][S0628].
 
 ## Tensions and contradictions  
-- **Isolation vs. Brotherhood** – While advocating detachment from “bums” and “bullshit people,” the creator simultaneously promises to help others succeed and speaks of a supportive “brotherhood,” creating a tension between lone‑wolf rhetoric and communal mentorship [S0466].  
+- **Isolation vs. Brotherhood** – While advocating detachment from “bums” and “bullshit people,” Musa simultaneously promises to help others succeed and speaks of a supportive “brotherhood,” creating a tension between lone‑wolf rhetoric and communal mentorship [S0466].  
 - **Permanent vs. Flexible** – Ghost Mode is described as a lifelong way of life, yet the advice to “move solo or move balanced” suggests situational flexibility, potentially confusing followers about the required degree of isolation [S0438].  
-- **Safety vs. Risk** – The creator warns against illegal hustles for safety, yet promotes aggressive social pruning that could damage essential support networks, raising ethical concerns about emotional well‑being [S1115][S1418].
+- **Safety vs. Risk** – Musa warns against illegal hustles for safety, yet promotes aggressive social pruning that could damage essential support networks, raising ethical concerns about emotional well‑being [S1115][S1418].
 
 ## Caveats  
 - **Emotional Health** – Systematic cutting of friends and family may lead to loneliness, depression, or loss of essential social support; the advice lacks guidance on mental‑health safeguards.  
 - **Legal and Financial Risk** – The narrative’s emphasis on “hustling” and rapid wealth pursuit may encourage high‑risk activities without adequate risk‑management advice.  
 - **Context‑Specificity** – The effectiveness of Ghost Mode likely depends on individual circumstances (e.g., existing support structures, financial stability); it is not universally applicable.  
 - **Unverified Claims** – Assertions such as surpassing 4 000 course members in a month purely through drive lack independent verification and should be treated as anecdotal [S1115][S1119].  
-- **Potential for Abuse** – The “future‑casting” filter could be misused to justify cutting ties with vulnerable individuals who cannot meet the creator’s projected standards.  
+- **Potential for Abuse** – The “future‑casting” filter could be misused to justify cutting ties with vulnerable individuals who cannot meet Musa's projected standards.  
 
 ---  
 

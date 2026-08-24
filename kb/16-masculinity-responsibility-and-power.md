@@ -11,13 +11,13 @@ source_scope:
 # Masculinity, responsibility, and power
 
 ## Overview
-- The creator frames masculinity around reclaiming a "wild," undomesticated nature against societal pressures that seek to tame men [S0020, S0021, S0565].
+- Musa frames masculinity around reclaiming a "wild," undomesticated nature against societal pressures that seek to tame men [S0020, S0021, S0565].
 - Manhood is defined by a balance of raw power, intellectual development, and responsibility, rejecting both fragile intellectualism and unrefined savagery [S0041, S0898].
 - Power is presented as a prerequisite for freedom and respect, with responsibility framed as a beneficial trade-off for male resilience and potential [S0323, S0710, S0711, S0777].
 
 ## Core ideas
 - **The Wild vs. Domesticated Man:** Society, particularly women, attempts to "domesticate" men, but true masculinity requires preserving an internal "wild man" and rejecting conventional constraints [S0020, S0021, S0565].
-- **Power and Freedom:** Rules and regulations are viewed as tools that apply only to the powerless; the creator asserts that "might makes right" and that genuine freedom is only achievable through the accumulation of power [S0777]. Men are said to naturally respect power levels, which can be leveraged to command environments [S0323].
+- **Power and Freedom:** Rules and regulations are viewed as tools that apply only to the powerless; Musa asserts that "might makes right" and that genuine freedom is only achievable through the accumulation of power [S0777]. Men are said to naturally respect power levels, which can be leveraged to command environments [S0323].
 - **Masculine Balance:** The ideal man integrates opposing traits: berserker intensity with class, physical capability with intellect, competitiveness with love, and a feminine partner with a drive for winning [S0843]. Relying solely on intellectualism (citing figures like Jordan Peterson or Robert Greene) is claimed to produce fragility, while pure savagery stunts growth [S0898].
 - **Responsibility as a Trade-off:** Men are characterized as having higher stress tolerance, resilience, and potential, partly attributed to the absence of monthly hormonal cycles; responsibility is framed as a favorable exchange for these traits [S0710, S0711].
 
@@ -35,27 +35,27 @@ source_scope:
 - Channel complaints about systemic injustice into personal motivation and power-building rather than passive grievance [S0777].
 
 ## Examples and stories
-- The creator references his Moroccan ancestors defeating Vikings and Turkish ancestors conquering Romans to illustrate historical masculine power and lineage [S0345].
+- Musa references his Moroccan ancestors defeating Vikings and Turkish ancestors conquering Romans to illustrate historical masculine power and lineage [S0345].
 - He contrasts modern men with historical conquerors like Genghis Khan and Alexander the Great, suggesting contemporary men lack the same drive or context [S0984].
-- The creator describes his own past "wormy behavior" in his twenties, attributing it to the absence of a strong masculine or father figure in his upbringing, and claims that such a presence would have prevented it [S1586].
+- Musa describes his own past "wormy behavior" in his twenties, attributing it to the absence of a strong masculine or father figure in his upbringing, and claims that such a presence would have prevented it [S1586].
 - He labels both his biological father and stepfather as "weak men," suggesting this background influenced his current demeanor and drive [S1595].
 - He recounts an encounter with a fitness YouTuber where he chose radical honesty over "coping," emphasizing the necessity of 100% self-honesty for men [S1567].
-- The creator notes that many men struggle to discuss vulnerability due to leadership roles (as husbands, fathers, or mentors), creating pressure to constantly conceal weakness [S1615].
+- Musa notes that many men struggle to discuss vulnerability due to leadership roles (as husbands, fathers, or mentors), creating pressure to constantly conceal weakness [S1615].
 
 ## Tensions and contradictions
-- The creator rejects "internet alpha males" and influencer culture while simultaneously promoting a highly stylized, combative, and power-centric framework for masculinity that mirrors aspects of that same culture [S0041, S0569, S0777].
+- Musa rejects "internet alpha males" and influencer culture while simultaneously promoting a highly stylized, combative, and power-centric framework for masculinity that mirrors aspects of that same culture [S0041, S0569, S0777].
 - He advocates for being a "father and family man" and valuing love and class, yet frames masculinity around "berserker" energy, "testosterone" dominance, and "might makes right" power dynamics [S0041, S0569, S0777, S0843].
 - He criticizes intellectual figures like Jordan Peterson and Robert Greene for lacking charisma and being fragile, while his own framework relies heavily on theoretical archetypes ("wild man," "warrior," "power levels") and historical romanticization [S0898, S1604].
 - He values "warriors" in his social circle and claims to recognize an internal "warrior" quality in others, yet explicitly states this has nothing to do with seeking fights or trouble, creating a tension between the term's traditional connotations and his defined usage [S1617, S1618].
 - He advises men not to scorn a "weak cub" who may become a "Brutal Tiger," contrasting with his broader emphasis on power, dominance, and dismissing those who complain rather than act [S0292, S0293, S0777].
 
 ## Caveats
-- *Speculative/Gendered Claims:* The assertion that men possess inherently greater resilience and stress tolerance due to the absence of "monthly hormonal bleeding," and that risk-taking is biologically tied to "testosterone" while safety-seeking is tied to "estrogen," reflects the creator's gendered framing rather than established scientific consensus [S0569, S0710, S0711].
+- *Speculative/Gendered Claims:* The assertion that men possess inherently greater resilience and stress tolerance due to the absence of "monthly hormonal bleeding," and that risk-taking is biologically tied to "testosterone" while safety-seeking is tied to "estrogen," reflects Musa's gendered framing rather than established scientific consensus [S0569, S0710, S0711].
 - *Political/Philosophical Claims:* The statement that "rules and regulations only apply to the powerless" and that "might makes right" presents a subjective, power-centric worldview that contradicts established legal and ethical frameworks [S0777].
 - *Historical Claims:* References to ancestors destroying Vikings or conquering Romans, and comparisons to Genghis Khan and Alexander the Great, are presented as lineage-based or aspirational narratives rather than verified historical analysis [S0345, S0984].
-- *Psychological/Developmental Claims:* The creator's assertion that a strong father figure would have definitively prevented his past "wormy behavior," and that labeling his fathers as "weak" explains his current demeanor, reflects personal attribution rather than clinical psychological evidence [S1586, S1595].
+- *Psychological/Developmental Claims:* Musa's assertion that a strong father figure would have definitively prevented his past "wormy behavior," and that labeling his fathers as "weak" explains his current demeanor, reflects personal attribution rather than clinical psychological evidence [S1586, S1595].
 - *Social Dynamics:* The claim that men universally respect "power levels" and that increasing one's power level will reliably command rooms is a generalized social observation that may not apply across all cultural or professional contexts [S0323].
-- *Vulnerability & Leadership:* The observation that men in leadership roles feel pressured to hide weakness highlights a social constraint rather than a prescriptive rule, and the creator acknowledges this creates difficulty in discussing struggles [S1615].
+- *Vulnerability & Leadership:* The observation that men in leadership roles feel pressured to hide weakness highlights a social constraint rather than a prescriptive rule, and Musa acknowledges this creates difficulty in discussing struggles [S1615].
 
 ## Sources
 

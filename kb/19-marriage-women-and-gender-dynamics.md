@@ -33,7 +33,7 @@ Marriage, women, and gender dynamics are framed in the cited sources as a comple
 
 ## Examples and stories
 - A man who prioritizes powerlessness is treated like a slave, illustrating the consequences of perceived weakness. [S0607]
-- A woman’s family uses flattery to protect herself, which the speaker claims can be destructive. [S0846]
+- A woman’s family uses flattery to protect herself, which Musa claims can be destructive. [S0846]
 - A narrative of a man who would accept multiple partners if they were “worthy enough,” reflecting a conqueror mindset. [S0980]
 - A family workout story where a wife’s example motivates a daughter’s intense effort. [S1676]
 

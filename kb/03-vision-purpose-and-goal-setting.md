@@ -11,7 +11,7 @@ source_scope:
 # Vision, purpose, and goal-setting
 
 ## Overview  
-The material presents vision, purpose, and goal‑setting as a spiritual‑psychological system that promises immunity to temptation, anxiety elimination, and extraordinary achievement. Central to the claim is that a “definite purpose” functions as a shield against the Devil and as the engine that drives relentless action [S0025][S0975]. Vision is framed as a multi‑layered compass that must be vivid, sensory, and broken into short‑term horizons (12‑week cycles) to generate urgency and “hyper‑realistic” habit execution [S0155][S1175][S1176][S1261]. The author mixes personal anecdotes, motivational rhetoric, and references to self‑help literature (e.g., Napoleon Hill) while offering concrete planning methods such as the “one‑three‑five” breakdown and the Demartini values hierarchy [S0882][S1141].
+The material presents vision, purpose, and goal‑setting as a spiritual‑psychological system that promises immunity to temptation, anxiety elimination, and extraordinary achievement. Central to the claim is that a “definite purpose” functions as a shield against the Devil and as the engine that drives relentless action [S0025][S0975]. Vision is framed as a multi‑layered compass that must be vivid, sensory, and broken into short‑term horizons (12‑week cycles) to generate urgency and “hyper‑realistic” habit execution [S0155][S1175][S1176][S1261]. Musa mixes personal anecdotes, motivational rhetoric, and references to self‑help literature (e.g., Napoleon Hill) while offering concrete planning methods such as the “one‑three‑five” breakdown and the Demartini values hierarchy [S0882][S1141].
 
 ## Core ideas  
 1. **Definite purpose as spiritual armor** – A clear mission makes a person “uncontrollable by the Devil” and immune to temptations, positioning success as a battle between God‑aligned purpose and demonic distraction [S0025][S1031].  
@@ -43,10 +43,10 @@ The material presents vision, purpose, and goal‑setting as a spiritual‑psych
 8. **Iteratively calibrate** thoughts and actions; adjust the plan based on feedback rather than rigidly adhering to an initial script [S1371].  
 
 ## Examples and stories  
-* The author recounts a “4‑year Ghost Mode” period after which a personal purpose emerged, motivating a “give‑back” mission [S0068].  
+* Musa recounts a “4‑year Ghost Mode” period after which a personal purpose emerged, motivating a “give‑back” mission [S0068].  
 * A failed attempt to earn $10 k/month annually was resolved by narrowing the target to a 12‑week horizon, resulting in rapid success due to heightened urgency [S1177].  
 * Attending a conference with speakers like William Hoff and Robert Greene is presented as a catalyst for inspiration and improved personal branding [S1355].  
-* The speaker describes rejecting selfies and social media as a daily demonstration of purpose dominance [S1347].  
+* Musa describes rejecting selfies and social media as a daily demonstration of purpose dominance [S1347].  
 * A personal “main character” affirmation (“let a motherfucker try to stop me”) illustrates the aggressive mindset encouraged for relentless pursuit [S1640].  
 
 ## Tensions and contradictions  
@@ -54,7 +54,7 @@ The material presents vision, purpose, and goal‑setting as a spiritual‑psych
 * **Freedom vs. suppression** – Relationships are labeled “suppression” when they conflict with the mission, potentially undermining social support networks [S0451].  
 * **Optimism requirement** – The claim that “being super optimistic” is a prerequisite, otherwise life will “fuck you up,” discounts legitimate emotional states and may stigmatize normal anxiety [S0426].  
 * **Urgency through death framing** – Equating hesitation with death can generate unhealthy pressure and burnout, conflicting with sustainable performance principles [S0216][S0922].  
-* **Copying vs. authenticity** – While the author warns against blindly copying influencers, they simultaneously prescribe modeling admired leaders, a paradoxical stance [S1247][S1490].  
+* **Copying vs. authenticity** – While Musa warns against blindly copying influencers, they simultaneously prescribe modeling admired leaders, a paradoxical stance [S1247][S1490].  
 
 ## Caveats  
 * The spiritual claims (e.g., immunity to the Devil, purpose feeling “better than an orgasm”) are **speculative religious assertions** and lack empirical verification [S0025][S0763].  

@@ -11,12 +11,12 @@ source_scope:
 # Confidence, boldness, and action
 
 ## Overview  
-The creator repeatedly links confidence, boldness, and immediate action to personal power, respect, and success. Central to the narrative is the idea that hesitation invites domination, while decisive, aggressive moves generate emotion, deter opponents, and produce results. Boldness is framed as both a spiritual inheritance and a practical strategy for navigating risk, criticism, and failure.
+Musa repeatedly links confidence, boldness, and immediate action to personal power, respect, and success. Central to the narrative is the idea that hesitation invites domination, while decisive, aggressive moves generate emotion, deter opponents, and produce results. Boldness is framed as both a spiritual inheritance and a practical strategy for navigating risk, criticism, and failure.
 
 ## Core ideas  
 - **Respect through action:** Even if others dislike or resent you, decisive behavior forces them to acknowledge your presence [S0107].  
 - **Emotion follows motion:** Inactivity breeds stagnant feelings; taking any motion creates the emotional state needed for confidence [S0109].  
-- **Boldness as lineage:** The creator claims confidence is rooted in an ancestral line of winners and survivors, positioning bold acts as a way to honor that heritage [S0193].  
+- **Boldness as lineage:** Musa claims confidence is rooted in an ancestral line of winners and survivors, positioning bold acts as a way to honor that heritage [S0193].  
 - **Reframing risk:** Shifting the question from “what if it fails?” to “what if it works?” encourages risk‑taking and undermines conventional safety advice [S0286].  
 - **Zero hesitation doctrine:** A mindset of “no hesitation, no retreat, 100 % pressure” is presented as essential for confronting perceived “coward hyenas” and maintaining dominance [S0312].  
 - **Humiliation as a metric:** Experiencing public defeat is portrayed as proof of boldness; avoiding humiliation signals insufficient daring [S0339].  
@@ -39,15 +39,15 @@ The creator repeatedly links confidence, boldness, and immediate action to perso
 - **Project confidence socially:** Claim achievements or financial freedom in networking contexts to create an aura of boldness, even if tangential to the conversation [S1355].
 
 ## Examples and stories  
-- **Bike incident:** The creator’s brother aggressively confronted a bully, causing the bully to flee, while the creator’s hesitation allowed intimidation to persist [S0311].  
+- **Bike incident:** Musa's brother aggressively confronted a bully, causing the bully to flee, while Musa's hesitation allowed intimidation to persist [S0311].  
 - **Donald Trump & Dana White:** Both faced humiliating defeats yet continued to act boldly, illustrating persistence after public loss [S0339].  
 - **“Hidden status Jiu‑Jitsu” networking:** Claiming unrelated successes to project confidence in social settings [S1355].  
 - **Childhood “little rocks” metaphor:** Labeling discouragement as something to smash, reinforcing a violent‑sounding rejection of doubt [S1641].
 
 ## Tensions and contradictions  
-- **Safety vs. boldness:** The creator dismisses conventional safety advice, yet acknowledges that bold risk‑taking can backfire, creating a tension between advocating reckless action and recognizing potential negative outcomes [S1365].  
+- **Safety vs. boldness:** Musa dismisses conventional safety advice, yet acknowledges that bold risk‑taking can backfire, creating a tension between advocating reckless action and recognizing potential negative outcomes [S1365].  
 - **Spiritual vs. mental framing:** Lack of confidence is described both as a mental condition normalized by society and as a spiritual deficiency tied to ancestry, presenting contradictory explanatory models [S0193].  
-- **Public humility vs. invulnerability:** While humiliation is praised as evidence of boldness, the creator simultaneously claims indifference to opponents and an invulnerable stance, which may conflict with the vulnerability implied by public defeat [S0345].
+- **Public humility vs. invulnerability:** While humiliation is praised as evidence of boldness, Musa simultaneously claims indifference to opponents and an invulnerable stance, which may conflict with the vulnerability implied by public defeat [S0345].
 
 ## Caveats  
 - **Speculative spiritual claim:** The notion that confidence is a spiritual inheritance from “winners and survivors” is a personal belief, not an empirically verified fact [S0193].  
