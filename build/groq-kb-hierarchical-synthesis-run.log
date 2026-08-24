@@ -1,0 +1,1162 @@
+Requesting T04-E001 with key slot 1 / qwen/qwen3.6-27b.
+Extracted evidence T04-E001 with key slot 1 on qwen/qwen3.6-27b.
+Requesting T04-E002 with key slot 1 / openai/gpt-oss-120b.
+Rate limited for T04-E002 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 468 second(s).
+Requesting T04-E002 with key slot 1 / openai/gpt-oss-20b.
+Rate limited for T04-E002 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 957 second(s).
+Requesting T04-E002 with key slot 2 / qwen/qwen3.6-27b.
+Extracted evidence T04-E002 with key slot 2 on qwen/qwen3.6-27b.
+Requesting T04-FINAL with key slot 2 / openai/gpt-oss-120b.
+Rate limited for T04-FINAL on key slot 2 / openai/gpt-oss-120b; pair cooling down for 1746 second(s).
+Requesting T04-FINAL with key slot 2 / openai/gpt-oss-20b.
+Rate limited for T04-FINAL on key slot 2 / openai/gpt-oss-20b; pair cooling down for 633 second(s).
+Requesting T04-FINAL with key slot 3 / qwen/qwen3.6-27b.
+Synthesized topic 4/25 with key slot 3 on qwen/qwen3.6-27b.
+Requesting T05-E001 with key slot 3 / openai/gpt-oss-120b.
+Rate limited for T05-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 1297 second(s).
+Requesting T05-E001 with key slot 3 / openai/gpt-oss-20b.
+Rate limited for T05-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 637 second(s).
+Requesting T05-E001 with key slot 4 / qwen/qwen3.6-27b.
+Extracted evidence T05-E001 with key slot 4 on qwen/qwen3.6-27b.
+Requesting T05-FINAL with key slot 4 / openai/gpt-oss-120b.
+Synthesized topic 5/25 with key slot 4 on openai/gpt-oss-120b.
+Requesting T06-E001 with key slot 4 / openai/gpt-oss-20b.
+Rate limited for T06-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 2589 second(s).
+Requesting T06-E001 with key slot 5 / qwen/qwen3.6-27b.
+HTTP 413 for T06-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+Requesting T06-E001 with key slot 5 / openai/gpt-oss-120b.
+Extracted evidence T06-E001 with key slot 5 on openai/gpt-oss-120b.
+Requesting T06-E002 with key slot 5 / openai/gpt-oss-20b.
+Rate limited for T06-E002 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 1155 second(s).
+Requesting T06-E002 with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T06-E002 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 29 second(s).
+Requesting T06-E002 with key slot 2 / qwen/qwen3.6-27b.
+Rate limited for T06-E002 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 2 second(s).
+Requesting T06-E002 with key slot 3 / qwen/qwen3.6-27b.
+Rate limited for T06-E002 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 33 second(s).
+Requesting T06-E002 with key slot 4 / qwen/qwen3.6-27b.
+Rate limited for T06-E002 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 16 second(s).
+Requesting T06-E002 with key slot 4 / openai/gpt-oss-120b.
+Rate limited for T06-E002 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 18 second(s).
+Requesting T06-E002 with key slot 5 / openai/gpt-oss-120b.
+Rate limited for T06-E002 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 37 second(s).
+All key/model pairs are cooling down; waiting 2 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T06-E002 with key slot 2 / qwen/qwen3.6-27b.
+Extracted evidence T06-E002 with key slot 2 on qwen/qwen3.6-27b.
+Requesting T06-E003 with key slot 2 / qwen/qwen3.6-27b.
+Rate limited for T06-E003 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 49 second(s).
+All key/model pairs are cooling down; waiting 12 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T06-E003 with key slot 4 / qwen/qwen3.6-27b.
+Extracted evidence T06-E003 with key slot 4 on qwen/qwen3.6-27b.
+Requesting T06-E004 with key slot 4 / openai/gpt-oss-120b.
+Extracted evidence T06-E004 with key slot 4 on openai/gpt-oss-120b.
+Requesting T06-FINAL with key slot 4 / qwen/qwen3.6-27b.
+Rate limited for T06-FINAL on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 45 second(s).
+Requesting T06-FINAL with key slot 4 / openai/gpt-oss-120b.
+Synthesized topic 6/25 with key slot 4 on openai/gpt-oss-120b.
+Requesting T07-E001 with key slot 4 / openai/gpt-oss-120b.
+Rate limited for T07-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 50 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T07-E001 with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T07-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 9 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T07-E001 with key slot 3 / qwen/qwen3.6-27b.
+Rate limited for T07-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 9 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T07-E001 with key slot 5 / openai/gpt-oss-120b.
+Rate limited for T07-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 7 second(s).
+All key/model pairs are cooling down; waiting 1 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T07-E001 with key slot 1 / qwen/qwen3.6-27b.
+Extracted evidence T07-E001 with key slot 1 on qwen/qwen3.6-27b.
+Requesting T07-E002 with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T07-E002 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 56 second(s).
+All key/model pairs are cooling down; waiting 1 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T07-E002 with key slot 3 / qwen/qwen3.6-27b.
+Extracted evidence T07-E002 with key slot 3 on qwen/qwen3.6-27b.
+Requesting T07-E003 with key slot 5 / openai/gpt-oss-120b.
+Extracted evidence T07-E003 with key slot 5 on openai/gpt-oss-120b.
+Requesting T07-FINAL with key slot 3 / qwen/qwen3.6-27b.
+Rate limited for T07-FINAL on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 23 second(s).
+Requesting T07-FINAL with key slot 5 / openai/gpt-oss-120b.
+Synthesized topic 7/25 with key slot 5 on openai/gpt-oss-120b.
+Requesting T08-E001 with key slot 5 / openai/gpt-oss-120b.
+Rate limited for T08-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 46 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T08-E001 with key slot 2 / qwen/qwen3.6-27b.
+Extracted evidence T08-E001 with key slot 2 on qwen/qwen3.6-27b.
+Requesting T08-E002 with key slot 2 / qwen/qwen3.6-27b.
+Rate limited for T08-E002 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 37 second(s).
+All key/model pairs are cooling down; waiting 9 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T08-E002 with key slot 4 / qwen/qwen3.6-27b.
+Extracted evidence T08-E002 with key slot 4 on qwen/qwen3.6-27b.
+Requesting T08-E003 with key slot 3 / qwen/qwen3.6-27b.
+Rate limited for T08-E003 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 10 second(s).
+Requesting T08-E003 with key slot 4 / qwen/qwen3.6-27b.
+Rate limited for T08-E003 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 30 second(s).
+All key/model pairs are cooling down; waiting 2 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T08-E003 with key slot 4 / openai/gpt-oss-120b.
+Extracted evidence T08-E003 with key slot 4 on openai/gpt-oss-120b.
+Requesting T08-E004 with key slot 4 / openai/gpt-oss-120b.
+Rate limited for T08-E004 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 15 second(s).
+All key/model pairs are cooling down; waiting 7 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T08-E004 with key slot 3 / qwen/qwen3.6-27b.
+Extracted evidence T08-E004 with key slot 3 on qwen/qwen3.6-27b.
+Requesting T08-E005 with key slot 3 / qwen/qwen3.6-27b.
+Rate limited for T08-E005 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 46 second(s).
+All key/model pairs are cooling down; waiting 5 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T08-E005 with key slot 4 / openai/gpt-oss-120b.
+Rate limited for T08-E005 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 8 second(s).
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T08-E005 with key slot 2 / qwen/qwen3.6-27b.
+Rate limited for T08-E005 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 8 second(s).
+All key/model pairs are cooling down; waiting 2 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T08-E005 with key slot 5 / openai/gpt-oss-120b.
+Extracted evidence T08-E005 with key slot 5 on openai/gpt-oss-120b.
+Requesting T08-E006 with key slot 1 / qwen/qwen3.6-27b.
+Extracted evidence T08-E006 with key slot 1 on qwen/qwen3.6-27b.
+Requesting T08-FINAL with key slot 4 / openai/gpt-oss-120b.
+Synthesized topic 8/25 with key slot 4 on openai/gpt-oss-120b.
+Requesting T09-E001 with key slot 5 / openai/gpt-oss-120b.
+Rate limited for T09-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 31 second(s).
+Requesting T09-E001 with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T09-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 31 second(s).
+Requesting T09-E001 with key slot 2 / qwen/qwen3.6-27b.
+Extracted evidence T09-E001 with key slot 2 on qwen/qwen3.6-27b.
+Requesting T09-E002 with key slot 4 / qwen/qwen3.6-27b.
+Extracted evidence T09-E002 with key slot 4 on qwen/qwen3.6-27b.
+Requesting T09-E003 with key slot 4 / openai/gpt-oss-120b.
+Rate limited for T09-E003 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 23 second(s).
+Requesting T09-E003 with key slot 2 / qwen/qwen3.6-27b.
+Rate limited for T09-E003 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 35 second(s).
+Requesting T09-E003 with key slot 4 / qwen/qwen3.6-27b.
+Rate limited for T09-E003 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 33 second(s).
+All key/model pairs are cooling down; waiting 19 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T09-E003 with key slot 3 / qwen/qwen3.6-27b.
+Extracted evidence T09-E003 with key slot 3 on qwen/qwen3.6-27b.
+Requesting T09-E004 with key slot 3 / qwen/qwen3.6-27b.
+Rate limited for T09-E004 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 33 second(s).
+All key/model pairs are cooling down; waiting 1 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T09-E004 with key slot 4 / openai/gpt-oss-120b.
+Rate limited for T09-E004 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 4 second(s).
+All key/model pairs are cooling down; waiting 1 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T09-E004 with key slot 5 / openai/gpt-oss-120b.
+Extracted evidence T09-E004 with key slot 5 on openai/gpt-oss-120b.
+Requesting T09-E005 with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T09-E005 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 1 second(s).
+Requesting T09-E005 with key slot 5 / openai/gpt-oss-120b.
+Rate limited for T09-E005 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 41 second(s).
+All key/model pairs are cooling down; waiting 1 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T09-E005 with key slot 1 / qwen/qwen3.6-27b.
+Extracted evidence T09-E005 with key slot 1 on qwen/qwen3.6-27b.
+Requesting T09-E006 with key slot 4 / openai/gpt-oss-120b.
+Malformed response for T09-E006 from key slot 4 / openai/gpt-oss-120b; pair cooling down for 300 second(s): Response has no valid source citations.
+Requesting T09-E006 with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T09-E006 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 8 second(s).
+All key/model pairs are cooling down; waiting 2 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T09-E006 with key slot 4 / qwen/qwen3.6-27b.
+Extracted evidence T09-E006 with key slot 4 on qwen/qwen3.6-27b.
+Requesting T09-FINAL with key slot 2 / qwen/qwen3.6-27b.
+Rate limited for T09-FINAL on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 6 second(s).
+Requesting T09-FINAL with key slot 4 / qwen/qwen3.6-27b.
+Rate limited for T09-FINAL on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 17 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T09-FINAL with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T09-FINAL on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 33 second(s).
+All key/model pairs are cooling down; waiting 2 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T09-FINAL with key slot 2 / qwen/qwen3.6-27b.
+Malformed response for T09-FINAL from key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T09-FINAL with key slot 4 / qwen/qwen3.6-27b.
+Malformed response for T09-FINAL from key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+Requesting T09-FINAL with key slot 3 / qwen/qwen3.6-27b.
+Malformed response for T09-FINAL from key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+All key/model pairs are cooling down; waiting 1 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T09-FINAL with key slot 5 / openai/gpt-oss-120b.
+Synthesized topic 9/25 with key slot 5 on openai/gpt-oss-120b.
+Requesting T10-E001 with key slot 5 / openai/gpt-oss-120b.
+Rate limited for T10-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 43 second(s).
+All key/model pairs are cooling down; waiting 2 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T10-E001 with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T10-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 4 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T10-E001 with key slot 1 / qwen/qwen3.6-27b.
+Extracted evidence T10-E001 with key slot 1 on qwen/qwen3.6-27b.
+Requesting T10-E002 with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T10-E002 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 22 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T10-E002 with key slot 1 / qwen/qwen3.6-27b.
+Extracted evidence T10-E002 with key slot 1 on qwen/qwen3.6-27b.
+Requesting T10-FINAL with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T10-FINAL on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 20 second(s).
+All key/model pairs are cooling down; waiting 10 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T10-FINAL with key slot 5 / openai/gpt-oss-120b.
+Synthesized topic 10/25 with key slot 5 on openai/gpt-oss-120b.
+Requesting T11-E001 with key slot 5 / openai/gpt-oss-120b.
+Rate limited for T11-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 18 second(s).
+All key/model pairs are cooling down; waiting 7 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T11-E001 with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T11-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 25 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T11-E001 with key slot 5 / openai/gpt-oss-120b.
+Extracted evidence T11-E001 with key slot 5 on openai/gpt-oss-120b.
+Requesting T11-E002 with key slot 5 / openai/gpt-oss-120b.
+Rate limited for T11-E002 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 38 second(s).
+All key/model pairs are cooling down; waiting 12 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T11-E002 with key slot 1 / qwen/qwen3.6-27b.
+Extracted evidence T11-E002 with key slot 1 on qwen/qwen3.6-27b.
+Requesting T11-E003 with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T11-E003 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 18 second(s).
+All key/model pairs are cooling down; waiting 18 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T11-E003 with key slot 1 / qwen/qwen3.6-27b.
+Extracted evidence T11-E003 with key slot 1 on qwen/qwen3.6-27b.
+Requesting T11-FINAL with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T11-FINAL on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 26 second(s).
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T11-FINAL with key slot 5 / openai/gpt-oss-120b.
+Malformed response for T11-FINAL from key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s): Response has no valid source citations.
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T11-FINAL with key slot 5 / qwen/qwen3.6-27b.
+Malformed response for T11-FINAL from key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T11-FINAL with key slot 1 / qwen/qwen3.6-27b.
+Malformed response for T11-FINAL from key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+All key/model pairs are cooling down; waiting 123 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T11-FINAL with key slot 4 / openai/gpt-oss-120b.
+Synthesized topic 11/25 with key slot 4 on openai/gpt-oss-120b.
+Requesting T12-E001 with key slot 1 / openai/gpt-oss-120b.
+Rate limited for T12-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 182 second(s).
+Requesting T12-E001 with key slot 4 / openai/gpt-oss-120b.
+Rate limited for T12-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 20 second(s).
+All key/model pairs are cooling down; waiting 14 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T12-E001 with key slot 2 / qwen/qwen3.6-27b.
+Extracted evidence T12-E001 with key slot 2 on qwen/qwen3.6-27b.
+Requesting T12-FINAL with key slot 2 / qwen/qwen3.6-27b.
+Rate limited for T12-FINAL on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 10 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T12-FINAL with key slot 4 / openai/gpt-oss-120b.
+Synthesized topic 12/25 with key slot 4 on openai/gpt-oss-120b.
+Requesting T13-E001 with key slot 4 / openai/gpt-oss-120b.
+Rate limited for T13-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 49 second(s).
+All key/model pairs are cooling down; waiting 1 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T13-E001 with key slot 4 / qwen/qwen3.6-27b.
+Extracted evidence T13-E001 with key slot 4 on qwen/qwen3.6-27b.
+Requesting T13-E002 with key slot 2 / qwen/qwen3.6-27b.
+Rate limited for T13-E002 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 8 second(s).
+Requesting T13-E002 with key slot 4 / qwen/qwen3.6-27b.
+Rate limited for T13-E002 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 38 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T13-E002 with key slot 3 / qwen/qwen3.6-27b.
+Extracted evidence T13-E002 with key slot 3 on qwen/qwen3.6-27b.
+Requesting T13-FINAL with key slot 3 / qwen/qwen3.6-27b.
+Rate limited for T13-FINAL on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 22 second(s).
+All key/model pairs are cooling down; waiting 2 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T13-FINAL with key slot 2 / qwen/qwen3.6-27b.
+Malformed response for T13-FINAL from key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+All key/model pairs are cooling down; waiting 14 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T13-FINAL with key slot 3 / qwen/qwen3.6-27b.
+Malformed response for T13-FINAL from key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T13-FINAL with key slot 4 / qwen/qwen3.6-27b.
+Malformed response for T13-FINAL from key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+All key/model pairs are cooling down; waiting 1 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T13-FINAL with key slot 4 / openai/gpt-oss-120b.
+Synthesized topic 13/25 with key slot 4 on openai/gpt-oss-120b.
+Requesting T14-E001 with key slot 4 / openai/gpt-oss-120b.
+Rate limited for T14-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 13 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T14-E001 with key slot 4 / openai/gpt-oss-120b.
+Extracted evidence T14-E001 with key slot 4 on openai/gpt-oss-120b.
+Requesting T14-FINAL with key slot 4 / openai/gpt-oss-120b.
+Rate limited for T14-FINAL on key slot 4 / openai/gpt-oss-120b; pair cooling down for 15 second(s).
+All key/model pairs are cooling down; waiting 15 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T14-FINAL with key slot 4 / openai/gpt-oss-120b.
+Synthesized topic 14/25 with key slot 4 on openai/gpt-oss-120b.
+Requesting T15-E001 with key slot 4 / openai/gpt-oss-120b.
+Rate limited for T15-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 2507 second(s).
+All key/model pairs are cooling down; waiting 34 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T15-E001 with key slot 5 / openai/gpt-oss-120b.
+Rate limited for T15-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 1358 second(s).
+All key/model pairs are cooling down; waiting 10 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T15-E001 with key slot 5 / qwen/qwen3.6-27b.
+Extracted evidence T15-E001 with key slot 5 on qwen/qwen3.6-27b.
+Requesting T15-E002 with key slot 5 / qwen/qwen3.6-27b.
+Rate limited for T15-E002 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 21 second(s).
+All key/model pairs are cooling down; waiting 10 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T15-E002 with key slot 2 / openai/gpt-oss-20b.
+Extracted evidence T15-E002 with key slot 2 on openai/gpt-oss-20b.
+Requesting T15-FINAL with key slot 2 / openai/gpt-oss-20b.
+Rate limited for T15-FINAL on key slot 2 / openai/gpt-oss-20b; pair cooling down for 1375 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T15-FINAL with key slot 1 / qwen/qwen3.6-27b.
+Malformed response for T15-FINAL from key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+Requesting T15-FINAL with key slot 3 / openai/gpt-oss-20b.
+Synthesized topic 15/25 with key slot 3 on openai/gpt-oss-20b.
+Requesting T16-E001 with key slot 5 / qwen/qwen3.6-27b.
+Rate limited for T16-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 24 second(s).
+Requesting T16-E001 with key slot 1 / openai/gpt-oss-120b.
+Rate limited for T16-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 980 second(s).
+Requesting T16-E001 with key slot 3 / openai/gpt-oss-20b.
+Rate limited for T16-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 2813 second(s).
+All key/model pairs are cooling down; waiting 24 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T16-E001 with key slot 5 / qwen/qwen3.6-27b.
+Extracted evidence T16-E001 with key slot 5 on qwen/qwen3.6-27b.
+Requesting T16-E002 with key slot 5 / qwen/qwen3.6-27b.
+Rate limited for T16-E002 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 18 second(s).
+All key/model pairs are cooling down; waiting 18 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T16-E002 with key slot 5 / qwen/qwen3.6-27b.
+Extracted evidence T16-E002 with key slot 5 on qwen/qwen3.6-27b.
+Requesting T16-FINAL with key slot 5 / qwen/qwen3.6-27b.
+Rate limited for T16-FINAL on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 38 second(s).
+All key/model pairs are cooling down; waiting 38 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T16-FINAL with key slot 5 / qwen/qwen3.6-27b.
+Synthesized topic 16/25 with key slot 5 on qwen/qwen3.6-27b.
+Requesting T17-E001 with key slot 5 / qwen/qwen3.6-27b.
+Rate limited for T17-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 39 second(s).
+All key/model pairs are cooling down; waiting 39 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T17-E001 with key slot 5 / qwen/qwen3.6-27b.
+Extracted evidence T17-E001 with key slot 5 on qwen/qwen3.6-27b.
+Requesting T17-E002 with key slot 5 / qwen/qwen3.6-27b.
+Rate limited for T17-E002 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 38 second(s).
+All key/model pairs are cooling down; waiting 24 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T17-E002 with key slot 2 / qwen/qwen3.6-27b.
+Extracted evidence T17-E002 with key slot 2 on qwen/qwen3.6-27b.
+Requesting T17-FINAL with key slot 2 / qwen/qwen3.6-27b.
+Rate limited for T17-FINAL on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 23 second(s).
+All key/model pairs are cooling down; waiting 12 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T17-FINAL with key slot 5 / qwen/qwen3.6-27b.
+Malformed response for T17-FINAL from key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+Requesting T17-FINAL with key slot 3 / qwen/qwen3.6-27b.
+Malformed response for T17-FINAL from key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+Requesting T17-FINAL with key slot 2 / qwen/qwen3.6-27b.
+Malformed response for T17-FINAL from key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+Requesting T17-FINAL with key slot 4 / qwen/qwen3.6-27b.
+Malformed response for T17-FINAL from key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+All key/model pairs are cooling down; waiting 97 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T17-FINAL with key slot 1 / qwen/qwen3.6-27b.
+Malformed response for T17-FINAL from key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T17-FINAL with key slot 1 / openai/gpt-oss-20b.
+Rate limited for T17-FINAL on key slot 1 / openai/gpt-oss-20b; pair cooling down for 467 second(s).
+All key/model pairs are cooling down; waiting 175 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T17-FINAL with key slot 5 / qwen/qwen3.6-27b.
+Malformed response for T17-FINAL from key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+Requesting T17-FINAL with key slot 3 / qwen/qwen3.6-27b.
+Malformed response for T17-FINAL from key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+All key/model pairs are cooling down; waiting 1 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T17-FINAL with key slot 2 / qwen/qwen3.6-27b.
+Malformed response for T17-FINAL from key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+Requesting T17-FINAL with key slot 4 / qwen/qwen3.6-27b.
+Malformed response for T17-FINAL from key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T17-FINAL with key slot 5 / openai/gpt-oss-20b.
+Synthesized topic 17/25 with key slot 5 on openai/gpt-oss-20b.
+Requesting T18-E001 with key slot 5 / openai/gpt-oss-20b.
+Rate limited for T18-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 2625 second(s).
+All key/model pairs are cooling down; waiting 79 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T18-E001 with key slot 1 / qwen/qwen3.6-27b.
+Extracted evidence T18-E001 with key slot 1 on qwen/qwen3.6-27b.
+Requesting T18-E002 with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T18-E002 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 87 second(s).
+All key/model pairs are cooling down; waiting 50 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T18-E002 with key slot 3 / openai/gpt-oss-120b.
+Rate limited for T18-E002 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 581 second(s).
+All key/model pairs are cooling down; waiting 37 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T18-E002 with key slot 1 / qwen/qwen3.6-27b.
+Extracted evidence T18-E002 with key slot 1 on qwen/qwen3.6-27b.
+Requesting T18-FINAL with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T18-FINAL on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 2157 second(s).
+All key/model pairs are cooling down; waiting 78 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T18-FINAL with key slot 1 / openai/gpt-oss-20b.
+Synthesized topic 18/25 with key slot 1 on openai/gpt-oss-20b.
+Requesting T19-E001 with key slot 1 / openai/gpt-oss-20b.
+Rate limited for T19-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 2558 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T19-E001 with key slot 5 / qwen/qwen3.6-27b.
+Extracted evidence T19-E001 with key slot 5 on qwen/qwen3.6-27b.
+Requesting T19-E002 with key slot 5 / qwen/qwen3.6-27b.
+Rate limited for T19-E002 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 9 second(s).
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T19-E002 with key slot 3 / qwen/qwen3.6-27b.
+Extracted evidence T19-E002 with key slot 3 on qwen/qwen3.6-27b.
+Requesting T19-FINAL with key slot 3 / qwen/qwen3.6-27b.
+Synthesized topic 19/25 with key slot 3 on qwen/qwen3.6-27b.
+Requesting T20-E001 with key slot 5 / qwen/qwen3.6-27b.
+Rate limited for T20-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 33 second(s).
+Requesting T20-E001 with key slot 2 / qwen/qwen3.6-27b.
+Extracted evidence T20-E001 with key slot 2 on qwen/qwen3.6-27b.
+Requesting T20-E002 with key slot 3 / qwen/qwen3.6-27b.
+Rate limited for T20-E002 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 50 second(s).
+Requesting T20-E002 with key slot 2 / qwen/qwen3.6-27b.
+Rate limited for T20-E002 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 43 second(s).
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T20-E002 with key slot 4 / qwen/qwen3.6-27b.
+Extracted evidence T20-E002 with key slot 4 on qwen/qwen3.6-27b.
+Requesting T20-E003 with key slot 4 / qwen/qwen3.6-27b.
+Rate limited for T20-E003 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 25 second(s).
+All key/model pairs are cooling down; waiting 25 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T20-E003 with key slot 5 / qwen/qwen3.6-27b.
+Extracted evidence T20-E003 with key slot 5 on qwen/qwen3.6-27b.
+Requesting T20-FINAL with key slot 4 / qwen/qwen3.6-27b.
+Malformed response for T20-FINAL from key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+Requesting T20-FINAL with key slot 5 / qwen/qwen3.6-27b.
+Malformed response for T20-FINAL from key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+Requesting T20-FINAL with key slot 2 / qwen/qwen3.6-27b.
+Malformed response for T20-FINAL from key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+Requesting T20-FINAL with key slot 3 / qwen/qwen3.6-27b.
+Malformed response for T20-FINAL from key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+All key/model pairs are cooling down; waiting 116 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T20-FINAL with key slot 1 / openai/gpt-oss-120b.
+Synthesized topic 20/25 with key slot 1 on openai/gpt-oss-120b.
+Requesting T21-E001 with key slot 1 / openai/gpt-oss-120b.
+Rate limited for T21-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 2606 second(s).
+All key/model pairs are cooling down; waiting 115 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T21-E001 with key slot 2 / openai/gpt-oss-120b.
+Rate limited for T21-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 500 second(s).
+All key/model pairs are cooling down; waiting 48 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T21-E001 with key slot 4 / qwen/qwen3.6-27b.
+Extracted evidence T21-E001 with key slot 4 on qwen/qwen3.6-27b.
+Requesting T21-E002 with key slot 4 / qwen/qwen3.6-27b.
+Rate limited for T21-E002 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 2567 second(s).
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T21-E002 with key slot 5 / qwen/qwen3.6-27b.
+Extracted evidence T21-E002 with key slot 5 on qwen/qwen3.6-27b.
+Requesting T21-E003 with key slot 5 / qwen/qwen3.6-27b.
+Extracted evidence T21-E003 with key slot 5 on qwen/qwen3.6-27b.
+Requesting T21-FINAL with key slot 2 / qwen/qwen3.6-27b.
+Synthesized topic 21/25 with key slot 2 on qwen/qwen3.6-27b.
+Requesting T22-E001 with key slot 3 / qwen/qwen3.6-27b.
+Extracted evidence T22-E001 with key slot 3 on qwen/qwen3.6-27b.
+Requesting T22-E002 with key slot 5 / qwen/qwen3.6-27b.
+Rate limited for T22-E002 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 12 second(s).
+Requesting T22-E002 with key slot 2 / qwen/qwen3.6-27b.
+Rate limited for T22-E002 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 22 second(s).
+Requesting T22-E002 with key slot 3 / qwen/qwen3.6-27b.
+Rate limited for T22-E002 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 204 second(s).
+All key/model pairs are cooling down; waiting 12 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T22-E002 with key slot 5 / qwen/qwen3.6-27b.
+Extracted evidence T22-E002 with key slot 5 on qwen/qwen3.6-27b.
+Requesting T22-FINAL with key slot 5 / qwen/qwen3.6-27b.
+Rate limited for T22-FINAL on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 34 second(s).
+All key/model pairs are cooling down; waiting 8 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T22-FINAL with key slot 2 / qwen/qwen3.6-27b.
+Rate limited for T22-FINAL on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 617 second(s).
+All key/model pairs are cooling down; waiting 26 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T22-FINAL with key slot 5 / qwen/qwen3.6-27b.
+Malformed response for T22-FINAL from key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s): Missing required section: ## Overview
+All key/model pairs are cooling down; waiting 15 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T22-FINAL with key slot 3 / openai/gpt-oss-120b.
+Synthesized topic 22/25 with key slot 3 on openai/gpt-oss-120b.
+Requesting T23-E001 with key slot 3 / openai/gpt-oss-120b.
+Rate limited for T23-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 2267 second(s).
+All key/model pairs are cooling down; waiting 79 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T23-E001 with key slot 5 / openai/gpt-oss-120b.
+Extracted evidence T23-E001 with key slot 5 on openai/gpt-oss-120b.
+Requesting T23-E002 with key slot 5 / openai/gpt-oss-120b.
+Rate limited for T23-E002 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 1532 second(s).
+All key/model pairs are cooling down; waiting 38 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T23-E002 with key slot 2 / openai/gpt-oss-20b.
+Extracted evidence T23-E002 with key slot 2 on openai/gpt-oss-20b.
+Requesting T23-FINAL with key slot 2 / openai/gpt-oss-20b.
+Rate limited for T23-FINAL on key slot 2 / openai/gpt-oss-20b; pair cooling down for 1737 second(s).
+All key/model pairs are cooling down; waiting 8 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T23-FINAL with key slot 3 / qwen/qwen3.6-27b.
+Rate limited for T23-FINAL on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 466 second(s).
+All key/model pairs are cooling down; waiting 151 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T23-FINAL with key slot 5 / qwen/qwen3.6-27b.
+Synthesized topic 23/25 with key slot 5 on qwen/qwen3.6-27b.
+Requesting T24-E001 with key slot 5 / qwen/qwen3.6-27b.
+Rate limited for T24-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 3673 second(s).
+All key/model pairs are cooling down; waiting 70 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T24-E001 with key slot 2 / openai/gpt-oss-120b.
+Rate limited for T24-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 654 second(s).
+All key/model pairs are cooling down; waiting 208 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T24-E001 with key slot 2 / qwen/qwen3.6-27b.
+Rate limited for T24-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 1514 second(s).
+All key/model pairs are cooling down; waiting 31 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T24-E001 with key slot 3 / qwen/qwen3.6-27b.
+Rate limited for T24-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 1763 second(s).
+All key/model pairs are cooling down; waiting 115 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T24-E001 with key slot 4 / openai/gpt-oss-20b.
+Extracted evidence T24-E001 with key slot 4 on openai/gpt-oss-20b.
+Requesting T24-E002 with key slot 4 / openai/gpt-oss-20b.
+Rate limited for T24-E002 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 2239 second(s).
+All key/model pairs are cooling down; waiting 298 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T24-E002 with key slot 2 / openai/gpt-oss-120b.
+Extracted evidence T24-E002 with key slot 2 on openai/gpt-oss-120b.
+Requesting T24-FINAL with key slot 2 / openai/gpt-oss-120b.
+Rate limited for T24-FINAL on key slot 2 / openai/gpt-oss-120b; pair cooling down for 1262 second(s).
+All key/model pairs are cooling down; waiting 179 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T24-FINAL with key slot 4 / openai/gpt-oss-120b.
+Synthesized topic 24/25 with key slot 4 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-120b.
+Rate limited for T25-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 5667 second(s).
+All key/model pairs are cooling down; waiting 373 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+Rate limited for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 2853 second(s).
+All key/model pairs are cooling down; waiting 40 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 1 / qwen/qwen3.6-27b.
+Rate limited for T25-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 4941 second(s).
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+Rate limited for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 4129 second(s).
+All key/model pairs are cooling down; waiting 244 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+Rate limited for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 3780 second(s).
+All key/model pairs are cooling down; waiting 49 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+Rate limited for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 3041 second(s).
+All key/model pairs are cooling down; waiting 172 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+Rate limited for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 3425 second(s).
+All key/model pairs are cooling down; waiting 12 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+Rate limited for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 3108 second(s).
+All key/model pairs are cooling down; waiting 175 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+Rate limited for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 3399 second(s).
+All key/model pairs are cooling down; waiting 9 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+Rate limited for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 3629 second(s).
+All key/model pairs are cooling down; waiting 71 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+Rate limited for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 3060 second(s).
+All key/model pairs are cooling down; waiting 12 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+Rate limited for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 3426 second(s).
+All key/model pairs are cooling down; waiting 116 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 4 / qwen/qwen3.6-27b.
+Rate limited for T25-E001 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 4531 second(s).
+All key/model pairs are cooling down; waiting 477 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-20b.
+Rate limited for T25-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 3427 second(s).
+All key/model pairs are cooling down; waiting 1007 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 5 / qwen/qwen3.6-27b.
+Rate limited for T25-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 3425 second(s).
+All key/model pairs are cooling down; waiting 464 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 300 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 224 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 76 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 175 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 49 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 76 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 82 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 93 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 76 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 12 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 27 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 16 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 54 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 12 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 26 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 16 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 54 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 26 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 7 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 16 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 54 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 10 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 1 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 15 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 7 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 16 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 54 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 1 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 34 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 8 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 16 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 2 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 4 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 1 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 54 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 1 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 34 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 8 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 16 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 2 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 4 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 1 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 32 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 5 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 1 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 34 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 8 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 16 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 2 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 4 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 1 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 32 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 5 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 1 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 34 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 8 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 16 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 2 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 4 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 1 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 32 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 5 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 1 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 34 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 8 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 15 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 4 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 32 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 5 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 23 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 1 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 34 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 8 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 15 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 4 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+Requesting T25-E001 with key slot 4 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 32 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 5 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 23 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 1 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 34 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 8 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 15 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+Requesting T25-E001 with key slot 4 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 32 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 5 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 23 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 1 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 34 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 8 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 15 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+Requesting T25-E001 with key slot 4 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 32 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 5 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 23 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 1 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 34 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 8 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 15 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+Requesting T25-E001 with key slot 4 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 32 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 5 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 23 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 1 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 34 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 8 second(s) for key slot 3 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 3 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 15 second(s) for key slot 1 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 3 second(s) for key slot 2 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 2 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+Requesting T25-E001 with key slot 4 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 45 second(s) for key slot 5 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 32 second(s) for key slot 5 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 5 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 22 second(s) for key slot 2 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 23 second(s) for key slot 3 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 13 second(s) for key slot 2 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 2 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 1 on qwen/qwen3.6-27b.
+Requesting T25-E001 with key slot 1 / qwen/qwen3.6-27b.
+HTTP 413 for T25-E001 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 11 second(s) for key slot 4 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 4 second(s) for key slot 3 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 3 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 42 second(s) for key slot 1 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 1 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 34 second(s) for key slot 5 on openai/gpt-oss-120b.
+Requesting T25-E001 with key slot 5 / openai/gpt-oss-120b.
+HTTP 413 for T25-E001 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 35 second(s) for key slot 4 on openai/gpt-oss-20b.
+Requesting T25-E001 with key slot 4 / openai/gpt-oss-20b.
+HTTP 413 for T25-E001 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 8 second(s) for key slot 3 on qwen/qwen3.6-27b.

@@ -1,0 +1,189 @@
+{
+    "generated_at":  "2026-08-24T11:25:24.7879738Z",
+    "passage_manifest":  "build/passage-manifest.jsonl",
+    "review_checkpoint":  "build/llm-topic-review-checkpoint.jsonl",
+    "source_manifest":  "build/source-manifest.jsonl",
+    "total_passages":  2956,
+    "llm_reviewed_passages":  2137,
+    "heuristic_passages":  819,
+    "primary_assignments":  2956,
+    "secondary_assignments":  1025,
+    "total_source_map_rows":  3981,
+    "topics":  [
+                   {
+                       "topic_id":  1,
+                       "topic_title":  "Identity and self-reinvention",
+                       "primary_passages":  230,
+                       "secondary_passages":  74,
+                       "distinct_sources":  231
+                   },
+                   {
+                       "topic_id":  2,
+                       "topic_title":  "Ghost Mode and environmental separation",
+                       "primary_passages":  79,
+                       "secondary_passages":  35,
+                       "distinct_sources":  100
+                   },
+                   {
+                       "topic_id":  3,
+                       "topic_title":  "Vision, purpose, and goal-setting",
+                       "primary_passages":  116,
+                       "secondary_passages":  64,
+                       "distinct_sources":  153
+                   },
+                   {
+                       "topic_id":  4,
+                       "topic_title":  "Discipline, execution, and productivity",
+                       "primary_passages":  90,
+                       "secondary_passages":  45,
+                       "distinct_sources":  107
+                   },
+                   {
+                       "topic_id":  5,
+                       "topic_title":  "Professionalism and mastery of craft",
+                       "primary_passages":  31,
+                       "secondary_passages":  20,
+                       "distinct_sources":  46
+                   },
+                   {
+                       "topic_id":  6,
+                       "topic_title":  "Resilience and adversity",
+                       "primary_passages":  175,
+                       "secondary_passages":  79,
+                       "distinct_sources":  196
+                   },
+                   {
+                       "topic_id":  7,
+                       "topic_title":  "Confidence, boldness, and action",
+                       "primary_passages":  131,
+                       "secondary_passages":  88,
+                       "distinct_sources":  164
+                   },
+                   {
+                       "topic_id":  8,
+                       "topic_title":  "Money and entrepreneurship",
+                       "primary_passages":  147,
+                       "secondary_passages":  70,
+                       "distinct_sources":  158
+                   },
+                   {
+                       "topic_id":  9,
+                       "topic_title":  "YouTube and content businesses",
+                       "primary_passages":  134,
+                       "secondary_passages":  53,
+                       "distinct_sources":  150
+                   },
+                   {
+                       "topic_id":  10,
+                       "topic_title":  "Personal branding and audience-building",
+                       "primary_passages":  54,
+                       "secondary_passages":  22,
+                       "distinct_sources":  54
+                   },
+                   {
+                       "topic_id":  11,
+                       "topic_title":  "Persuasion and communication",
+                       "primary_passages":  63,
+                       "secondary_passages":  34,
+                       "distinct_sources":  71
+                   },
+                   {
+                       "topic_id":  12,
+                       "topic_title":  "Networking and social hierarchy",
+                       "primary_passages":  22,
+                       "secondary_passages":  9,
+                       "distinct_sources":  26
+                   },
+                   {
+                       "topic_id":  13,
+                       "topic_title":  "Fitness and physical capability",
+                       "primary_passages":  93,
+                       "secondary_passages":  43,
+                       "distinct_sources":  107
+                   },
+                   {
+                       "topic_id":  14,
+                       "topic_title":  "Health, testosterone, and vitality",
+                       "primary_passages":  47,
+                       "secondary_passages":  31,
+                       "distinct_sources":  58
+                   },
+                   {
+                       "topic_id":  15,
+                       "topic_title":  "Youth, energy, and aging",
+                       "primary_passages":  67,
+                       "secondary_passages":  28,
+                       "distinct_sources":  77
+                   },
+                   {
+                       "topic_id":  16,
+                       "topic_title":  "Masculinity, responsibility, and power",
+                       "primary_passages":  76,
+                       "secondary_passages":  63,
+                       "distinct_sources":  110
+                   },
+                   {
+                       "topic_id":  17,
+                       "topic_title":  "Brotherhood, friendship, and loyalty",
+                       "primary_passages":  64,
+                       "secondary_passages":  30,
+                       "distinct_sources":  73
+                   },
+                   {
+                       "topic_id":  18,
+                       "topic_title":  "Family and fatherhood",
+                       "primary_passages":  78,
+                       "secondary_passages":  42,
+                       "distinct_sources":  82
+                   },
+                   {
+                       "topic_id":  19,
+                       "topic_title":  "Marriage, women, and gender dynamics",
+                       "primary_passages":  46,
+                       "secondary_passages":  20,
+                       "distinct_sources":  49
+                   },
+                   {
+                       "topic_id":  20,
+                       "topic_title":  "Spirituality and consciousness",
+                       "primary_passages":  123,
+                       "secondary_passages":  36,
+                       "distinct_sources":  99
+                   },
+                   {
+                       "topic_id":  21,
+                       "topic_title":  "Technology, algorithms, and attention",
+                       "primary_passages":  63,
+                       "secondary_passages":  29,
+                       "distinct_sources":  73
+                   },
+                   {
+                       "topic_id":  22,
+                       "topic_title":  "Social conditioning and “Genjutsu”",
+                       "primary_passages":  66,
+                       "secondary_passages":  43,
+                       "distinct_sources":  90
+                   },
+                   {
+                       "topic_id":  23,
+                       "topic_title":  "Learning and thinking skills",
+                       "primary_passages":  46,
+                       "secondary_passages":  34,
+                       "distinct_sources":  65
+                   },
+                   {
+                       "topic_id":  24,
+                       "topic_title":  "Community and alternative living",
+                       "primary_passages":  112,
+                       "secondary_passages":  33,
+                       "distinct_sources":  128
+                   },
+                   {
+                       "topic_id":  25,
+                       "topic_title":  "Non-substantive material",
+                       "primary_passages":  803,
+                       "secondary_passages":  0,
+                       "distinct_sources":  580
+                   }
+               ]
+}

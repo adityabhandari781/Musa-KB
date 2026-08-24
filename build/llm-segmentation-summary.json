@@ -1,0 +1,14 @@
+{
+    "schema_version":  1,
+    "generated_at":  "2026-08-23T17:16:35.9565871Z",
+    "canonical_source_count":  1651,
+    "segmented_source_count":  1651,
+    "llm_passage_count":  2956,
+    "primary_model":  "openai/gpt-oss-120b",
+    "fallback_model":  "openai/gpt-oss-20b",
+    "files":  {
+                  "checkpoint":  "build/llm-segmentation-checkpoint.jsonl",
+                  "request_log":  "build/groq-segmentation-requests.jsonl",
+                  "passage_manifest":  "build/llm-passage-manifest.jsonl"
+              }
+}

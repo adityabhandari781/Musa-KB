@@ -1,0 +1,6 @@
+Regenerated topic 19 with openai/gpt-oss-20b.
+Rate limited on openai/gpt-oss-20b for topic 23; waiting 21 second(s).
+Regenerated topic 23 with openai/gpt-oss-120b.
+Rate limited on openai/gpt-oss-20b for topic 25; waiting 1 second(s).
+Rate limited on openai/gpt-oss-120b for topic 25; waiting 23 second(s).
+HTTP 400 on qwen/qwen3.6-27b for topic 25; trying next model.

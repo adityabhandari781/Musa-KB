@@ -1,0 +1,16 @@
+Rate limited for topic 1 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 12557 second(s).
+Rate limited for topic 1 on key slot 1 / openai/gpt-oss-20b; pair cooling down for 13151 second(s).
+HTTP 413 for topic 1 on key slot 1 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+Rate limited for topic 1 on key slot 2 / openai/gpt-oss-120b; pair cooling down for 10756 second(s).
+Rate limited for topic 1 on key slot 2 / openai/gpt-oss-20b; pair cooling down for 13398 second(s).
+HTTP 413 for topic 1 on key slot 2 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+Rate limited for topic 1 on key slot 3 / openai/gpt-oss-120b; pair cooling down for 6925 second(s).
+Rate limited for topic 1 on key slot 3 / openai/gpt-oss-20b; pair cooling down for 13107 second(s).
+HTTP 413 for topic 1 on key slot 3 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+HTTP 413 for topic 1 on key slot 4 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+Rate limited for topic 1 on key slot 4 / openai/gpt-oss-20b; pair cooling down for 13105 second(s).
+HTTP 413 for topic 1 on key slot 4 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+HTTP 413 for topic 1 on key slot 5 / openai/gpt-oss-120b; pair cooling down for 300 second(s).
+Rate limited for topic 1 on key slot 5 / openai/gpt-oss-20b; pair cooling down for 13349 second(s).
+HTTP 413 for topic 1 on key slot 5 / qwen/qwen3.6-27b; pair cooling down for 300 second(s).
+All key/model pairs are cooling down; waiting 297 second(s) for key slot 1 on qwen/qwen3.6-27b.

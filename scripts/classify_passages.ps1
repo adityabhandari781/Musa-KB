@@ -2,7 +2,8 @@
 param(
     [string]$RepositoryRoot = (Split-Path -Parent $PSScriptRoot),
     [int]$TargetTranscriptPassageWords = 180,
-    [int]$MaximumTranscriptPassageWords = 260
+    [int]$MaximumTranscriptPassageWords = 260,
+    [string]$SegmentationManifest = ''
 )
 
 Set-StrictMode -Version Latest
@@ -223,11 +224,36 @@ if (-not (Test-Path -LiteralPath $manifestPath -PathType Leaf)) {
 $records = @(Get-Content -LiteralPath $manifestPath -Encoding UTF8 |
     ForEach-Object { $_ | ConvertFrom-Json } |
     Where-Object { $_.included_in_synthesis })
+$segmentsBySource = @{}
+if (-not [string]::IsNullOrWhiteSpace($SegmentationManifest)) {
+    $segmentationPath = if ([System.IO.Path]::IsPathRooted($SegmentationManifest)) { $SegmentationManifest } else { Join-Path $repo $SegmentationManifest }
+    if (-not (Test-Path -LiteralPath $segmentationPath -PathType Leaf)) {
+        throw "Segmentation manifest not found: $segmentationPath"
+    }
+    Get-Content -LiteralPath $segmentationPath -Encoding UTF8 | ForEach-Object {
+        $segment = $_ | ConvertFrom-Json
+        if ([string]::IsNullOrWhiteSpace($segment.source_id) -or [string]::IsNullOrWhiteSpace($segment.text)) {
+            throw 'The supplied segmentation manifest contains an invalid segment.'
+        }
+        if (-not $segmentsBySource.ContainsKey($segment.source_id)) { $segmentsBySource[$segment.source_id] = @() }
+        $segmentsBySource[$segment.source_id] += $segment
+    }
+    foreach ($record in $records) {
+        if (-not $segmentsBySource.ContainsKey($record.source_id)) {
+            throw "The supplied segmentation manifest omits $($record.source_id)."
+        }
+    }
+}
 $passages = @()
 $passageNumber = 0
 
 foreach ($record in $records) {
-    $segments = Get-CoherentPassages -Text $record.normalized_text -SourceType $record.source_type -TargetWords $TargetTranscriptPassageWords -MaximumWords $MaximumTranscriptPassageWords
+    $segments = if ([string]::IsNullOrWhiteSpace($SegmentationManifest)) {
+        Get-CoherentPassages -Text $record.normalized_text -SourceType $record.source_type -TargetWords $TargetTranscriptPassageWords -MaximumWords $MaximumTranscriptPassageWords
+    }
+    else {
+        @($segmentsBySource[$record.source_id] | Sort-Object segment_index | ForEach-Object text)
+    }
     $segmentIndex = 0
     foreach ($segment in $segments) {
         $segmentIndex++

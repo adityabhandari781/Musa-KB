@@ -1,0 +1,7 @@
+Could not regenerate topic 25 with GROQ_API_KEY6.
+At C:\Users\adity\Desktop\code\GitHub\Musa-KB-New\scripts\repair_invalid_kb_docs_with_groq.ps1:22 char:1932
++ ... eq $result){throw "Could not regenerate topic $topicId with GROQ_API_ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Could not regen... GROQ_API_KEY6.:String) [], RuntimeException
+    + FullyQualifiedErrorId : Could not regenerate topic 25 with GROQ_API_KEY6.
+ 

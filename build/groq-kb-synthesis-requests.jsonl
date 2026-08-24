@@ -1,0 +1,15 @@
+{"timestamp":"2026-08-24T11:31:33.1254936Z","topic_id":1,"key_slot":1,"model":"openai/gpt-oss-120b","status":429,"source_passages":230}
+{"timestamp":"2026-08-24T11:31:33.4777925Z","topic_id":1,"key_slot":1,"model":"openai/gpt-oss-20b","status":429,"source_passages":230}
+{"timestamp":"2026-08-24T11:31:33.8406920Z","topic_id":1,"key_slot":1,"model":"qwen/qwen3.6-27b","status":413,"source_passages":230}
+{"timestamp":"2026-08-24T11:31:34.1417661Z","topic_id":1,"key_slot":2,"model":"openai/gpt-oss-120b","status":429,"source_passages":230}
+{"timestamp":"2026-08-24T11:31:34.4746613Z","topic_id":1,"key_slot":2,"model":"openai/gpt-oss-20b","status":429,"source_passages":230}
+{"timestamp":"2026-08-24T11:31:35.1235803Z","topic_id":1,"key_slot":2,"model":"qwen/qwen3.6-27b","status":413,"source_passages":230}
+{"timestamp":"2026-08-24T11:31:35.6289046Z","topic_id":1,"key_slot":3,"model":"openai/gpt-oss-120b","status":429,"source_passages":230}
+{"timestamp":"2026-08-24T11:31:35.8629114Z","topic_id":1,"key_slot":3,"model":"openai/gpt-oss-20b","status":429,"source_passages":230}
+{"timestamp":"2026-08-24T11:31:36.1383473Z","topic_id":1,"key_slot":3,"model":"qwen/qwen3.6-27b","status":413,"source_passages":230}
+{"timestamp":"2026-08-24T11:31:36.3596527Z","topic_id":1,"key_slot":4,"model":"openai/gpt-oss-120b","status":413,"source_passages":230}
+{"timestamp":"2026-08-24T11:31:36.6066745Z","topic_id":1,"key_slot":4,"model":"openai/gpt-oss-20b","status":429,"source_passages":230}
+{"timestamp":"2026-08-24T11:31:36.9007611Z","topic_id":1,"key_slot":4,"model":"qwen/qwen3.6-27b","status":413,"source_passages":230}
+{"timestamp":"2026-08-24T11:31:37.1499398Z","topic_id":1,"key_slot":5,"model":"openai/gpt-oss-120b","status":413,"source_passages":230}
+{"timestamp":"2026-08-24T11:31:37.4304527Z","topic_id":1,"key_slot":5,"model":"openai/gpt-oss-20b","status":429,"source_passages":230}
+{"timestamp":"2026-08-24T11:31:37.7885013Z","topic_id":1,"key_slot":5,"model":"qwen/qwen3.6-27b","status":413,"source_passages":230}

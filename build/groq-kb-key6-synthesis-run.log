@@ -1,0 +1,21 @@
+Requesting T25-M001 with key slot 1 / openai/gpt-oss-120b.
+Merged Topic 25 evidence 1 with key slot 1 on openai/gpt-oss-120b.
+Requesting T25-M002 with key slot 1 / openai/gpt-oss-120b.
+Merged Topic 25 evidence 2 with key slot 1 on openai/gpt-oss-120b.
+Requesting T25-M003 with key slot 1 / openai/gpt-oss-120b.
+Merged Topic 25 evidence 3 with key slot 1 on openai/gpt-oss-120b.
+Requesting T25-M004 with key slot 1 / openai/gpt-oss-120b.
+Merged Topic 25 evidence 4 with key slot 1 on openai/gpt-oss-120b.
+Requesting T25-M005 with key slot 1 / openai/gpt-oss-120b.
+Rate limited for T25-M005 on key slot 1 / openai/gpt-oss-120b; pair cooling down for 15 second(s).
+Requesting T25-M005 with key slot 1 / openai/gpt-oss-20b.
+Merged Topic 25 evidence 5 with key slot 1 on openai/gpt-oss-20b.
+Requesting T25-M006 with key slot 1 / openai/gpt-oss-20b.
+Merged Topic 25 evidence 6 with key slot 1 on openai/gpt-oss-20b.
+Requesting T25-M007 with key slot 1 / openai/gpt-oss-20b.
+Merged Topic 25 evidence 7 with key slot 1 on openai/gpt-oss-20b.
+Requesting T25-FINAL with key slot 1 / openai/gpt-oss-20b.
+Rate limited for T25-FINAL on key slot 1 / openai/gpt-oss-20b; pair cooling down for 24 second(s).
+Requesting T25-FINAL with key slot 1 / qwen/qwen3.6-27b.
+Synthesized topic 25/25 with key slot 1 on qwen/qwen3.6-27b.
+Hierarchical LLM KB synthesis complete.

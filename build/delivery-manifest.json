@@ -1,0 +1,71 @@
+{
+    "generated_at":  "2026-08-24T16:33:16.3467655Z",
+    "delivery_status":  "complete",
+    "kb_document_count":  25,
+    "kb_documents":  [
+                         "01-identity-and-self-reinvention.md",
+                         "02-ghost-mode-and-environmental-separation.md",
+                         "03-vision-purpose-and-goal-setting.md",
+                         "04-discipline-execution-and-productivity.md",
+                         "05-professionalism-and-mastery-of-craft.md",
+                         "06-resilience-and-adversity.md",
+                         "07-confidence-boldness-and-action.md",
+                         "08-money-and-entrepreneurship.md",
+                         "09-youtube-and-content-businesses.md",
+                         "10-personal-branding-and-audience-building.md",
+                         "11-persuasion-and-communication.md",
+                         "12-networking-and-social-hierarchy.md",
+                         "13-fitness-and-physical-capability.md",
+                         "14-health-testosterone-and-vitality.md",
+                         "15-youth-energy-and-aging.md",
+                         "16-masculinity-responsibility-and-power.md",
+                         "17-brotherhood-friendship-and-loyalty.md",
+                         "18-family-and-fatherhood.md",
+                         "19-marriage-women-and-gender-dynamics.md",
+                         "20-spirituality-and-consciousness.md",
+                         "21-technology-algorithms-and-attention.md",
+                         "22-social-conditioning-and-genjutsu.md",
+                         "23-learning-and-thinking-skills.md",
+                         "24-community-and-alternative-living.md",
+                         "25-non-substantive-material.md"
+                     ],
+    "validation_report":  "build/kb-validation-report.json",
+    "artifacts":  [
+                      {
+                          "path":  "kb",
+                          "exists":  true,
+                          "kind":  "directory",
+                          "bytes":  null
+                      },
+                      {
+                          "path":  "build/source-manifest.jsonl",
+                          "exists":  true,
+                          "kind":  "file",
+                          "bytes":  2144823
+                      },
+                      {
+                          "path":  "build/passage-manifest.jsonl",
+                          "exists":  true,
+                          "kind":  "file",
+                          "bytes":  2891363
+                      },
+                      {
+                          "path":  "build/kb-source-map.jsonl",
+                          "exists":  true,
+                          "kind":  "file",
+                          "bytes":  4404318
+                      },
+                      {
+                          "path":  "build/kb-validation-report.json",
+                          "exists":  true,
+                          "kind":  "file",
+                          "bytes":  27043
+                      },
+                      {
+                          "path":  "scripts/validate_kb.ps1",
+                          "exists":  true,
+                          "kind":  "file",
+                          "bytes":  8841
+                      }
+                  ]
+}
