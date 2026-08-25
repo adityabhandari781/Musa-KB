@@ -7,9 +7,12 @@ $ErrorActionPreference = 'Stop'
 function Read-JsonLines([string]$Path) { @(Get-Content -LiteralPath $Path -Encoding UTF8 | Where-Object { $_.Trim() } | ForEach-Object { $_ | ConvertFrom-Json }) }
 
 $repo = (Resolve-Path -LiteralPath $RepositoryRoot).Path
-$kb = Join-Path $repo 'kb'; $build = Join-Path $repo 'build'
-$mapRows = Read-JsonLines (Join-Path $build 'kb-source-map.jsonl')
-$sourceRows = Read-JsonLines (Join-Path $build 'source-manifest.jsonl')
+$kb = Join-Path $repo 'kb'
+# Long-lived corpus artifacts were separated from transient run files.  Retain a
+# flat build/ fallback so existing clones made before that reorganization work too.
+$artifactRoot = if (Test-Path -LiteralPath (Join-Path $repo 'build\longterm\kb-source-map.jsonl')) { Join-Path $repo 'build\longterm' } else { Join-Path $repo 'build' }
+$mapRows = Read-JsonLines (Join-Path $artifactRoot 'kb-source-map.jsonl')
+$sourceRows = Read-JsonLines (Join-Path $artifactRoot 'source-manifest.jsonl')
 $expectedTopics = @{}
 foreach ($topicId in 1..25) { $expectedTopics[$topicId] = @($mapRows | Where-Object { [int]$_.topic_id -eq $topicId })[0].topic_title }
 $expectedSourceIds = @{}
@@ -92,7 +95,7 @@ $report = [ordered]@{
     warnings = @($warnings)
     manual_boundary_review = @('Identity vs. confidence','Ghost Mode vs. brotherhood','Discipline vs. professionalism','Masculinity vs. gender dynamics','Technology vs. Genjutsu','Spirituality vs. manifestation within goal-setting')
 }
-$reportPath = Join-Path $build 'kb-validation-report.json'
+$reportPath = Join-Path $artifactRoot 'kb-validation-report.json'
 [System.IO.File]::WriteAllText($reportPath, ($report | ConvertTo-Json -Depth 6), [System.Text.UTF8Encoding]::new($false))
 Write-Output "Validation $($report.status): $($errors.Count) error(s), $($warnings.Count) warning(s). Report: $reportPath"
 if ($errors.Count) { exit 1 }
