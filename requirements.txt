@@ -1,0 +1,6 @@
+telethon
+python-dotenv
+openai-whisper
+torch
+numpy
+imageio-ffmpeg

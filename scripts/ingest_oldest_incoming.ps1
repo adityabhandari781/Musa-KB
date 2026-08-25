@@ -48,17 +48,19 @@ function Get-RecordedAt {
 }
 
 function Get-OldestIncomingFile {
-    param([Parameter(Mandatory)][string]$IncomingPath)
-    $candidates = @(Get-ChildItem -LiteralPath $IncomingPath -File -Filter '*.txt' | ForEach-Object {
-        $match = [regex]::Match($_.Name, '^(?<date>\d{4}-\d{2}-\d{2})_(?<time>\d{2}-\d{2}-\d{2})(?:_\d+)?\.txt$')
+    param([Parameter(Mandatory)]$IncomingRoots)
+    $candidates = @($IncomingRoots | ForEach-Object {
+        $root = $_
+        Get-ChildItem -LiteralPath $root.path -File -Filter '*.txt' | ForEach-Object {
+        $match = [regex]::Match($_.Name, '(?<date>\d{4}-\d{2}-\d{2})_(?<time>\d{2}-\d{2}-\d{2})(?:_\d+)?')
         $sortTime = if ($match.Success) {
             [datetime]::ParseExact("$($match.Groups['date'].Value) $($match.Groups['time'].Value)", 'yyyy-MM-dd HH-mm-ss', [Globalization.CultureInfo]::InvariantCulture, [Globalization.DateTimeStyles]::None)
         } else { $_.LastWriteTime }
-        [pscustomobject]@{ File = $_; SortTime = $sortTime }
-    })
-    $oldest = $candidates | Sort-Object SortTime, @{ Expression = { $_.File.Name }; Ascending = $true } | Select-Object -First 1
+        [pscustomobject]@{ File = $_; SortTime = $sortTime; SourceType = $root.source_type; DestinationRoot = $root.destination_root }
+    }})
+    $oldest = $candidates | Sort-Object SortTime, @{ Expression = { $_.File.Name }; Ascending = $true }, SourceType | Select-Object -First 1
     if ($null -eq $oldest) { return $null }
-    return $oldest.File
+    return $oldest
 }
 
 function Get-NextNumericId {
@@ -273,7 +275,13 @@ function Write-TopicDocument {
 
 $repo = (Resolve-Path -LiteralPath $RepositoryRoot).Path
 $incomingPath = Join-Path $repo 'incoming'
+$incomingTextsPath = Join-Path $incomingPath 'texts'
+$incomingTranscriptsPath = Join-Path $incomingPath 'transcripts'
+$incomingMediaPath = Join-Path $incomingPath 'media'
+$transcriptMediaIndexPath = Join-Path $incomingTranscriptsPath 'media-index.jsonl'
 $textsPath = Join-Path $repo 'data\texts'
+$transcriptsPath = Join-Path $repo 'data\transcripts'
+$mediaPath = Join-Path $repo 'data\media'
 $kbPath = Join-Path $repo 'kb'
 $longtermPath = Join-Path $repo 'build\longterm'
 $usefulPath = Join-Path $repo 'build\useful'
@@ -286,10 +294,10 @@ $envPath = Join-Path $repo '.env'
 $apiKeyNames = @('GROQ_API_KEY', 'GROQ_API_KEY2', 'GROQ_API_KEY3', 'GROQ_API_KEY4', 'GROQ_API_KEY5', 'GROQ_API_KEY6')
 $models = @('openai/gpt-oss-120b', 'openai/gpt-oss-20b', 'qwen/qwen3.6-27b')
 
-foreach ($path in @($textsPath, $kbPath, $longtermPath, $usefulPath, $sourcePath, $passagePath, $mapPath, $envPath)) {
+foreach ($path in @($textsPath, $transcriptsPath, $mediaPath, $kbPath, $longtermPath, $usefulPath, $sourcePath, $passagePath, $mapPath, $envPath)) {
     if (-not (Test-Path -LiteralPath $path)) { throw "Required input is missing: $path" }
 }
-$null = New-Item -ItemType Directory -Path $incomingPath -Force
+foreach ($path in @($incomingTextsPath, $incomingTranscriptsPath, $incomingMediaPath)) { $null = New-Item -ItemType Directory -Path $path -Force }
 $keyEntries = @($apiKeyNames | ForEach-Object {
     $key = Get-EnvValue -Path $envPath -Name $_
     if ([string]::IsNullOrWhiteSpace($key)) { throw "Missing $_ in .env." }
@@ -301,22 +309,49 @@ if (Test-Path -LiteralPath $statePath) {
     $state = Get-Content -LiteralPath $statePath -Raw -Encoding UTF8 | ConvertFrom-Json
     Write-Output "Resuming active ingestion for $($state.filename) at stage '$($state.stage)'."
 } else {
-    $incoming = Get-OldestIncomingFile -IncomingPath $incomingPath
-    if ($null -eq $incoming) { Write-Output 'No .txt files are waiting in incoming/.'; exit 0 }
-    $destination = Join-Path $textsPath $incoming.Name
-    if (Test-Path -LiteralPath $destination) { throw "Cannot move $($incoming.Name): data/texts already contains a file with that name." }
-    Move-Item -LiteralPath $incoming.FullName -Destination $destination
-    $movedFile = Get-Item -LiteralPath $destination
+    $incomingRoots = @(
+        [pscustomobject]@{ path=$incomingTextsPath; source_type='text'; destination_root=$textsPath },
+        [pscustomobject]@{ path=$incomingTranscriptsPath; source_type='transcript'; destination_root=$transcriptsPath }
+    )
+    $incoming = Get-OldestIncomingFile -IncomingRoots $incomingRoots
+    if ($null -eq $incoming) { Write-Output 'No .txt files are waiting in incoming/texts or incoming/transcripts.'; exit 0 }
+    $destination = Join-Path $incoming.DestinationRoot $incoming.File.Name
+    if (Test-Path -LiteralPath $destination) { throw "Cannot move $($incoming.File.Name): destination already contains that file: $destination" }
     $state = [ordered]@{
         schema_version = 1
-        filename = $movedFile.Name
-        relative_path = "data/texts/$($movedFile.Name)"
-        destination_path = $movedFile.FullName
-        stage = 'moved'
+        filename = $incoming.File.Name
+        source_type = $incoming.SourceType
+        incoming_relative_path = "incoming/$($incoming.SourceType)s/$($incoming.File.Name)"
+        incoming_path = $incoming.File.FullName
+        relative_path = "data/$($incoming.SourceType)s/$($incoming.File.Name)"
+        destination_path = $destination
+        stage = 'selected'
         started_at = (Get-Date).ToUniversalTime().ToString('o')
     }
+    if ($incoming.SourceType -eq 'transcript') {
+        $entry = @(Read-JsonLines -Path $transcriptMediaIndexPath | Where-Object { $_.transcript_relative_path -eq $state.incoming_relative_path } | Select-Object -Last 1)
+        if (-not $entry.Count) { throw "Transcript $($state.filename) has no media-index entry." }
+        $mediaSourcePath = Join-Path $repo $entry[0].media_relative_path
+        $mediaDestinationPath = Join-Path $mediaPath ([System.IO.Path]::GetFileName($mediaSourcePath))
+        if (-not (Test-Path -LiteralPath $mediaSourcePath)) { throw "Transcript media is missing: $mediaSourcePath" }
+        if (Test-Path -LiteralPath $mediaDestinationPath) { throw "Cannot move transcript media: destination already exists: $mediaDestinationPath" }
+        $state.media_incoming_path = $mediaSourcePath
+        $state.media_relative_path = "data/media/$([System.IO.Path]::GetFileName($mediaSourcePath))"
+        $state.media_destination_path = $mediaDestinationPath
+    }
     Write-JsonAtomic -Path $statePath -Value $state
-    Write-Output "Moved oldest incoming file to $($state.relative_path)."
+}
+
+if ($state.stage -eq 'selected') {
+    if (Test-Path -LiteralPath $state.incoming_path) {
+        Move-Item -LiteralPath $state.incoming_path -Destination $state.destination_path
+    }
+    if ($state.PSObject.Properties.Name -contains 'media_incoming_path' -and (Test-Path -LiteralPath $state.media_incoming_path)) {
+        Move-Item -LiteralPath $state.media_incoming_path -Destination $state.media_destination_path
+    }
+    $state.stage = 'moved'
+    Write-JsonAtomic -Path $statePath -Value $state
+    Write-Output "Moved $($state.filename) to $($state.relative_path)$(if ($state.PSObject.Properties.Name -contains 'media_relative_path') { " and its media to $($state.media_relative_path)" })."
 }
 
 if (-not (Test-Path -LiteralPath $state.destination_path)) { throw "Active ingestion source is missing: $($state.destination_path)" }
@@ -327,7 +362,12 @@ foreach ($source in $sources) { $sourceById[$source.source_id] = $source }
 if ($state.stage -eq 'moved') {
     $file = Get-Item -LiteralPath $state.destination_path
     $normalizedText = Get-NormalizedContent -Content (Get-Content -LiteralPath $file.FullName -Raw -Encoding UTF8)
-    if ([string]::IsNullOrWhiteSpace($normalizedText)) { throw "Incoming file is empty after normalization: $($file.Name)" }
+    if ([string]::IsNullOrWhiteSpace($normalizedText)) {
+        Append-JsonLine -Path $logPath -Value ([ordered]@{ completed_at=(Get-Date).ToUniversalTime().ToString('o'); filename=$state.filename; source_type=$state.source_type; status='skipped_empty' })
+        Remove-Item -LiteralPath $statePath -Force
+        Write-Output "Skipped empty $($state.source_type) $($state.filename); any associated media was still moved to data/media."
+        exit 0
+    }
     $normalizedHash = Get-Sha256 -Value $normalizedText
     $existing = @($sources | Where-Object { $_.relative_path -eq $state.relative_path } | Select-Object -First 1)
     if ($existing.Count) {
@@ -339,7 +379,7 @@ if ($state.stage -eq 'moved') {
         $sourceId = Get-NextNumericId -Rows $sources -Property 'source_id' -Prefix 'S' -Digits 4
         $record = [ordered]@{
             source_id = $sourceId
-            source_type = 'text'
+            source_type = $state.source_type
             relative_path = $state.relative_path
             filename = $file.Name
             recorded_at = Get-RecordedAt -File $file
@@ -391,7 +431,7 @@ Classify the supplied text into exactly one of the 25 supplied KB topics. Return
     $state.classification_api_key_name = $classificationRequest.api_key_name
     $state.stage = 'classified'
     Append-JsonLine -Path $passagePath -Value ([ordered]@{
-        passage_id = $passageId; source_id = $state.source_id; source_type = 'text'; relative_path = $state.relative_path
+        passage_id = $passageId; source_id = $state.source_id; source_type = $state.source_type; relative_path = $state.relative_path
         recorded_at = $sourceById[$state.source_id].recorded_at; segment_index = 1; text = $state.normalized_text
         word_count = ([regex]::Matches($state.normalized_text, '\S+')).Count; primary_topic_id = $topicId; secondary_topic_ids = @()
         candidate_topics = @([ordered]@{ topic_id=$topicId; title=$null; score=$null; matched_terms=@() })

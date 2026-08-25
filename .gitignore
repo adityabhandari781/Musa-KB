@@ -1,2 +1,5 @@
 data/
 .env
+/incoming/*
+!/incoming/.gitkeep
+/build/useful/telegram_export.session*
