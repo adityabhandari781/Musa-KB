@@ -117,31 +117,45 @@ function Invoke-GroqAttempt {
         [Parameter(Mandatory)][string]$User
     )
     $reasoningEffort = if ($ModelName -like 'qwen/*') { 'default' } else { 'low' }
-    $payload = [ordered]@{
+    $payloadJson = [ordered]@{
+        api_key = $Key
         model = $ModelName
         reasoning_effort = $reasoningEffort
-        temperature = 0
-        max_completion_tokens = 5000
-        response_format = @{ type = 'json_object' }
-        messages = @(@{ role = 'system'; content = $System }, @{ role = 'user'; content = $User })
-    } | ConvertTo-Json -Depth 8 -Compress
-    $client = [System.Net.Http.HttpClient]::new()
-    $client.Timeout = [timespan]::FromSeconds(90)
-    $request = [System.Net.Http.HttpRequestMessage]::new([System.Net.Http.HttpMethod]::Post, 'https://api.groq.com/openai/v1/chat/completions')
-    $request.Headers.Authorization = [System.Net.Http.Headers.AuthenticationHeaderValue]::new('Bearer', $Key)
-    $request.Content = [System.Net.Http.StringContent]::new($payload, [System.Text.Encoding]::UTF8, 'application/json')
+        system = $System
+        user = $User
+        timeout_seconds = 90
+    } | ConvertTo-Json -Depth 6 -Compress
+    # Redirected Windows console streams can corrupt Unicode Markdown.  Base64
+    # carries the UTF-8 JSON as ASCII to the Python helper.
+    $payload = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($payloadJson))
+    $clientScript = Join-Path $PSScriptRoot 'groq_chat.py'
+    $startInfo = [System.Diagnostics.ProcessStartInfo]::new()
+    $startInfo.FileName = 'python'
+    $startInfo.Arguments = ('"{0}"' -f $clientScript)
+    $startInfo.UseShellExecute = $false
+    $startInfo.CreateNoWindow = $true
+    $startInfo.RedirectStandardInput = $true
+    $startInfo.RedirectStandardOutput = $true
+    $startInfo.RedirectStandardError = $true
+    $process = [System.Diagnostics.Process]::new()
+    $process.StartInfo = $startInfo
     try {
-        $response = $client.SendAsync($request).GetAwaiter().GetResult()
-        try {
-            $body = $response.Content.ReadAsStringAsync().GetAwaiter().GetResult()
-            return [pscustomobject]@{ status=[int]$response.StatusCode; body=$body; retry_seconds=(Get-WaitSeconds $response.Headers) }
+        if (-not $process.Start()) { throw 'Could not start the Python Groq transport.' }
+        $process.StandardInput.Write($payload)
+        $process.StandardInput.Close()
+        $stdout = $process.StandardOutput.ReadToEnd()
+        $stderr = $process.StandardError.ReadToEnd()
+        $process.WaitForExit()
+        if ($process.ExitCode -ne 0 -or [string]::IsNullOrWhiteSpace($stdout)) {
+            throw "Python Groq transport failed: $stderr"
         }
-        finally { $response.Dispose() }
+        $response = $stdout | ConvertFrom-Json
+        return [pscustomobject]@{ status=[int]$response.status; body=[string]$response.body; retry_seconds=[int]$response.retry_seconds }
     }
     catch {
-        return [pscustomobject]@{ status=599; body=$_.Exception.Message; retry_seconds=60 }
+        return [pscustomobject]@{ status=599; body=$_.Exception.GetBaseException().Message; retry_seconds=60 }
     }
-    finally { $request.Dispose(); $client.Dispose() }
+    finally { $process.Dispose() }
 }
 
 function Invoke-GroqJson {
@@ -168,6 +182,7 @@ function Invoke-GroqJson {
     }
     $cursor = 0
     $errors = [System.Collections.Generic.List[string]]::new()
+    $transportFailures = 0
     while ($true) {
         $now = [datetime]::UtcNow
         $pair = $null
@@ -180,7 +195,7 @@ function Invoke-GroqJson {
             if ($usable.Count -eq 0) { throw "All Groq key/model pairs failed for $WorkLabel. $($errors -join ' | ')" }
             $earliest = $usable | Sort-Object available_at | Select-Object -First 1
             $seconds = [math]::Max(1, [math]::Ceiling(($earliest.available_at - $now).TotalSeconds))
-            Write-Output "All Groq key/model pairs are cooling down for $WorkLabel; waiting $seconds second(s) for $($earliest.key_name) / $($earliest.model)."
+            Write-Host "All Groq key/model pairs are cooling down for $WorkLabel; waiting $seconds second(s) for $($earliest.key_name) / $($earliest.model)."
             while ($seconds -gt 0) {
                 $chunk = [math]::Min(60, $seconds)
                 Start-Sleep -Seconds $chunk
@@ -190,7 +205,7 @@ function Invoke-GroqJson {
         }
 
         $pairIndex = $pairs.IndexOf($pair)
-        Write-Output "Requesting $WorkLabel with $($pair.key_name) / $($pair.model)."
+        Write-Host "Requesting $WorkLabel with $($pair.key_name) / $($pair.model)."
         $response = Invoke-GroqAttempt -Key $pair.key -ModelName $pair.model -System $System -User $User
         if ($response.status -ge 200 -and $response.status -lt 300) {
             try {
@@ -201,21 +216,31 @@ function Invoke-GroqJson {
             catch {
                 $pair.available_at = [datetime]::UtcNow.AddSeconds(300)
                 $errors.Add("$($pair.key_name)/$($pair.model): invalid JSON response")
-                Write-Output "Invalid JSON from $($pair.key_name) / $($pair.model) for $WorkLabel; trying the next pair."
+                Write-Host "Invalid JSON from $($pair.key_name) / $($pair.model) for $WorkLabel; trying the next pair."
             }
         }
         elseif ($response.status -eq 429 -or $response.status -eq 408 -or $response.status -eq 599 -or $response.status -ge 500) {
             $wait = [math]::Max(1, [int]$response.retry_seconds)
             $pair.available_at = [datetime]::UtcNow.AddSeconds($wait)
             $errors.Add("$($pair.key_name)/$($pair.model): HTTP $($response.status), retry in $wait s")
-            Write-Output "HTTP $($response.status) from $($pair.key_name) / $($pair.model) for $WorkLabel; pair cooling down for $wait second(s)."
+            if ($response.status -eq 599) {
+                $transportFailures++
+                $detail = ([string]$response.body -replace '\s+', ' ').Trim()
+                if ($detail.Length -gt 240) { $detail = $detail.Substring(0, 240) + '…' }
+                Write-Host "HTTP 599 from $($pair.key_name) / $($pair.model) for $($WorkLabel): $detail"
+                if ($transportFailures -ge $pairs.Count) {
+                    throw "Every Groq key/model pair had a transport failure for $WorkLabel. Check network connectivity before retrying."
+                }
+            } else {
+                Write-Host "HTTP $($response.status) from $($pair.key_name) / $($pair.model) for $WorkLabel; pair cooling down for $wait second(s)."
+            }
         }
         else {
             # A model/key-specific client error is not expected to recover during
             # this logical request.  Move on immediately and do not wait on it.
             $pair.disabled = $true
             $errors.Add("$($pair.key_name)/$($pair.model): HTTP $($response.status)")
-            Write-Output "HTTP $($response.status) from $($pair.key_name) / $($pair.model) for $WorkLabel; trying the next pair."
+            Write-Host "HTTP $($response.status) from $($pair.key_name) / $($pair.model) for $WorkLabel; trying the next pair."
         }
         $cursor = ($pairIndex + 1) % $pairs.Count
     }
@@ -237,7 +262,7 @@ function Get-TopicBody {
 }
 
 function Remove-CitationsForGroq {
-    param([Parameter(Mandatory)][string]$Text)
+    param([Parameter(Mandatory)][AllowEmptyString()][string]$Text)
     # Groq receives no source identifiers or links.
     $citation = '\[S\d{4}\](?:\([^\)]*\))?'
     $Text = [regex]::Replace($Text, "\s*\((?:\s*$citation\s*,?)+\s*\)", '')
@@ -293,13 +318,13 @@ function Assert-CitationFreeTopicBody {
 }
 
 function Get-ComparisonKey {
-    param([Parameter(Mandatory)][string]$Line)
+    param([Parameter(Mandatory)][AllowEmptyString()][string]$Line)
     $withoutCitations = Remove-CitationsForGroq -Text $Line
     return [regex]::Replace($withoutCitations.Trim(), '\s+', ' ')
 }
 
 function Test-SubstantiveContentLine {
-    param([Parameter(Mandatory)][string]$Line)
+    param([Parameter(Mandatory)][AllowEmptyString()][string]$Line)
     $trimmed = $Line.Trim()
     return $trimmed.Length -gt 0 -and $trimmed -notmatch '^#{1,6}\s' -and $trimmed -notmatch '^(---|\*\*\*|___)$'
 }
@@ -430,7 +455,14 @@ $keyEntries = @($apiKeyNames | ForEach-Object {
 
 $state = $null
 if (Test-Path -LiteralPath $statePath) {
-    $state = Get-Content -LiteralPath $statePath -Raw -Encoding UTF8 | ConvertFrom-Json
+    # ConvertFrom-Json creates a fixed PSCustomObject.  A resumed ingestion
+    # needs to add fields as it advances through later stages, so use a mutable
+    # ordered map just like a newly created checkpoint.
+    $savedState = Get-Content -LiteralPath $statePath -Raw -Encoding UTF8 | ConvertFrom-Json
+    $state = [ordered]@{}
+    foreach ($property in $savedState.PSObject.Properties) {
+        $state[$property.Name] = $property.Value
+    }
     Write-Output "Resuming active ingestion for $($state.filename) at stage '$($state.stage)'."
 } else {
     $incomingRoots = @(
@@ -597,7 +629,7 @@ if ($state.stage -eq 'source_mapped') {
     $currentBody = Remove-CitationsForGroq -Text $originalBody
     $topicSourceCount = @($topicRows | Select-Object -ExpandProperty source_id -Unique).Count
     $updateSystem = @'
-Return JSON only: {"markdown":"..."}. Update the supplied knowledge-base document with the supplied new source text. The markdown value must start with "## Overview" and contain exactly these sections in order: Overview, Core ideas, Principles and mental models, Recommended practices, Examples and stories, Tensions and contradictions, Caveats. Make the smallest possible line-level change: retain every unaffected line verbatim, and add or revise a line only when the new source directly supports it. Do not rewrite, reorder, summarize, or polish unaffected material. Do not include citations, source IDs, links, YAML, a document title, a Sources section, code fences, or reasoning. Do not invent facts. Attribute contested claims to the creator; label speculative health/scientific claims, strongly gendered framing, political claims, and unsafe advice appropriately.
+Return JSON only: {"markdown":"..."}. Update the supplied knowledge-base document with the supplied new source text. The markdown value must start with "## Overview" and contain exactly these sections in order: Overview, Core ideas, Principles and mental models, Recommended practices, Examples and stories, Tensions and contradictions, Caveats. Make the smallest possible line-level change: retain every unaffected line verbatim, and add or revise a line only when the new source directly supports it. Do not rewrite, reorder, summarize, or polish unaffected material. Use the KB's established editorial voice: integrate claims directly, and never write source-note phrasing such as "the source states," "the source asserts," or "this source explains." Do not include citations, source IDs, links, YAML, a document title, a Sources section, code fences, or reasoning. Do not invent facts. Attribute contested claims to the creator; label speculative health/scientific claims, strongly gendered framing, political claims, and unsafe advice appropriately.
 '@
     $updateInput = @"
 INCOMING TEXT:
@@ -621,7 +653,8 @@ $currentBody
 
 if ($state.stage -eq 'kb_updated') {
     & (Join-Path $repo 'scripts\validate_kb.ps1') -RepositoryRoot $repo
-    if ($LASTEXITCODE -ne 0) { throw 'KB validation failed; the active ingestion state was retained for inspection.' }
+    $validationExitCode = if (Test-Path -LiteralPath 'Variable:\LASTEXITCODE') { $LASTEXITCODE } else { 0 }
+    if ($validationExitCode -ne 0) { throw 'KB validation failed; the active ingestion state was retained for inspection.' }
     $state.stage = 'validated'
     $state.completed_at = (Get-Date).ToUniversalTime().ToString('o')
     Write-JsonAtomic -Path $statePath -Value $state
