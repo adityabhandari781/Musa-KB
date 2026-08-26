@@ -281,7 +281,7 @@ $incomingMediaPath = Join-Path $incomingPath 'media'
 $transcriptMediaIndexPath = Join-Path $incomingTranscriptsPath 'media-index.jsonl'
 $textsPath = Join-Path $repo 'data\texts'
 $transcriptsPath = Join-Path $repo 'data\transcripts'
-$mediaPath = Join-Path $repo 'data\media'
+$mediaPath = Join-Path $repo 'data\media\audio and video'
 $kbPath = Join-Path $repo 'kb'
 $longtermPath = Join-Path $repo 'build\longterm'
 $usefulPath = Join-Path $repo 'build\useful'
@@ -336,7 +336,7 @@ if (Test-Path -LiteralPath $statePath) {
         if (-not (Test-Path -LiteralPath $mediaSourcePath)) { throw "Transcript media is missing: $mediaSourcePath" }
         if (Test-Path -LiteralPath $mediaDestinationPath) { throw "Cannot move transcript media: destination already exists: $mediaDestinationPath" }
         $state.media_incoming_path = $mediaSourcePath
-        $state.media_relative_path = "data/media/$([System.IO.Path]::GetFileName($mediaSourcePath))"
+        $state.media_relative_path = "data/media/audio and video/$([System.IO.Path]::GetFileName($mediaSourcePath))"
         $state.media_destination_path = $mediaDestinationPath
     }
     Write-JsonAtomic -Path $statePath -Value $state
@@ -365,7 +365,7 @@ if ($state.stage -eq 'moved') {
     if ([string]::IsNullOrWhiteSpace($normalizedText)) {
         Append-JsonLine -Path $logPath -Value ([ordered]@{ completed_at=(Get-Date).ToUniversalTime().ToString('o'); filename=$state.filename; source_type=$state.source_type; status='skipped_empty' })
         Remove-Item -LiteralPath $statePath -Force
-        Write-Output "Skipped empty $($state.source_type) $($state.filename); any associated media was still moved to data/media."
+        Write-Output "Skipped empty $($state.source_type) $($state.filename); any associated media was still moved to data/media/audio and video/."
         exit 0
     }
     $normalizedHash = Get-Sha256 -Value $normalizedText

@@ -3,3 +3,4 @@ data/
 /incoming/*
 !/incoming/.gitkeep
 /build/useful/telegram_export.session*
+/telegram_export.session*

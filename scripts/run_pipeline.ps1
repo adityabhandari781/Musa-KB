@@ -1,5 +1,8 @@
 [CmdletBinding()]
-param([string]$RepositoryRoot = (Split-Path -Parent $PSScriptRoot))
+param(
+    [string]$RepositoryRoot = (Split-Path -Parent $PSScriptRoot),
+    [ValidateSet('cloud', 'local')][string]$TranscriptionMode = 'cloud'
+)
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
@@ -9,7 +12,8 @@ Push-Location $repo
 try {
     & python .\scripts\fetch.py
     if ($LASTEXITCODE -ne 0) { throw 'Fetch failed.' }
-    & python .\scripts\transcription.py
+    $transcriptionScript = if ($TranscriptionMode -eq 'cloud') { '.\scripts\cloud_transcription.py' } else { '.\scripts\transcription.py' }
+    & python $transcriptionScript
     if ($LASTEXITCODE -ne 0) { throw 'Transcription failed.' }
 
     while ($true) {

@@ -27,7 +27,8 @@ TEMP_TEXTS_DIR = TEMP_DIR / "texts"
 MEDIA_DIR = INCOMING_DIR / "media"
 TEXT_DIR = INCOMING_DIR / "texts"
 STATE_DIR = REPO_ROOT / "build" / "useful"
-SESSION = str(STATE_DIR / "telegram_export")
+# Telethon stores telegram_export.session beside the repository files, as requested.
+SESSION = str(REPO_ROOT / "telegram_export")
 LAST_TIMESTAMP_FILE = STATE_DIR / "telegram-last-timestamp.txt"
 TIMESTAMP_FORMAT = "%Y-%m-%d_%H-%M-%S"
 LIMIT = None
