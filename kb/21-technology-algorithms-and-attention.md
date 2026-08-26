@@ -36,7 +36,7 @@ Technology and algorithms shape attention by filtering content, rewarding engage
 - Anecdotal advice from a Musa's mother about embracing “rough edges” to gain social media traction. ([S1669](26-all-texts.md#s1669))
 
 ## Tensions and contradictions
-- While creators claim algorithms are inherently manipulative, some argue that user agency can mitigate their effects; the evidence for effective counter‑strategies is mixed. ([S1363](26-all-texts.md#s1363), ([S1364](26-all-texts.md#s1364)))
+- While creators claim algorithms are inherently manipulative, some argue that user agency can mitigate their effects; the evidence for effective counter‑strategies is mixed. ([S1363](26-all-texts.md#s1363), [S1364](26-all-texts.md#s1364))
 - The RAS model is promoted as a practical tool, yet scientific consensus on its manipulability remains uncertain. ([S0696](26-all-texts.md#s0696))
 - Authenticity is touted as a competitive advantage, but the claim lacks empirical validation and may oversimplify complex audience dynamics. ([S1669](26-all-texts.md#s1669))
 

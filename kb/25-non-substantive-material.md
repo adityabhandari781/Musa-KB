@@ -12,7 +12,7 @@ source_scope:
 
 ## Overview
 
-This document records the material intentionally excluded from the substantive knowledge base: promotions, engagement requests, banter, low-context media, and topical commentary that does not contain a self-contained lesson. It remains traceable to the source corpus, but is not presented as practical, scientific, financial, or relationship guidance. ([S0002](26-all-texts.md#s0002), ([S0003](26-all-texts.md#s0003)), ([S0004](26-all-texts.md#s0004)), ([S0005](26-all-texts.md#s0005)))
+This document records the material intentionally excluded from the substantive knowledge base: promotions, engagement requests, banter, low-context media, and topical commentary that does not contain a self-contained lesson. It remains traceable to the source corpus, but is not presented as practical, scientific, financial, or relationship guidance. ([S0002](26-all-texts.md#s0002), [S0003](26-all-texts.md#s0003), [S0004](26-all-texts.md#s0004), [S0005](26-all-texts.md#s0005))
 
 ## Core ideas
 
@@ -32,7 +32,7 @@ There are no recommended practices in this category. Treat these entries as sour
 
 ## Examples and stories
 
-Representative entries include engagement-led posts, short promotional messages, low-context references, and commentary without sufficient supporting explanation. ([S0002](26-all-texts.md#s0002), ([S0003](26-all-texts.md#s0003)), ([S0004](26-all-texts.md#s0004)), ([S0005](26-all-texts.md#s0005)))
+Representative entries include engagement-led posts, short promotional messages, low-context references, and commentary without sufficient supporting explanation. ([S0002](26-all-texts.md#s0002), [S0003](26-all-texts.md#s0003), [S0004](26-all-texts.md#s0004), [S0005](26-all-texts.md#s0005))
 
 ## Tensions and contradictions
 

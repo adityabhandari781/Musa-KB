@@ -11,12 +11,12 @@ source_scope:
 # Learning and thinking skills
 
 ## Overview
-Musa presents a framework for accelerating learning and thinking that blends mindset tricks, meta‑skills, and unconventional habits. Central to the message is the idea that inspiration, skill stacking, and self‑directed “higher education” are more powerful than formal schooling or passive content consumption. By actively seeking inspiration, cultivating a suite of complementary abilities, and using role‑model archetypes as a personal “board of directors,” individuals can transform their learning velocity and influence both themselves and others.([S0115](26-all-texts.md#s0115), ([S1207](26-all-texts.md#s1207)), ([S0427](26-all-texts.md#s0427)), ([S1489](26-all-texts.md#s1489)))
+Musa presents a framework for accelerating learning and thinking that blends mindset tricks, meta‑skills, and unconventional habits. Central to the message is the idea that inspiration, skill stacking, and self‑directed “higher education” are more powerful than formal schooling or passive content consumption. By actively seeking inspiration, cultivating a suite of complementary abilities, and using role‑model archetypes as a personal “board of directors,” individuals can transform their learning velocity and influence both themselves and others.([S0115](26-all-texts.md#s0115), [S1207](26-all-texts.md#s1207), [S0427](26-all-texts.md#s0427), [S1489](26-all-texts.md#s1489))
 
 ## Core ideas
 1. **Inspiration as a skill** – Treat finding inspiration like any other ability; train your “eyes” to see the free energy of inspiration everywhere and use it to fuel motivation.([S0116](26-all-texts.md#s0116))
 2. **Identify personal strengths** – Knowing what you naturally excel at guides the selection of complementary skills to stack.([S0174](26-all-texts.md#s0174))
-3. **Skill stacking** – Combine several “good enough” abilities (e.g., writing, visual thinking, speaking) to create a unique, hard‑to‑copy advantage, especially in an AI‑driven world where single‑skill mastery is risky.([S0427](26-all-texts.md#s0427), ([S1400](26-all-texts.md#s1400)))
+3. **Skill stacking** – Combine several “good enough” abilities (e.g., writing, visual thinking, speaking) to create a unique, hard‑to‑copy advantage, especially in an AI‑driven world where single‑skill mastery is risky.([S0427](26-all-texts.md#s0427), [S1400](26-all-texts.md#s1400))
 4. **Meta‑skills** – Learning how to learn, focus, pattern recognition, critical thinking, self‑reflection, and persuasion act as accelerators that multiply the acquisition speed of any hard skill.([S1356](26-all-texts.md#s1356))
 5. **Sequence thinking** – Prioritize the order of steps over raw information accumulation; the meta‑skill of sequencing is more valuable than sheer knowledge.([S0611](26-all-texts.md#s0611))
 6. **Personal counsel board** – Imagine a council of admired figures (e.g., Rogan, McGregor, Jocko, Trump) to reframe problems and guide decisions, turning consumed content into actionable insight.([S1489](26-all-texts.md#s1489))
@@ -50,6 +50,6 @@ Musa presents a framework for accelerating learning and thinking that blends min
 - Labeling terms like *confirmation bias* as “negative labels” contradicts the broader advocacy for critical thinking and meta‑cognition, potentially downplaying useful scientific concepts.([S1500](26-all-texts.md#s1500))
 
 ## Caveats
-- The assertion that “inspiration is free energy” and that “skill stacking yields double‑XP” are metaphorical and lack empirical validation; treat them as motivational heuristics, not proven formulas.([S0116](26-all-texts.md#s0116), ([S1356](26-all-texts.md#s1356)))
-- Advice to model decisions after controversial figures (e.g., Donald Trump) may carry political bias and could lead to ethically questionable strategies; users should critically assess role‑model suitability.([S0427](26-all-texts.md#s0427), ([S1489](26-all-texts.md#s1489)))
+- The assertion that “inspiration is free energy” and that “skill stacking yields double‑XP” are metaphorical and lack empirical validation; treat them as motivational heuristics, not proven formulas.([S0116](26-all-texts.md#s0116), [S1356](26-all-texts.md#s1356))
+- Advice to model decisions after controversial figures (e.g., Donald Trump) may carry political bias and could lead to ethically questionable strategies; users should critically assess role‑model suitability.([S0427](26-all-texts.md#s0427), [S1489](26-all-texts.md#s1489))
 - Dismissing TikTok wholesale ignores evidence that short‑form video can be an effective learning medium for certain topics; the blanket claim is overly simplistic.([S1364](26-all-texts.md#s1364))

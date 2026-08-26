@@ -52,5 +52,5 @@ Musa repeatedly links confidence, boldness, and immediate action to personal pow
 ## Caveats  
 - **Speculative spiritual claim:** The notion that confidence is a spiritual inheritance from “winners and survivors” is a personal belief, not an empirically verified fact ([S0193](26-all-texts.md#s0193)).  
 - **Potential for unsafe behavior:** Advising “no hesitation, 100 % pressure” in confrontational contexts can encourage reckless aggression and may lead to physical harm; readers should consider legal and safety implications before applying such tactics.  
-- **Gendered language:** Terms like “cameltoes” and “bitches” are used to disparage perceived weakness, reflecting a strongly gendered framing that may alienate or offend ([S0339](26-all-texts.md#s0339), ([S1641](26-all-texts.md#s1641))).  
+- **Gendered language:** Terms like “cameltoes” and “bitches” are used to disparage perceived weakness, reflecting a strongly gendered framing that may alienate or offend ([S0339](26-all-texts.md#s0339), [S1641](26-all-texts.md#s1641)).  
 - **Unverified networking claims:** Projecting false achievements to appear confident can damage credibility if discovered; this practice is not supported by evidence of long‑term effectiveness.

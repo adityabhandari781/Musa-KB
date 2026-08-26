@@ -275,16 +275,13 @@ function Format-LinkedCitationRuns {
     param([Parameter(Mandatory)][string]$Text)
 
     $citationLink = '\[S\d{4}\]\([^\)]+\)'
-    $separator = '[ \t\u00A0\u202F]*'
-    # Unwrap a pre-existing citation-only list before formatting, so retries or
-    # resumed ingestions never add a second set of parentheses.
-    $Text = [regex]::Replace($Text, "(?<!\\w)\\($separator($citationLink(?:$separator,$separator$citationLink)*)$separator\\)", {
+    $gap = '[ \t\u00A0\u202F]*'
+    # Normalize a citation run after local link restoration, including any
+    # parentheses the model might have placed around individual citations.
+    $cluster = '(?<!\w)\(*' + $gap + $citationLink + '(?:' + $gap + '\)*' + $gap + '(?:,' + $gap + ')?\(*' + $gap + $citationLink + ')*' + $gap + '\)*'
+    return [regex]::Replace($Text, $cluster, {
         param($match)
-        $match.Groups[1].Value
-    })
-    return [regex]::Replace($Text, "(?<![\\(\\w])($citationLink(?:$separator$citationLink)*)", {
-        param($match)
-        $links = @([regex]::Matches($match.Groups[1].Value, $citationLink) | ForEach-Object Value)
+        $links = @([regex]::Matches($match.Value, $citationLink) | ForEach-Object Value)
         '(' + ($links -join ', ') + ')'
     })
 }
