@@ -1,0 +1,30 @@
+site_name: Musa Knowledge Base
+site_description: Structured knowledge extracted from Musa's content
+site_url: https://adityabhandari781.github.io/Musa-KB/
+
+repo_name: adityabhandari781/Musa-KB
+repo_url: https://github.com/adityabhandari781/Musa-KB
+
+docs_dir: kb
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.suggest
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true

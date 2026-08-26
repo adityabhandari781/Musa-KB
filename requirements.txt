@@ -5,3 +5,4 @@ torch
 numpy
 imageio-ffmpeg
 requests
+mkdocs-material==9.*
