@@ -1,7 +1,6 @@
 ---
 topic_id: 25
 title: Non-substantive material
-status: synthesized
 source_count: 580
 source_scope:
   - data/texts

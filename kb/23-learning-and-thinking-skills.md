@@ -1,7 +1,6 @@
 ---
 topic_id: 23
 title: Learning and thinking skills
-status: synthesized
 source_count: 36
 source_scope:
   - data/texts

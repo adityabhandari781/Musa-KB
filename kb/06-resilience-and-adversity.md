@@ -1,7 +1,6 @@
 ---
 topic_id: 6
 title: Resilience and adversity
-status: synthesized
 source_count: 146
 source_scope:
   - data/texts

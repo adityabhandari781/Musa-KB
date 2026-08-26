@@ -1,7 +1,6 @@
 ---
 topic_id: 3
 title: Vision, purpose, and goal-setting
-status: synthesized
 source_count: 98
 source_scope:
   - data/texts

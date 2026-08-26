@@ -1,7 +1,6 @@
 ---
 topic_id: 4
 title: Discipline, execution, and productivity
-status: synthesized
 source_count: 68
 source_scope:
   - data/texts

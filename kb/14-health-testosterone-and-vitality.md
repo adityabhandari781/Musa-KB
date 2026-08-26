@@ -1,7 +1,6 @@
 ---
 topic_id: 14
 title: Health, testosterone, and vitality
-status: synthesized
 source_count: 31
 source_scope:
   - data/texts

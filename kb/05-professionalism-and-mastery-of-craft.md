@@ -1,7 +1,6 @@
 ---
 topic_id: 5
 title: Professionalism and mastery of craft
-status: synthesized
 source_count: 28
 source_scope:
   - data/texts

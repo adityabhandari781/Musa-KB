@@ -1,7 +1,6 @@
 ---
 topic_id: 2
 title: Ghost Mode and environmental separation
-status: synthesized
 source_count: 70
 source_scope:
   - data/texts

@@ -1,7 +1,6 @@
 ---
 topic_id: 12
 title: Networking and social hierarchy
-status: synthesized
 source_count: 19
 source_scope:
   - data/texts

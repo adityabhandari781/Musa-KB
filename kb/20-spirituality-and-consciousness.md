@@ -1,7 +1,6 @@
 ---
 topic_id: 20
 title: Spirituality and consciousness
-status: synthesized
 source_count: 80
 source_scope:
   - data/texts

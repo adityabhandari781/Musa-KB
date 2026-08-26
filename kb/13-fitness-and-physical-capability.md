@@ -1,7 +1,6 @@
 ---
 topic_id: 13
 title: Fitness and physical capability
-status: synthesized
 source_count: 75
 source_scope:
   - data/texts

@@ -1,7 +1,6 @@
 ---
 topic_id: 1
 title: Identity and self-reinvention
-status: synthesized
 source_count: 188
 source_scope:
   - data/texts

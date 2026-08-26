@@ -1,7 +1,6 @@
 ---
 topic_id: 15
 title: Youth, energy, and aging
-status: synthesized
 source_count: 50
 source_scope:
   - data/texts

@@ -1,7 +1,6 @@
 ---
 topic_id: 10
 title: Personal branding and audience-building
-status: synthesized
 source_count: 39
 source_scope:
   - data/texts

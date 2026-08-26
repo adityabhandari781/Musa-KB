@@ -1,7 +1,6 @@
 ---
 topic_id: 9
 title: YouTube and content businesses
-status: synthesized
 source_count: 112
 source_scope:
   - data/texts

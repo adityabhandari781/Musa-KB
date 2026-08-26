@@ -1,7 +1,6 @@
 ---
 topic_id: 22
 title: Social conditioning and “Genjutsu”
-status: synthesized
 source_count: 58
 source_scope:
   - data/texts

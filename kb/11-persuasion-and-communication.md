@@ -1,7 +1,6 @@
 ---
 topic_id: 11
 title: Persuasion and communication
-status: synthesized
 source_count: 47
 source_scope:
   - data/texts

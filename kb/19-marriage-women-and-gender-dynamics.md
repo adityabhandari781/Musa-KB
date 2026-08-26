@@ -1,7 +1,6 @@
 ---
 topic_id: 19
 title: Marriage, women, and gender dynamics
-status: synthesized
 source_count: 34
 source_scope:
   - data/texts

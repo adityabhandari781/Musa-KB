@@ -1,7 +1,6 @@
 ---
 topic_id: 7
 title: Confidence, boldness, and action
-status: synthesized
 source_count: 101
 source_scope:
   - data/texts

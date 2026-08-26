@@ -1,7 +1,6 @@
 ---
 topic_id: 8
 title: Money and entrepreneurship
-status: synthesized
 source_count: 113
 source_scope:
   - data/texts

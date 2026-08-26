@@ -1,7 +1,6 @@
 ---
 topic_id: 21
 title: Technology, algorithms, and attention
-status: synthesized
 source_count: 51
 source_scope:
   - data/texts

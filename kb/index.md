@@ -13,3 +13,5 @@ The knowledge base is generated from source material collected,
 transcribed, classified, and synthesized by the Musa-KB pipeline.
 
 Each article includes references back to its underlying source material.
+
+Source code at https://github.com/adityabhandari781/Musa-KB

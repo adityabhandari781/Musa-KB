@@ -1,7 +1,6 @@
 ---
 topic_id: 18
 title: Family and fatherhood
-status: synthesized
 source_count: 58
 source_scope:
   - data/texts

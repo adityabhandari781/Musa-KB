@@ -43,7 +43,6 @@ foreach ($file in $files) {
     $topicId = [int]$idMatch.Groups[1].Value; $seenTopics[$topicId] = $file.Name
     if ($topicId -notin 1..25) { $errors.Add("$($file.Name): invalid topic ID $topicId.") }
     if ($titleMatch.Groups[1].Value -ne $expectedTopics[$topicId]) { $errors.Add("$($file.Name): title does not match topic $topicId.") }
-    if ($text -notmatch '(?m)^status:\s*synthesized\s*$') { $errors.Add("$($file.Name): not marked synthesized.") }
     if ($text.Length -lt 500) { $errors.Add("$($file.Name): document is too short.") }
     if ($text -match '<think>|</think>') { $errors.Add("$($file.Name): contains leaked model reasoning.") }
     if ($text -match '\[Paragraph with citations\]|\[Bullets/Paragraphs with citations\]|I need to synthesize the (provided )?notes|Check against constraints') { $errors.Add("$($file.Name): contains model-generation boilerplate or placeholders.") }

@@ -1,7 +1,6 @@
 ---
 topic_id: 16
 title: Masculinity, responsibility, and power
-status: synthesized
 source_count: 64
 source_scope:
   - data/texts

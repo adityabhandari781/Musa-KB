@@ -414,6 +414,7 @@ function Write-TopicDocument {
         [Parameter(Mandatory)][int]$SourceCount
     )
     $header = "---`ntopic_id: $TopicId`ntitle: $Title`nstatus: synthesized`nsource_count: $SourceCount`nsource_scope:`n  - data/texts`n  - data/transcripts`n---`n`n# $Title`n`n"
+    $header = $header -replace 'status: synthesized\r?\n', ''
     [System.IO.File]::WriteAllText($Path, $header + $Body.Trim() + "`n", [System.Text.UTF8Encoding]::new($false))
 }
 

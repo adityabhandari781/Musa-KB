@@ -1,7 +1,6 @@
 ---
 topic_id: 17
 title: Brotherhood, friendship, and loyalty
-status: synthesized
 source_count: 50
 source_scope:
   - data/texts

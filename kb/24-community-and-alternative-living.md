@@ -1,7 +1,6 @@
 ---
 topic_id: 24
 title: Community and alternative living
-status: synthesized
 source_count: 101
 source_scope:
   - data/texts
