@@ -14,7 +14,7 @@ Push-Location $repo
 try {
     & python .\scripts\fetch.py
     if ($LASTEXITCODE -ne 0) { throw 'Fetch failed.' }
-    $transcriptionScript = if ($TranscriptionMode -eq 'cloud') { '.\scripts\cloud_transcription.py' } else { '.\scripts\transcription.py' }
+    $transcriptionScript = if ($TranscriptionMode -eq 'cloud') { '.\scripts\cloud_transcription.py' } else { '.\scripts\local_transcription.py' }
     & python $transcriptionScript
     if ($LASTEXITCODE -ne 0) { throw 'Transcription failed.' }
 

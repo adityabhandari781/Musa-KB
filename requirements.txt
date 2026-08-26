@@ -1,7 +1,7 @@
 telethon
 python-dotenv
-openai-whisper
-torch
+# openai-whisper
+# torch
 numpy
 imageio-ffmpeg
 requests
