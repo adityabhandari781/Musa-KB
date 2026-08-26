@@ -1,6 +1,6 @@
-# Musa Knowledge Base
+# Musa's Gems
 
-A structured knowledge base synthesized from Musa's content.
+A structured knowledge base aggregated from Musa's telegram channels [@MusaRAW](t.me/MusaRAW) and [@UnchainedReality](t.me/UnchainedReality).
 
 ## Browse the knowledge base
 
