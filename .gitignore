@@ -7,3 +7,4 @@ data/media/*
 __pycache__/
 *.pyc
 workspace/
+site/
