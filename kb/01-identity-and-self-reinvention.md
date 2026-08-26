@@ -14,47 +14,47 @@ source_scope:
 The material centers on a philosophy of continual self‑reinvention that treats the self as a mutable construct rather than a fixed identity.  The core claim is that progress is achieved by confronting and surpassing an internal “shadow twin” or “demon twin” – the strongest, most disciplined version of oneself – rather than merely improving on a weak baseline.  This process is framed as a cyclical loop of beliefs, stories, actions, results, and identity, which must be made conscious through mental rehearsal, reframing, and the creation of alter‑egos or personal archetypes.  The approach emphasizes internal competition, the strategic use of labels, and the deliberate abandonment of past selves, often through symbolic acts such as “burning bridges.”  The philosophy is presented as a universal method for overcoming self‑deception, trauma, and external validation, with the ultimate goal of achieving a higher, purpose‑aligned identity.  
 
 ## Core ideas  
-- **Shadow twin competition**: Success comes from beating the strongest internal version of oneself, not from external comparison or self‑flattery. [S0074]  
-- **Identity Loop**: Beliefs → story → actions → results → identity; breaking this loop requires conscious reprogramming. [S0744]  
-- **Alter‑ego as tool**: Many already possess an alter‑ego; it can be activated to pursue goals, but must be aligned with a genuine purpose. [S0423]  
-- **Re‑programming through rehearsal**: Visualization, journaling, and affirmations overwrite the old self‑image. [S0413]  
-- **Label strategy**: Using a single, flexible label (e.g., “learner”) avoids constraining identity. [S0448]  
-- **Pain as catalyst**: Confronting trauma and pain is necessary for transformation, likened to a rocket burning fuel. [S0822]  
-- **Willpower limits**: Will alone cannot break the loop; conscious awareness of unconscious patterns is required. [S0744]  
+- **Shadow twin competition**: Success comes from beating the strongest internal version of oneself, not from external comparison or self‑flattery. ([S0074](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2025-12-26_13-04-42.txt))  
+- **Identity Loop**: Beliefs → story → actions → results → identity; breaking this loop requires conscious reprogramming. ([S0744](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-04-22_12-40-29.txt))  
+- **Alter‑ego as tool**: Many already possess an alter‑ego; it can be activated to pursue goals, but must be aligned with a genuine purpose. ([S0423](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-02-20_22-01-38.txt))  
+- **Re‑programming through rehearsal**: Visualization, journaling, and affirmations overwrite the old self‑image. ([S0413](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-02-17_10-48-23.txt))  
+- **Label strategy**: Using a single, flexible label (e.g., “learner”) avoids constraining identity. ([S0448](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-02-26_15-02-30.txt))  
+- **Pain as catalyst**: Confronting trauma and pain is necessary for transformation, likened to a rocket burning fuel. ([S0822](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-05-11_17-21-56.txt))  
+- **Willpower limits**: Will alone cannot break the loop; conscious awareness of unconscious patterns is required. ([S0744](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-04-22_12-40-29.txt))  
 - **Self‑deception**: Lying to oneself steals destiny; lying to others is less harmful. [S0635, S0879]  
 - **Warrior archetype**: Embodying a powerful persona is essential, yet risks losing inner child and creativity. [S0910, S0927]  
 
 ## Principles and mental models  
-- **Internal competition model**: Focus on beating yourself; rewards follow personal conquest. [S1019]  
-- **Shadow twin model**: The strongest version of oneself is the target for self‑improvement. [S0074]  
-- **Identity Loop model**: Recognize and interrupt the cycle of beliefs → story → actions → results → identity. [S0744]  
-- **Alter‑ego activation**: Use a personal “board of directors” of admired archetypes to guide decisions. [S1492]  
-- **Reframing model**: Constantly reframe socially accepted labels and internal narratives to shift identity. [S1470]  
-- **Mission‑based identity**: A clear mission locks in a new identity and prevents regression. [S1589]  
-- **Pain‑fuel model**: Pain, anger, and hatred are necessary fuels for breaking old identities. [S1557]  
+- **Internal competition model**: Focus on beating yourself; rewards follow personal conquest. ([S1019](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-07-09_09-02-22.txt))  
+- **Shadow twin model**: The strongest version of oneself is the target for self‑improvement. ([S0074](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2025-12-26_13-04-42.txt))  
+- **Identity Loop model**: Recognize and interrupt the cycle of beliefs → story → actions → results → identity. ([S0744](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-04-22_12-40-29.txt))  
+- **Alter‑ego activation**: Use a personal “board of directors” of admired archetypes to guide decisions. ([S1492](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2026-04-14_15-33-33.txt))  
+- **Reframing model**: Constantly reframe socially accepted labels and internal narratives to shift identity. ([S1470](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2026-04-01_10-18-20_1980.ogg.txt))  
+- **Mission‑based identity**: A clear mission locks in a new identity and prevents regression. ([S1589](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2026-05-27_07-29-24.txt))  
+- **Pain‑fuel model**: Pain, anger, and hatred are necessary fuels for breaking old identities. ([S1557](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2026-05-12_07-58-02.txt))  
 
 ## Recommended practices  
-- **Step‑by‑step routine**: Wake up, “go ghost,” create a vision, awaken an alter‑ego, act like a man possessed, and turn dreams into reality. [S0191]  
-- **Mental rehearsal**: Daily visualization, journaling, and affirmations to overwrite the current self‑image. [S0413]  
-- **Label simplification**: Adopt only the label “learner” to avoid constraints. [S0448]  
-- **Alter‑ego activation**: Identify or create an alter‑ego that embodies the desired traits and use it strategically. [S0423]  
-- **Reframing exercises**: Reframe socially accepted labels (e.g., “coward”) into action prompts. [S1470]  
-- **Mission setting**: Define a clear mission that anchors the new identity. [S1589]  
-- **Pain processing**: Confront past trauma and use it as fuel for transformation. [S0822]  
-- **Burn bridges**: Symbolically abandon the old identity to prevent regression. [S0985]  
+- **Step‑by‑step routine**: Wake up, “go ghost,” create a vision, awaken an alter‑ego, act like a man possessed, and turn dreams into reality. ([S0191](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-01-07_15-42-12.txt))  
+- **Mental rehearsal**: Daily visualization, journaling, and affirmations to overwrite the current self‑image. ([S0413](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-02-17_10-48-23.txt))  
+- **Label simplification**: Adopt only the label “learner” to avoid constraints. ([S0448](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-02-26_15-02-30.txt))  
+- **Alter‑ego activation**: Identify or create an alter‑ego that embodies the desired traits and use it strategically. ([S0423](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-02-20_22-01-38.txt))  
+- **Reframing exercises**: Reframe socially accepted labels (e.g., “coward”) into action prompts. ([S1470](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2026-04-01_10-18-20_1980.ogg.txt))  
+- **Mission setting**: Define a clear mission that anchors the new identity. ([S1589](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2026-05-27_07-29-24.txt))  
+- **Pain processing**: Confront past trauma and use it as fuel for transformation. ([S0822](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-05-11_17-21-56.txt))  
+- **Burn bridges**: Symbolically abandon the old identity to prevent regression. ([S0985](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-06-25_07-57-03.txt))  
 
 ## Examples and stories  
-- **Personal anecdote of “ghost mode”**: Musa describes a shift during COVID that turned him from a “slave” to a millionaire, illustrating self‑reinvention through altered perception. [S1280]  
-- **David Goggins model**: Goggins overcame abuse and self‑hatred, reinvented himself, and made his surname synonymous with achievement. [S1521]  
-- **Real‑estate broker story**: Musa's comment about fitness led a broker to run a marathon, suggesting influence through personal standards. [S1203]  
-- **Alter‑ego success**: Musa claims that creating an alter‑ego is one of the most powerful tools for achieving goals. [S1389]  
+- **Personal anecdote of “ghost mode”**: Musa describes a shift during COVID that turned him from a “slave” to a millionaire, illustrating self‑reinvention through altered perception. ([S1280](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2026-01-14_03-17-39_971.ogg.txt))  
+- **David Goggins model**: Goggins overcame abuse and self‑hatred, reinvented himself, and made his surname synonymous with achievement. ([S1521](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2026-04-19_13-16-46.txt))  
+- **Real‑estate broker story**: Musa's comment about fitness led a broker to run a marathon, suggesting influence through personal standards. ([S1203](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2025-12-31_03-02-17_749.ogg.txt))  
+- **Alter‑ego success**: Musa claims that creating an alter‑ego is one of the most powerful tools for achieving goals. ([S1389](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2026-02-20_12-53-52_1393.mp4.txt))  
 
 ## Tensions and contradictions  
 - **Warrior vs. inner child**: The warrior archetype can suppress creativity and the inner child, creating a tension between strength and flow. [S0910, S0927]  
 - **Self‑deception vs. authenticity**: While the philosophy condemns self‑deception, it also encourages abandoning the old self entirely, which may risk losing authentic aspects of identity. [S0635, S0879]  
-- **Willpower limits**: The claim that will alone cannot break the loop contradicts the emphasis on willpower as a key faculty. [S0744]  
-- **Pain as fuel vs. emotional suppression**: The approach promotes pain as necessary but also warns against suppressing negative emotions, creating a nuanced stance on emotional processing. [S1557]  
-- **External validation**: The philosophy downplays social validation yet acknowledges that external events (e.g., VIP interactions) can influence internal standards. [S1169]  
+- **Willpower limits**: The claim that will alone cannot break the loop contradicts the emphasis on willpower as a key faculty. ([S0744](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-04-22_12-40-29.txt))  
+- **Pain as fuel vs. emotional suppression**: The approach promotes pain as necessary but also warns against suppressing negative emotions, creating a nuanced stance on emotional processing. ([S1557](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2026-05-12_07-58-02.txt))  
+- **External validation**: The philosophy downplays social validation yet acknowledges that external events (e.g., VIP interactions) can influence internal standards. ([S1169](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2025-12-26_17-28-07_658.ogg.txt))  
 
 ## Caveats  
 - **Speculative claims**: Assertions that self‑reprogramming can overwrite reality or that pain is the sole catalyst for transformation are speculative and lack empirical support.  
@@ -62,194 +62,3 @@ The material centers on a philosophy of continual self‑reinvention that treats
 - **Gendered language**: The repeated use of warrior or killer archetypes may reinforce gender stereotypes; readers should critically assess such framing.  
 - **Safety of mental practices**: Intensive mental rehearsal and confrontation of trauma should be undertaken with professional guidance to avoid re‑traumatization.  
 - **Unverified efficacy**: Many techniques (alter‑ego activation, mission setting) are presented as universally effective without acknowledging individual differences or contextual factors.
-
-## Sources
-
-- [S0074](../data/texts/2025-12-26_13-04-42.txt)
-- [S0191](../data/texts/2026-01-07_15-42-12.txt)
-- [S0249](../data/texts/2026-01-22_17-11-57.txt)
-- [S0279](../data/texts/2026-01-28_00-48-55.txt)
-- [S0283](../data/texts/2026-01-28_04-35-23.txt)
-- [S0291](../data/texts/2026-01-30_01-53-35.txt)
-- [S0294](../data/texts/2026-01-30_05-44-06.txt)
-- [S0304](../data/texts/2026-02-01_04-00-35.txt)
-- [S0363](../data/texts/2026-02-10_10-08-58.txt)
-- [S0364](../data/texts/2026-02-10_10-16-02.txt)
-- [S0376](../data/texts/2026-02-12_10-14-38.txt)
-- [S0413](../data/texts/2026-02-17_10-48-23.txt)
-- [S0423](../data/texts/2026-02-20_22-01-38.txt)
-- [S0448](../data/texts/2026-02-26_15-02-30.txt)
-- [S0465](../data/texts/2026-03-01_08-16-39.txt)
-- [S0473](../data/texts/2026-03-03_09-23-35.txt)
-- [S0477](../data/texts/2026-03-03_18-26-01.txt)
-- [S0484](../data/texts/2026-03-09_08-35-51.txt)
-- [S0485](../data/texts/2026-03-09_08-36-03.txt)
-- [S0486](../data/texts/2026-03-09_08-36-26.txt)
-- [S0487](../data/texts/2026-03-09_08-36-39.txt)
-- [S0488](../data/texts/2026-03-09_08-36-51.txt)
-- [S0489](../data/texts/2026-03-09_09-31-15.txt)
-- [S0490](../data/texts/2026-03-09_12-47-42.txt)
-- [S0535](../data/texts/2026-03-21_18-53-57.txt)
-- [S0541](../data/texts/2026-03-23_05-27-43.txt)
-- [S0586](../data/texts/2026-03-27_23-02-58.txt)
-- [S0635](../data/texts/2026-04-04_10-57-04.txt)
-- [S0649](../data/texts/2026-04-06_16-47-40.txt)
-- [S0658](../data/texts/2026-04-07_10-45-28.txt)
-- [S0665](../data/texts/2026-04-07_15-56-04.txt)
-- [S0669](../data/texts/2026-04-09_17-20-30.txt)
-- [S0675](../data/texts/2026-04-13_14-39-36.txt)
-- [S0676](../data/texts/2026-04-13_15-10-35.txt)
-- [S0681](../data/texts/2026-04-14_03-43-36.txt)
-- [S0706](../data/texts/2026-04-15_23-45-17.txt)
-- [S0714](../data/texts/2026-04-17_21-16-11.txt)
-- [S0716](../data/texts/2026-04-18_13-15-15.txt)
-- [S0717](../data/texts/2026-04-18_13-33-50.txt)
-- [S0722](../data/texts/2026-04-19_12-50-19.txt)
-- [S0725](../data/texts/2026-04-19_23-53-58.txt)
-- [S0735](../data/texts/2026-04-20_16-07-52.txt)
-- [S0737](../data/texts/2026-04-20_20-20-55.txt)
-- [S0739](../data/texts/2026-04-21_12-55-19.txt)
-- [S0742](../data/texts/2026-04-21_16-19-01.txt)
-- [S0744](../data/texts/2026-04-22_12-40-29.txt)
-- [S0745](../data/texts/2026-04-22_12-46-35.txt)
-- [S0748](../data/texts/2026-04-22_21-14-32.txt)
-- [S0750](../data/texts/2026-04-23_10-32-44.txt)
-- [S0753](../data/texts/2026-04-23_15-36-18.txt)
-- [S0818](../data/texts/2026-05-08_22-36-18.txt)
-- [S0822](../data/texts/2026-05-11_17-21-56.txt)
-- [S0823](../data/texts/2026-05-12_07-57-52.txt)
-- [S0824](../data/texts/2026-05-12_12-54-36.txt)
-- [S0844](../data/texts/2026-05-19_00-15-00.txt)
-- [S0853](../data/texts/2026-05-21_05-58-51.txt)
-- [S0857](../data/texts/2026-05-21_13-08-07.txt)
-- [S0858](../data/texts/2026-05-22_09-01-44.txt)
-- [S0879](../data/texts/2026-05-27_17-26-58.txt)
-- [S0880](../data/texts/2026-05-27_19-16-58.txt)
-- [S0901](../data/texts/2026-05-31_15-20-52.txt)
-- [S0903](../data/texts/2026-06-01_05-51-02.txt)
-- [S0910](../data/texts/2026-06-03_03-33-51.txt)
-- [S0927](../data/texts/2026-06-08_12-21-19.txt)
-- [S0929](../data/texts/2026-06-08_19-42-14.txt)
-- [S0960](../data/texts/2026-06-15_10-49-53.txt)
-- [S0967](../data/texts/2026-06-16_15-00-44.txt)
-- [S0978](../data/texts/2026-06-23_11-17-35.txt)
-- [S0979](../data/texts/2026-06-23_11-22-53.txt)
-- [S0980](../data/texts/2026-06-23_15-40-44.txt)
-- [S0985](../data/texts/2026-06-25_07-57-03.txt)
-- [S0988](../data/texts/2026-06-26_01-29-39.txt)
-- [S1001](../data/texts/2026-06-30_19-16-43.txt)
-- [S1002](../data/texts/2026-07-01_04-54-57.txt)
-- [S1015](../data/texts/2026-07-07_03-58-36.txt)
-- [S1018](../data/texts/2026-07-08_18-46-21.txt)
-- [S1019](../data/texts/2026-07-09_09-02-22.txt)
-- [S1021](../data/texts/2026-07-10_14-13-29.txt)
-- [S1027](../data/texts/2026-07-13_07-35-14.txt)
-- [S1035](../data/texts/2026-07-15_12-31-37.txt)
-- [S1037](../data/texts/2026-07-16_05-07-14.txt)
-- [S1041](../data/texts/2026-07-17_05-19-50.txt)
-- [S1047](../data/texts/2026-07-19_17-41-16.txt)
-- [S1049](../data/texts/2026-07-20_04-42-58.txt)
-- [S1054](../data/texts/2026-07-23_14-28-58.txt)
-- [S1073](../data/texts/2026-07-31_13-12-29.txt)
-- [S1085](../data/texts/2026-08-06_12-30-11.txt)
-- [S1094](../data/texts/2026-08-12_20-07-07.txt)
-- [S1122](../data/transcripts/2025-12-18_13-29-39_530.mp4.txt)
-- [S1128](../data/transcripts/2025-12-23_07-45-03_572.ogg.txt)
-- [S1143](../data/transcripts/2025-12-24_16-03-30_602.mp4.txt)
-- [S1144](../data/transcripts/2025-12-25_09-42-16_605.ogg.txt)
-- [S1145](../data/transcripts/2025-12-25_09-48-39_606.ogg.txt)
-- [S1160](../data/transcripts/2025-12-26_10-07-49_639.ogg.txt)
-- [S1169](../data/transcripts/2025-12-26_17-28-07_658.ogg.txt)
-- [S1203](../data/transcripts/2025-12-31_03-02-17_749.ogg.txt)
-- [S1213](../data/transcripts/2026-01-01_13-57-03_779.ogg.txt)
-- [S1220](../data/transcripts/2026-01-02_08-04-20_795.ogg.txt)
-- [S1248](../data/transcripts/2026-01-04_06-24-01_871.ogg.txt)
-- [S1249](../data/transcripts/2026-01-04_09-59-38_875.ogg.txt)
-- [S1259](../data/transcripts/2026-01-05_09-31-35_897.mp4.txt)
-- [S1269](../data/transcripts/2026-01-09_02-19-05_939.ogg.txt)
-- [S1280](../data/transcripts/2026-01-14_03-17-39_971.ogg.txt)
-- [S1282](../data/transcripts/2026-01-14_05-34-06_977.mp4.txt)
-- [S1283](../data/transcripts/2026-01-14_05-34-07_978.mp4.txt)
-- [S1291](../data/transcripts/2026-01-18_12-58-52_1011.ogg.txt)
-- [S1302](../data/transcripts/2026-01-25_14-44-28_1066.mp4.txt)
-- [S1307](../data/transcripts/2026-01-27_12-05-27_1090.ogg.txt)
-- [S1308](../data/transcripts/2026-01-27_12-05-28_1093.mp4.txt)
-- [S1309](../data/transcripts/2026-01-28_01-26-17_1101.ogg.txt)
-- [S1311](../data/transcripts/2026-01-29_02-44-29_1120.ogg.txt)
-- [S1315](../data/transcripts/2026-02-01_06-54-39_1150.ogg.txt)
-- [S1316](../data/transcripts/2026-02-01_06-54-40_1151.mp4.txt)
-- [S1318](../data/transcripts/2026-02-02_03-50-18_1159.MP4.txt)
-- [S1324](../data/transcripts/2026-02-03_05-00-44_1177.MP4.txt)
-- [S1332](../data/transcripts/2026-02-07_08-09-48_1215.ogg.txt)
-- [S1334](../data/transcripts/2026-02-07_08-18-38_1219.mp4.txt)
-- [S1335](../data/transcripts/2026-02-07_17-16-46_1224.ogg.txt)
-- [S1336](../data/transcripts/2026-02-08_21-02-43_1235.ogg.txt)
-- [S1341](../data/transcripts/2026-02-10_10-09-05_1250.ogg.txt)
-- [S1342](../data/transcripts/2026-02-10_10-09-06_1252.mp4.txt)
-- [S1354](../data/transcripts/2026-02-12_09-08-10_1280.MP4.txt)
-- [S1355](../data/transcripts/2026-02-13_19-12-33_1285.ogg.txt)
-- [S1357](../data/transcripts/2026-02-14_13-41-59_1299.mp4.txt)
-- [S1360](../data/transcripts/2026-02-14_16-48-21_1302.ogg.txt)
-- [S1361](../data/transcripts/2026-02-14_20-21-01_1307.ogg.txt)
-- [S1365](../data/transcripts/2026-02-15_09-13-41_1316.ogg.txt)
-- [S1367](../data/transcripts/2026-02-15_09-13-43_1319.mp4.txt)
-- [S1371](../data/transcripts/2026-02-16_10-23-01_1341.ogg.txt)
-- [S1380](../data/transcripts/2026-02-17_10-48-24_1370.mp4.txt)
-- [S1387](../data/transcripts/2026-02-17_22-22-32_1386.ogg.txt)
-- [S1389](../data/transcripts/2026-02-20_12-53-52_1393.mp4.txt)
-- [S1392](../data/transcripts/2026-02-23_19-41-19_1409.MP4.txt)
-- [S1397](../data/transcripts/2026-02-24_19-02-03_1419.ogg.txt)
-- [S1414](../data/transcripts/2026-03-01_16-46-39_1484.MP4.txt)
-- [S1415](../data/transcripts/2026-03-03_10-31-31_1504.ogg.txt)
-- [S1418](../data/transcripts/2026-03-09_08-44-30_1526.ogg.txt)
-- [S1420](../data/transcripts/2026-03-09_22-59-00_1532.ogg.txt)
-- [S1422](../data/transcripts/2026-03-09_23-15-49_1536.ogg.txt)
-- [S1425](../data/transcripts/2026-03-10_23-56-05_1557.ogg.txt)
-- [S1429](../data/transcripts/2026-03-12_12-51-36_1583.ogg.txt)
-- [S1437](../data/transcripts/2026-03-24_06-47-33_1628.mp4.txt)
-- [S1443](../data/transcripts/2026-03-26_09-34-45_1687.ogg.txt)
-- [S1444](../data/transcripts/2026-03-26_09-34-46_1688.mp4.txt)
-- [S1445](../data/transcripts/2026-03-26_09-34-47_1689.mp4.txt)
-- [S1460](../data/transcripts/2026-03-27_19-04-24_1927.mp4.txt)
-- [S1470](../data/transcripts/2026-04-01_10-18-20_1980.ogg.txt)
-- [S1474](../data/transcripts/2026-04-03_06-47-37_1995.ogg.txt)
-- [S1486](../data/transcripts/2026-04-07_06-55-11_2050.MP4.txt)
-- [S1487](../data/transcripts/2026-04-07_06-55-12_2071.MP4.txt)
-- [S1488](../data/transcripts/2026-04-07_06-55-13_2082.MOV.txt)
-- [S1490](../data/transcripts/2026-04-14_10-13-11_2088.ogg.txt)
-- [S1491](../data/transcripts/2026-04-14_10-39-56_2091.ogg.txt)
-- [S1492](../data/transcripts/2026-04-14_15-33-33.txt)
-- [S1493](../data/transcripts/2026-04-14_15-43-11.txt)
-- [S1494](../data/transcripts/2026-04-14_16-09-56.txt)
-- [S1498](../data/transcripts/2026-04-15_08-55-03_117.oga.txt)
-- [S1501](../data/transcripts/2026-04-15_14-10-39.txt)
-- [S1502](../data/transcripts/2026-04-15_14-25-03.txt)
-- [S1511](../data/transcripts/2026-04-18_13-30-09.txt)
-- [S1520](../data/transcripts/2026-04-19_12-50-29.txt)
-- [S1521](../data/transcripts/2026-04-19_13-16-46.txt)
-- [S1525](../data/transcripts/2026-04-20_12-55-03.txt)
-- [S1531](../data/transcripts/2026-04-20_16-38-04.txt)
-- [S1532](../data/transcripts/2026-04-21_12-55-58.txt)
-- [S1537](../data/transcripts/2026-04-29_16-49-59.txt)
-- [S1543](../data/transcripts/2026-05-05_09-10-49.txt)
-- [S1557](../data/transcripts/2026-05-12_07-58-02.txt)
-- [S1569](../data/transcripts/2026-05-16_17-11-24.txt)
-- [S1571](../data/transcripts/2026-05-16_19-58-51.txt)
-- [S1577](../data/transcripts/2026-05-20_07-26-37.txt)
-- [S1583](../data/transcripts/2026-05-23_08-41-00.txt)
-- [S1589](../data/transcripts/2026-05-27_07-29-24.txt)
-- [S1592](../data/transcripts/2026-05-29_07-48-05.txt)
-- [S1595](../data/transcripts/2026-05-29_08-11-29.txt)
-- [S1607](../data/transcripts/2026-06-01_11-40-20.txt)
-- [S1611](../data/transcripts/2026-06-03_18-28-19.txt)
-- [S1614](../data/transcripts/2026-06-04_05-31-08.txt)
-- [S1622](../data/transcripts/2026-06-08_05-01-17.txt)
-- [S1624](../data/transcripts/2026-06-08_19-47-14.txt)
-- [S1628](../data/transcripts/2026-06-09_14-26-58.txt)
-- [S1630](../data/transcripts/2026-06-09_18-24-52.txt)
-- [S1651](../data/transcripts/voice_2026-06-24_06-22-22.txt)
-- [S1657](../data/transcripts/voice_2026-06-30_07-45-03.txt)
-- [S1660](../data/transcripts/voice_2026-07-10_14-21-21.txt)
-- [S1666](../data/transcripts/voice_2026-07-18_07-22-51.txt)
-- [S1671](../data/transcripts/voice_2026-08-01_14-31-58.txt)
-- [S1678](../data/transcripts/voice_2026-08-11_10-41-18.txt)
