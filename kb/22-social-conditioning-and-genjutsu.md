@@ -1,14 +1,13 @@
 ---
 topic_id: 22
-title: Social conditioning and “Genjutsu”
+title: 😵 Social conditioning and “Genjutsu”
 source_count: 58
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Social conditioning and “Genjutsu”
-
+# 😵 Social conditioning and “Genjutsu”
 ## Overview  
 Musa frames “Genjutsu” as a metaphor for pervasive social conditioning that obscures authentic perception. Drawing on concepts from hypnosis, mass persuasion, and cultural narratives, Musa argues that institutions, media, and influential figures continuously project illusory realities that keep individuals compliant and limit personal agency. The discourse blends personal anecdotes, critiques of education and technology, and prescriptive tactics for “breaking” the Genjutsu.
 

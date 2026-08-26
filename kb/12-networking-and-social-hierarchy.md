@@ -1,14 +1,13 @@
 ---
 topic_id: 12
-title: Networking and social hierarchy
+title: 🤝 Networking and social hierarchy
 source_count: 19
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Networking and social hierarchy
-
+# 🤝 Networking and social hierarchy
 ## Overview  
 Networking operates within implicit social hierarchies that shape who is heard, trusted, and granted opportunities. Musa repeatedly warns against “yes‑men” circles, pedestal‑building, and status‑induced deference, arguing that these dynamics both limit personal growth and reinforce power imbalances ([S0043](26-all-texts.md#s0043), [S0078](26-all-texts.md#s0078), [S0079](26-all-texts.md#s0079), [S1171](26-all-texts.md#s1171)). Effective networking, in Musa's view, requires strategic self‑presentation, genuine value provision, and an awareness of one’s relative position in the hierarchy ([S0599](26-all-texts.md#s0599), [S0601](26-all-texts.md#s0601), [S1355](26-all-texts.md#s1355), [S1468](26-all-texts.md#s1468)).
 

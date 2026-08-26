@@ -1,14 +1,13 @@
 ---
 topic_id: 19
-title: Marriage, women, and gender dynamics
+title: 💍 Marriage, women, and gender dynamics
 source_count: 34
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Marriage, women, and gender dynamics
-
+# 💍 Marriage, women, and gender dynamics
 ## Overview
 Marriage, women, and gender dynamics are framed in the cited sources as a complex interplay of power, attraction, and social expectations. The material presents a range of viewpoints, from strategic advice on partner selection to critiques of gendered behavior and power structures.
 

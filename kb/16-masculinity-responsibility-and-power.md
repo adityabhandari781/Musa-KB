@@ -1,14 +1,13 @@
 ---
 topic_id: 16
-title: Masculinity, responsibility, and power
+title: 🦁 Masculinity, responsibility, and power
 source_count: 64
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Masculinity, responsibility, and power
-
+# 🦁 Masculinity, responsibility, and power
 ## Overview
 - Musa frames masculinity around reclaiming a "wild," undomesticated nature against societal pressures that seek to tame men [S0020, S0021, S0565].
 - Manhood is defined by a balance of raw power, intellectual development, and responsibility, rejecting both fragile intellectualism and unrefined savagery [S0041, S0898].

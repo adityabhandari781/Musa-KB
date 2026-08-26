@@ -1,14 +1,13 @@
 ---
 topic_id: 17
-title: Brotherhood, friendship, and loyalty
+title: 👊 Brotherhood, friendship, and loyalty
 source_count: 50
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Brotherhood, friendship, and loyalty
-
+# 👊 Brotherhood, friendship, and loyalty
 ## Overview  
 Brotherhood, friendship, and loyalty are presented as central pillars of Musa's worldview.  Musa frames these relationships as essential for personal growth, survival, and success, while also delineating strict criteria for who qualifies as a true “brother” or friend.  The narrative emphasizes mutual support, shared purpose, and a protective, mission‑oriented mindset, often at the expense of broader social norms or emotional nuance.
 

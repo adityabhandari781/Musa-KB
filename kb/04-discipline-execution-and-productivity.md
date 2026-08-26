@@ -1,14 +1,13 @@
 ---
 topic_id: 4
-title: Discipline, execution, and productivity
+title: ⚙️ Discipline, execution, and productivity
 source_count: 68
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Discipline, execution, and productivity
-
+# ⚙️ Discipline, execution, and productivity
 ## Overview
 Discipline, execution, and productivity are framed as interlinked practices that rely on habit formation, systems, and mindset. Musa emphasizes consistency over perfection, the importance of actionable systems, and the role of self‑discipline as a tool for maintaining focus.
 

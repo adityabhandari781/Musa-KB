@@ -1,14 +1,13 @@
 ---
 topic_id: 7
-title: Confidence, boldness, and action
+title: ⚡ Confidence, boldness, and action
 source_count: 101
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Confidence, boldness, and action
-
+# ⚡ Confidence, boldness, and action
 ## Overview  
 Musa repeatedly links confidence, boldness, and immediate action to personal power, respect, and success. Central to the narrative is the idea that hesitation invites domination, while decisive, aggressive moves generate emotion, deter opponents, and produce results. Boldness is framed as both a spiritual inheritance and a practical strategy for navigating risk, criticism, and failure.
 

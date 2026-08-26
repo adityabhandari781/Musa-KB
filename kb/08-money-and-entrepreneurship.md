@@ -1,14 +1,13 @@
 ---
 topic_id: 8
-title: Money and entrepreneurship
+title: 💰 Money and entrepreneurship
 source_count: 113
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Money and entrepreneurship
-
+# 💰 Money and entrepreneurship
 ## Overview  
 Musa presents a self‑styled framework for generating wealth that blends personal mindset, strategic positioning, and a stark view of “brokers” versus “free agents.” Central to the narrative is the belief that conventional advice is often a façade for profit‑driven influencers, and that true financial independence arises from aligning with one’s innate strengths, mastering sales, and avoiding the “golden cage” of entrepreneurship ([S1116](26-all-texts.md#s1116), [S1246](26-all-texts.md#s1246), [S1243](26-all-texts.md#s1243)).
 

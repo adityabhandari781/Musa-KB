@@ -1,14 +1,13 @@
 ---
 topic_id: 13
-title: Fitness and physical capability
+title: 🏋️ Fitness and physical capability
 source_count: 75
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Fitness and physical capability
-
+# 🏋️ Fitness and physical capability
 ## Overview  
 Musa's discourse on fitness and physical capability is built around extreme, high‑intensity challenges (e.g., 100 push‑ups, 100 burpees, heavy lifts) and a philosophy that frames relentless training as a means of unlocking “animal” energy, confronting danger, and maintaining a constant “default mode of attack.” These narratives blend personal anecdotes, self‑styled challenges, and occasional references to broader concepts such as cross‑training, caloric needs, and the psychological benefits of physical stress.  
 

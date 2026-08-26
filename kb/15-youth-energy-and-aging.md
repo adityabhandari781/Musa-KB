@@ -1,14 +1,13 @@
 ---
 topic_id: 15
-title: Youth, energy, and aging
+title: 🌱 Youth, energy, and aging
 source_count: 50
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Youth, energy, and aging
-
+# 🌱 Youth, energy, and aging
 ## Overview  
 Youth is portrayed as a finite resource that fuels energy, risk‑taking, and creative output. As people age, physical stamina, recovery speed, and tolerance for uncertainty decline, leading to a shift toward reflection and reduced intensity in daily life. The material emphasizes that the way one frames and manages energy—through identity, habits, and mindset—can mitigate age‑related losses and sustain vitality longer.
 

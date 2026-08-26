@@ -1,14 +1,13 @@
 ---
 topic_id: 9
-title: YouTube and content businesses
+title: ▶️ YouTube and content businesses
 source_count: 112
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# YouTube and content businesses
-
+# ▶️ YouTube and content businesses
 ## Overview
 Musa's discourse on YouTube and content businesses blends self‑promotion, operational tactics, and philosophical framing of “underdog” success. Central themes include leveraging giveaways, “faceless” channels, rigorous output schedules, and positioning the platform as a vehicle for personal freedom and influence. The narrative is punctuated by claims about audience psychology, monetization pathways, and Musa's own evolution from “novice” to “non‑amateur” status.
 

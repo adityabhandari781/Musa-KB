@@ -1,14 +1,13 @@
 ---
 topic_id: 24
-title: Community and alternative living
+title: 🏡 Community and alternative living
 source_count: 101
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Community and alternative living
-
+# 🏡 Community and alternative living
 ## Overview  
 The “Far From Weak” (FFW) movement is presented by its Musa as a tightly‑bound community that seeks to escape perceived governmental and algorithmic domination by establishing a physical enclave—often described as a “village” or tax‑haven—where members can live, raise families, and maintain a brotherhood of “real” individuals ([S0259](26-all-texts.md#s0259), [S0285](26-all-texts.md#s0285), [S0376](26-all-texts.md#s0376), [S0410](26-all-texts.md#s0410), [S0419](26-all-texts.md#s0419), [S0420](26-all-texts.md#s0420), [S0430](26-all-texts.md#s0430), [S0459](26-all-texts.md#s0459), [S0461](26-all-texts.md#s0461), [S0483](26-all-texts.md#s0483), [S0570](26-all-texts.md#s0570), [S0579](26-all-texts.md#s0579), [S0594](26-all-texts.md#s0594), [S0608](26-all-texts.md#s0608), [S0670](26-all-texts.md#s0670), [S0687](26-all-texts.md#s0687), [S0689](26-all-texts.md#s0689), [S0816](26-all-texts.md#s0816), [S0819](26-all-texts.md#s0819), [S0827](26-all-texts.md#s0827), [S0897](26-all-texts.md#s0897), [S0953](26-all-texts.md#s0953), [S0993](26-all-texts.md#s0993), [S0994](26-all-texts.md#s0994), [S1056](26-all-texts.md#s1056)). The narrative intertwines anti‑algorithmic rhetoric, exclusionary identity language, and promises of economic autonomy, positioning the community as both a cultural counter‑culture and a practical refuge from “digital enslavement.”  
 

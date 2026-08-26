@@ -1,14 +1,13 @@
 ---
 topic_id: 3
-title: Vision, purpose, and goal-setting
+title: 👁️ Vision, purpose, and goal-setting
 source_count: 98
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Vision, purpose, and goal-setting
-
+# 👁️ Vision, purpose, and goal-setting
 ## Overview  
 The material presents vision, purpose, and goal‑setting as a spiritual‑psychological system that promises immunity to temptation, anxiety elimination, and extraordinary achievement. Central to the claim is that a “definite purpose” functions as a shield against the Devil and as the engine that drives relentless action ([S0025](26-all-texts.md#s0025), [S0975](26-all-texts.md#s0975)). Vision is framed as a multi‑layered compass that must be vivid, sensory, and broken into short‑term horizons (12‑week cycles) to generate urgency and “hyper‑realistic” habit execution ([S0155](26-all-texts.md#s0155), [S1175](26-all-texts.md#s1175), [S1176](26-all-texts.md#s1176), [S1261](26-all-texts.md#s1261)). Musa mixes personal anecdotes, motivational rhetoric, and references to self‑help literature (e.g., Napoleon Hill) while offering concrete planning methods such as the “one‑three‑five” breakdown and the Demartini values hierarchy ([S0882](26-all-texts.md#s0882), [S1141](26-all-texts.md#s1141)).
 

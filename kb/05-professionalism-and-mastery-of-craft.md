@@ -1,14 +1,13 @@
 ---
 topic_id: 5
-title: Professionalism and mastery of craft
+title: 🕴️ Professionalism and mastery of craft
 source_count: 28
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Professionalism and mastery of craft
-
+# 🕴️ Professionalism and mastery of craft
 ## Overview  
 Professionalism and mastery of craft are presented as intertwined attitudes that shape how individuals show up in any field of work. Musa distinguishes a “professional” identity—defined by self‑imposed standards, relentless attention to quality, and a commitment to continual improvement—from “amateurism,” which is framed as an “ambition killer” that manifests in avoidance, fear, and self‑sabotage ([S0066](26-all-texts.md#s0066), [S0067](26-all-texts.md#s0067), [S1551](26-all-texts.md#s1551)). Mastery is described as the product of obsessive, deliberate practice coupled with feedback loops, while the value of all ethical work is affirmed regardless of its perceived status ([S0437](26-all-texts.md#s0437), [S1395](26-all-texts.md#s1395)).
 

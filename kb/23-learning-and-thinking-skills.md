@@ -1,14 +1,13 @@
 ---
 topic_id: 23
-title: Learning and thinking skills
+title: 📚 Learning and thinking skills
 source_count: 36
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Learning and thinking skills
-
+# 📚 Learning and thinking skills
 ## Overview
 Musa presents a framework for accelerating learning and thinking that blends mindset tricks, meta‑skills, and unconventional habits. Central to the message is the idea that inspiration, skill stacking, and self‑directed “higher education” are more powerful than formal schooling or passive content consumption. By actively seeking inspiration, cultivating a suite of complementary abilities, and using role‑model archetypes as a personal “board of directors,” individuals can transform their learning velocity and influence both themselves and others.([S0115](26-all-texts.md#s0115), [S1207](26-all-texts.md#s1207), [S0427](26-all-texts.md#s0427), [S1489](26-all-texts.md#s1489))
 

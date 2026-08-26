@@ -1,14 +1,13 @@
 ---
 topic_id: 21
-title: Technology, algorithms, and attention
+title: 📱 Technology, algorithms, and attention
 source_count: 51
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
-# Technology, algorithms, and attention
-
+# 📱 Technology, algorithms, and attention
 ## Overview
 Technology and algorithms shape attention by filtering content, rewarding engagement, and creating addictive loops. Creators argue that understanding these mechanisms can help reclaim focus, but the evidence is largely anecdotal and speculative.
 
