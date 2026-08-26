@@ -1,7 +1,7 @@
 """Transcribe incoming audio/video with Groq Whisper Large V3 Turbo.
 
-Successful transcripts are published to incoming/transcripts. Their associated
-media remains in incoming/media until the PowerShell ingestor moves both into
+Successful transcripts are published to data/incoming/transcripts. Their associated
+media remains in data/incoming/media until the PowerShell ingestor moves both into
 the durable data/ archive together.
 """
 
@@ -24,8 +24,8 @@ import imageio_ffmpeg
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(REPO_ROOT / ".env")
-INCOMING_MEDIA_DIR = REPO_ROOT / "incoming" / "media"
-TRANSCRIPTS_DIR = REPO_ROOT / "incoming" / "transcripts"
+INCOMING_MEDIA_DIR = REPO_ROOT/ "data" / "incoming" / "media"
+TRANSCRIPTS_DIR = REPO_ROOT/ "data" / "incoming" / "transcripts"
 ARCHIVED_MEDIA_DIR = REPO_ROOT / "data" / "media"
 MEDIA_INDEX_PATH = TRANSCRIPTS_DIR / "media-index.jsonl"
 API_URL = "https://api.groq.com/openai/v1/audio/transcriptions"
@@ -63,7 +63,7 @@ def next_transcript_path(media_path: Path, indexed: dict[str, dict]) -> Path:
     while True:
         filename = f"{base}{'' if suffix == 0 else f'_{suffix}'}.txt"
         candidate = TRANSCRIPTS_DIR / filename
-        if f"incoming/transcripts/{filename}" not in occupied and not candidate.exists():
+        if f"data/incoming/transcripts/{filename}" not in occupied and not candidate.exists():
             return candidate
         suffix += 1
 
@@ -182,17 +182,21 @@ def transcribe(media_path: Path, keys: list[tuple[str, str]]) -> tuple[str, str]
 
 
 def main() -> None:
+    files = target_media()
+    if not files:
+        print(f"No incoming audio/video files. Archived {archive_nontranscribable_media()} non-transcribable media file(s).")
+        return
     TRANSCRIPTS_DIR.mkdir(parents=True, exist_ok=True)
     indexed, keys = read_index(), groq_keys()
-    pending = [path for path in target_media() if f"incoming/media/{path.name}" not in indexed]
+    pending = [path for path in files if f"data/incoming/media/{path.name}" not in indexed]
     failures = []
     for number, media_path in enumerate(pending, start=1):
-        media_relative_path = f"incoming/media/{media_path.name}"
+        media_relative_path = f"data/incoming/media/{media_path.name}"
         target = next_transcript_path(media_path, indexed)
         try:
             text, key_name = transcribe(media_path, keys)
             target.write_text(text + "\n", encoding="utf-8")
-            row = {"media_relative_path": media_relative_path, "transcript_relative_path": f"incoming/transcripts/{target.name}", "model": MODEL, "api_key_name": key_name, "created_at": datetime.now(timezone.utc).isoformat()}
+            row = {"media_relative_path": media_relative_path, "transcript_relative_path": f"data/incoming/transcripts/{target.name}", "model": MODEL, "api_key_name": key_name, "created_at": datetime.now(timezone.utc).isoformat()}
             append_index(row)
             indexed[media_relative_path] = row
         except Exception as exc:

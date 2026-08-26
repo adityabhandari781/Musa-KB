@@ -1,6 +1,6 @@
 """Fetch new Telegram messages into the repository's incoming queues.
 
-Files are staged under incoming/temp and become visible to later pipeline stages
+Files are staged under data/incoming/temp and become visible to later pipeline stages
 only after every configured channel has finished downloading successfully.
 """
 
@@ -20,16 +20,17 @@ load_dotenv(REPO_ROOT / ".env")
 
 IST = timezone(timedelta(hours=5, minutes=30))
 CHANNELS = ["@MusaRAW", "@UnchainedReality"]
-INCOMING_DIR = REPO_ROOT / "incoming"
+INCOMING_DIR = REPO_ROOT / "data" / "incoming"
 TEMP_DIR = INCOMING_DIR / "temp"
 TEMP_MEDIA_DIR = TEMP_DIR / "media"
 TEMP_TEXTS_DIR = TEMP_DIR / "texts"
 MEDIA_DIR = INCOMING_DIR / "media"
 TEXT_DIR = INCOMING_DIR / "texts"
-STATE_DIR = REPO_ROOT / "build" / "useful"
 # Telethon stores telegram_export.session beside the repository files, as requested.
 SESSION = str(REPO_ROOT / "telegram_export")
-LAST_TIMESTAMP_FILE = STATE_DIR / "telegram-last-timestamp.txt"
+# Keep using the existing export cursor so moving the incoming queue does not
+# cause a first-run re-download of the historical channel archive.
+LAST_TIMESTAMP_FILE = REPO_ROOT / "data" / "last_timestamp.txt"
 TIMESTAMP_FORMAT = "%Y-%m-%d_%H-%M-%S"
 LIMIT = None
 START_DATE = "14-04-2026"
@@ -138,7 +139,6 @@ async def export_channel(client: TelegramClient, channel: str, start: datetime, 
 async def main_async() -> None:
     api_id, api_hash = get_api_credentials()
     start = get_start_datetime()
-    STATE_DIR.mkdir(parents=True, exist_ok=True)
     reset_directory(TEMP_MEDIA_DIR)
     reset_directory(TEMP_TEXTS_DIR)
     media_counts: dict[str, int] = {}

@@ -49,15 +49,20 @@ function Get-RecordedAt {
 
 function Get-OldestIncomingFile {
     param([Parameter(Mandatory)]$IncomingRoots)
-    $candidates = @($IncomingRoots | ForEach-Object {
+    $candidates = @(
+        $IncomingRoots | ForEach-Object {
         $root = $_
-        Get-ChildItem -LiteralPath $root.path -File -Filter '*.txt' | ForEach-Object {
-        $match = [regex]::Match($_.Name, '(?<date>\d{4}-\d{2}-\d{2})_(?<time>\d{2}-\d{2}-\d{2})(?:_\d+)?')
-        $sortTime = if ($match.Success) {
-            [datetime]::ParseExact("$($match.Groups['date'].Value) $($match.Groups['time'].Value)", 'yyyy-MM-dd HH-mm-ss', [Globalization.CultureInfo]::InvariantCulture, [Globalization.DateTimeStyles]::None)
-        } else { $_.LastWriteTime }
-        [pscustomobject]@{ File = $_; SortTime = $sortTime; SourceType = $root.source_type; DestinationRoot = $root.destination_root }
-    }})
+        if (Test-Path -LiteralPath $root.path -PathType Container) {
+            Get-ChildItem -LiteralPath $root.path -File -Filter '*.txt' | ForEach-Object {
+                $match = [regex]::Match($_.Name, '(?<date>\d{4}-\d{2}-\d{2})_(?<time>\d{2}-\d{2}-\d{2})(?:_\d+)?')
+                $sortTime = if ($match.Success) {
+                    [datetime]::ParseExact("$($match.Groups['date'].Value) $($match.Groups['time'].Value)", 'yyyy-MM-dd HH-mm-ss', [Globalization.CultureInfo]::InvariantCulture, [Globalization.DateTimeStyles]::None)
+                } else { $_.LastWriteTime }
+                [pscustomobject]@{ File = $_; SortTime = $sortTime; SourceType = $root.source_type; DestinationRoot = $root.destination_root }
+            }
+        }
+    }
+    )
     $oldest = $candidates | Sort-Object SortTime, @{ Expression = { $_.File.Name }; Ascending = $true }, SourceType | Select-Object -First 1
     if ($null -eq $oldest) { return $null }
     return $oldest
@@ -274,7 +279,7 @@ function Write-TopicDocument {
 }
 
 $repo = (Resolve-Path -LiteralPath $RepositoryRoot).Path
-$incomingPath = Join-Path $repo 'incoming'
+$incomingPath = Join-Path $repo 'data\incoming'
 $incomingTextsPath = Join-Path $incomingPath 'texts'
 $incomingTranscriptsPath = Join-Path $incomingPath 'transcripts'
 $incomingMediaPath = Join-Path $incomingPath 'media'
@@ -297,7 +302,6 @@ $models = @('openai/gpt-oss-120b', 'openai/gpt-oss-20b', 'qwen/qwen3.6-27b')
 foreach ($path in @($textsPath, $transcriptsPath, $mediaPath, $kbPath, $longtermPath, $usefulPath, $sourcePath, $passagePath, $mapPath, $envPath)) {
     if (-not (Test-Path -LiteralPath $path)) { throw "Required input is missing: $path" }
 }
-foreach ($path in @($incomingTextsPath, $incomingTranscriptsPath, $incomingMediaPath)) { $null = New-Item -ItemType Directory -Path $path -Force }
 $keyEntries = @($apiKeyNames | ForEach-Object {
     $key = Get-EnvValue -Path $envPath -Name $_
     if ([string]::IsNullOrWhiteSpace($key)) { throw "Missing $_ in .env." }
@@ -314,14 +318,14 @@ if (Test-Path -LiteralPath $statePath) {
         [pscustomobject]@{ path=$incomingTranscriptsPath; source_type='transcript'; destination_root=$transcriptsPath }
     )
     $incoming = Get-OldestIncomingFile -IncomingRoots $incomingRoots
-    if ($null -eq $incoming) { Write-Output 'No .txt files are waiting in incoming/texts or incoming/transcripts.'; exit 0 }
+    if ($null -eq $incoming) { Write-Output 'No .txt files are waiting in data/incoming/texts or data/incoming/transcripts.'; exit 0 }
     $destination = Join-Path $incoming.DestinationRoot $incoming.File.Name
     if (Test-Path -LiteralPath $destination) { throw "Cannot move $($incoming.File.Name): destination already contains that file: $destination" }
     $state = [ordered]@{
         schema_version = 1
         filename = $incoming.File.Name
         source_type = $incoming.SourceType
-        incoming_relative_path = "incoming/$($incoming.SourceType)s/$($incoming.File.Name)"
+        incoming_relative_path = "data/incoming/$($incoming.SourceType)s/$($incoming.File.Name)"
         incoming_path = $incoming.File.FullName
         relative_path = "data/$($incoming.SourceType)s/$($incoming.File.Name)"
         destination_path = $destination

@@ -16,8 +16,8 @@ import whisper.audio
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-INCOMING_MEDIA_DIR = REPO_ROOT / "incoming" / "media"
-TRANSCRIPTS_DIR = REPO_ROOT / "incoming" / "transcripts"
+INCOMING_MEDIA_DIR = REPO_ROOT / "data" / "incoming" / "media"
+TRANSCRIPTS_DIR = REPO_ROOT / "data" / "incoming" / "transcripts"
 ARCHIVED_MEDIA_DIR = REPO_ROOT / "data" / "media"
 MEDIA_INDEX_PATH = TRANSCRIPTS_DIR / "media-index.jsonl"
 TARGET_PREFIXES = ("audio", "video", "video_note", "voice")
@@ -65,7 +65,7 @@ def next_transcript_path(media_path: Path, indexed: dict[str, dict]) -> Path:
     occupied = {row["transcript_relative_path"] for row in indexed.values()}
     while True:
         filename = f"{base}{'' if suffix == 0 else f'_{suffix}'}.txt"
-        relative = f"incoming/transcripts/{filename}"
+        relative = f"data/incoming/transcripts/{filename}"
         candidate = TRANSCRIPTS_DIR / filename
         if relative not in occupied and not candidate.exists():
             return candidate
@@ -98,9 +98,13 @@ def archive_nontranscribable_media() -> int:
 
 def main() -> None:
     patch_whisper_ffmpeg()
+    files = target_media()
+    if not files:
+        print(f"No incoming audio/video files. Archived {archive_nontranscribable_media()} non-transcribable media file(s).")
+        return
     TRANSCRIPTS_DIR.mkdir(parents=True, exist_ok=True)
-    files, indexed = target_media(), read_index()
-    pending = [path for path in files if f"incoming/media/{path.name}" not in indexed or FORCE]
+    indexed = read_index()
+    pending = [path for path in files if f"data/incoming/media/{path.name}" not in indexed or FORCE]
     if not pending:
         print(f"No untranscribed incoming audio/video files. Archived {archive_nontranscribable_media()} non-transcribable media file(s).")
         return
@@ -109,20 +113,20 @@ def main() -> None:
     model = whisper.load_model(MODEL)
     failures = []
     for number, media_path in enumerate(pending, start=1):
-        media_relative_path = f"incoming/media/{media_path.name}"
+        media_relative_path = f"data/incoming/media/{media_path.name}"
         target = next_transcript_path(media_path, indexed)
         print(f"[{number}/{len(pending)}] Transcribing {media_path.name} -> {target.name}")
         try:
             result = model.transcribe(str(media_path), language=LANGUAGE, fp16=use_fp16)
             target.write_text(((result.get("text") or "").strip() + "\n"), encoding="utf-8")
-            row = {"media_relative_path": media_relative_path, "transcript_relative_path": f"incoming/transcripts/{target.name}", "created_at": datetime.now(timezone.utc).isoformat()}
+            row = {"media_relative_path": media_relative_path, "transcript_relative_path": f"data/incoming/transcripts/{target.name}", "created_at": datetime.now(timezone.utc).isoformat()}
             append_index(row)
             indexed[media_relative_path] = row
         except Exception as exc:
             failures.append((media_path, exc))
             print(f"    Failed: {exc}")
     archived = archive_nontranscribable_media()
-    print(f"Transcription complete: {len(pending) - len(failures)} succeeded, {len(failures)} failed. Archived {archived} non-transcribable media file(s); transcribed media remain in incoming/media until their transcripts are ingested.")
+    print(f"Transcription complete: {len(pending) - len(failures)} succeeded, {len(failures)} failed. Archived {archived} non-transcribable media file(s); transcribed media remain in data/incoming/media until their transcripts are ingested.")
     if failures:
         raise SystemExit(1)
 
