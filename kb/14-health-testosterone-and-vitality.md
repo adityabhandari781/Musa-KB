@@ -2,7 +2,7 @@
 topic_id: 14
 title: Health, testosterone, and vitality
 status: synthesized
-source_count: 30
+source_count: 31
 source_scope:
   - data/texts
   - data/transcripts
@@ -46,6 +46,7 @@ Musa presents a personal framework linking mental purpose, lifestyle “discomfo
 - Musa reports personal testosterone readings exceeding 900 ng/dL while averaging sleep scores below 60 %, attributing this to his mission‑driven mindset and minimal supplement use ([S1124](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2025-12-19_15-22-23_556.ogg.txt), [S0035](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2025-12-19_15-18-42.txt), [S1497](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2026-04-15_08-40-39_115.oga.txt), [S1501](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2026-04-15_14-10-39.txt)).  
 - He describes “horse‑cock testosterone” and “animal maxing” routines (unspecified physical or behavioral protocols) that he claims can triple natural testosterone, contrasting these with conventional “looks‑maxing” tactics he deems ineffective ([S1258](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2026-01-05_09-31-34_895.mp4.txt), [S0248](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-01-22_16-45-24.txt)).  
 - A cautionary anecdote notes that only extreme psychological trauma can suppress reproductive drive in mammals, reinforcing his view of an innate, resilient testosterone system ([S1626](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2026-06-09_14-06-50.txt)).  
+- A father caring for his daughter during a contagious infection contracted the illness, losing 7 kg and experiencing appetite loss, but expects recovery ([S1679](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2026-08-22_20-25-49.txt)).
 
 ## Tensions and contradictions  
 - **Sleep vs. testosterone:** Scientific consensus links chronic sleep deprivation to reduced testosterone; Musa's claim that purpose can fully offset this effect conflicts with established endocrinology ([S1124](https://github.com/adityabhandari781/Musa-KB/blob/master/data/transcripts/2025-12-19_15-22-23_556.ogg.txt), [S0035](https://github.com/adityabhandari781/Musa-KB/blob/master/data/texts/2025-12-19_15-18-42.txt)).  
@@ -59,7 +60,4 @@ Musa presents a personal framework linking mental purpose, lifestyle “discomfo
 - **Safety of hygiene hacks:** Oil pulling with baking soda and topical coconut‑oil/baking‑soda applications are not clinically proven to affect systemic hormone levels; improper use may cause mucosal irritation.  
 - **Discomfort training risks:** Ice baths and extreme workouts can pose cardiovascular or hypothermic risks for untrained individuals; gradual acclimation and medical clearance are advisable.  
 - **Placebo reliance:** Relying on expectation alone without monitoring hormonal status may lead to misinterpretation of health status.  
-- **Genetic editing outlook:** Current gene‑editing technologies are experimental; any claims about future testosterone manipulation remain speculative and should not be acted upon.  
-
----  
-All statements are grounded in the cited Musa‑provided evidence notes.
+- **Genetic editing outlook:** Current gene‑editing technologies are experimental; any claims about future testosterone manipulation remain speculative and should not be acted upon.

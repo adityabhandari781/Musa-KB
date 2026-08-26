@@ -1,13 +1,13 @@
 {
-    "generated_at":  "2026-08-26T12:09:34.7036249Z",
+    "generated_at":  "2026-08-26T14:16:17.5779821Z",
     "status":  "passed",
     "source_manifest_summary":  {
-                                    "canonical_sources":  1651,
-                                    "canonical_sources_used":  1651,
+                                    "canonical_sources":  1655,
+                                    "canonical_sources_used":  1655,
                                     "excluded_empty_or_duplicate_copies":  27
                                 },
     "passage_coverage":  {
-                             "total_primary_passages":  2956,
+                             "total_primary_passages":  2960,
                              "total_secondary_assignments":  1025,
                              "by_topic":  [
                                               {
@@ -53,9 +53,9 @@
                                               {
                                                   "topic_id":  6,
                                                   "topic_title":  "Resilience and adversity",
-                                                  "primary_passages":  175,
+                                                  "primary_passages":  178,
                                                   "secondary_passages":  79,
-                                                  "distinct_sources":  143,
+                                                  "distinct_sources":  146,
                                                   "low_confidence_passages":  3
                                               },
                                               {
@@ -117,9 +117,9 @@
                                               {
                                                   "topic_id":  14,
                                                   "topic_title":  "Health, testosterone, and vitality",
-                                                  "primary_passages":  47,
+                                                  "primary_passages":  48,
                                                   "secondary_passages":  31,
-                                                  "distinct_sources":  30,
+                                                  "distinct_sources":  31,
                                                   "low_confidence_passages":  0
                                               },
                                               {
@@ -290,21 +290,21 @@
                           "file":  "19-marriage-women-and-gender-dynamics.md",
                           "source_links":  29,
                           "inline_citations":  8,
-                          "bytes":  6060
+                          "bytes":  6108
                       },
                       {
                           "topic_id":  14,
                           "file":  "14-health-testosterone-and-vitality.md",
-                          "source_links":  29,
-                          "inline_citations":  20,
-                          "bytes":  11009
+                          "source_links":  30,
+                          "inline_citations":  21,
+                          "bytes":  11237
                       },
                       {
                           "topic_id":  15,
                           "file":  "15-youth-energy-and-aging.md",
                           "source_links":  9,
                           "inline_citations":  5,
-                          "bytes":  6278
+                          "bytes":  6331
                       },
                       {
                           "topic_id":  16,
@@ -332,7 +332,7 @@
                           "file":  "25-non-substantive-material.md",
                           "source_links":  8,
                           "inline_citations":  4,
-                          "bytes":  3369
+                          "bytes":  3367
                       },
                       {
                           "topic_id":  20,
@@ -379,9 +379,9 @@
                       {
                           "topic_id":  6,
                           "file":  "06-resilience-and-adversity.md",
-                          "source_links":  55,
-                          "inline_citations":  32,
-                          "bytes":  12365
+                          "source_links":  60,
+                          "inline_citations":  35,
+                          "bytes":  13770
                       },
                       {
                           "topic_id":  1,
