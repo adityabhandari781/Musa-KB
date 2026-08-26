@@ -23,7 +23,7 @@ function Get-TopicCatalog {
         }
     }
     if ($catalog.Count -ne 25 -or @(1..25 | Where-Object { -not $catalog.ContainsKey($_) }).Count -gt 0) {
-        throw 'Could not derive all 25 topic titles from data/topics.md.'
+        throw 'Could not derive all 25 topic titles from artifacts/topics.md.'
     }
     return $catalog
 }
@@ -33,7 +33,7 @@ $build = Join-Path $repo 'build'
 $passagePath = Join-Path $build 'passage-manifest.jsonl'
 $reviewPath = Join-Path $build 'llm-topic-review-checkpoint.jsonl'
 $sourcePath = Join-Path $build 'source-manifest.jsonl'
-$topicPath = Join-Path $repo 'data\topics.md'
+$topicPath = Join-Path $repo 'artifacts\topics.md'
 $outputPath = Join-Path $build 'kb-source-map.jsonl'
 $summaryPath = Join-Path $build 'kb-source-map-summary.json'
 

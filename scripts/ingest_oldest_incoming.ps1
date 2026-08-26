@@ -417,7 +417,7 @@ if ($state.stage -eq 'duplicate_skipped') {
 }
 
 if ($state.stage -eq 'source_recorded') {
-    $topics = Get-Content -LiteralPath (Join-Path $repo 'data\topics.md') -Raw -Encoding UTF8
+    $topics = Get-Content -LiteralPath (Join-Path $repo 'artifacts\topics.md') -Raw -Encoding UTF8
     $classificationSystem = @'
 Classify the supplied text into exactly one of the 25 supplied KB topics. Return JSON only: {"primary_topic_id":1,"confidence":"high|medium|low","rationale":"brief source-grounded reason"}. Do not return secondary topics, ambiguity analysis, rewritten text, or facts not in the input. Topic 25 is only for non-substantive promotion, banter, low-context media, or topical commentary with no self-contained broader lesson.
 '@

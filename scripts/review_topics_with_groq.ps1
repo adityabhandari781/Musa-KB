@@ -38,7 +38,7 @@ $keys = @('GROQ_API_KEY','GROQ_API_KEY2','GROQ_API_KEY3','GROQ_API_KEY4','GROQ_A
 $all = @(Get-Content $inputPath -Encoding UTF8 | ForEach-Object { $_ | ConvertFrom-Json }); $flagged = @($all | Where-Object review_required)
 $done = @{}; if (Test-Path $checkpointPath) { Get-Content $checkpointPath -Encoding UTF8 | ForEach-Object { $row = $_ | ConvertFrom-Json; $done[$row.passage_id] = $row } }
 $pending = @($flagged | Where-Object { -not $done.ContainsKey($_.passage_id) })
-$topics = Get-Content (Join-Path $repo 'data\topics.md') -Raw -Encoding UTF8
+$topics = Get-Content (Join-Path $repo 'artifacts\topics.md') -Raw -Encoding UTF8
 $system = @'
 You independently review knowledge-base topic assignments. Use only the supplied 25 topic definitions and passage text. Return JSON only: {"results":[{"passage_id":"P000001","primary_topic_id":1,"secondary_topic_ids":[2],"confidence":"high|medium|low","rationale":"brief source-grounded reason","routing":"substantive|non_substantive"}]}. Return every requested passage_id exactly once. Topic 25 is only for promotion, banter, low-context material, or commentary that has no broader lesson. Do not rewrite text or add facts.
 '@ + "`n`nTOPICS:`n" + $topics
