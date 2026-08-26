@@ -15,17 +15,18 @@ $mapRows = Read-JsonLines (Join-Path $artifactRoot 'kb-source-map.jsonl')
 $sourceRows = Read-JsonLines (Join-Path $artifactRoot 'source-manifest.jsonl')
 $expectedTopics = @{}
 foreach ($topicId in 1..25) { $expectedTopics[$topicId] = @($mapRows | Where-Object { [int]$_.topic_id -eq $topicId })[0].topic_title }
-$expectedSourceIds = @{}
-foreach ($topicId in 1..25) { $expectedSourceIds[$topicId] = @($mapRows | Where-Object { [int]$_.topic_id -eq $topicId -and $_.assignment_role -eq 'primary' } | Select-Object -ExpandProperty source_id -Unique | Sort-Object) }
+$expectedSourceCounts = @{}
+foreach ($topicId in 1..25) { $expectedSourceCounts[$topicId] = @($mapRows | Where-Object { [int]$_.topic_id -eq $topicId -and $_.assignment_role -eq 'primary' } | Select-Object -ExpandProperty source_id -Unique).Count }
 $sourceById = @{}
 foreach ($source in $sourceRows) { $sourceById[$source.source_id] = $source }
 
 $errors = [System.Collections.Generic.List[string]]::new(); $warnings = [System.Collections.Generic.List[string]]::new(); $documentResults = [System.Collections.Generic.List[object]]::new()
-$files = @(Get-ChildItem -LiteralPath $kb -Filter '*.md' | Sort-Object Name)
+$files = @(Get-ChildItem -LiteralPath $kb -Filter '*.md' | Where-Object { $_.Name -match '^\d{2}-.+\.md$' } | Sort-Object Name)
 if ($files.Count -ne 25) { $errors.Add("kb/ contains $($files.Count) Markdown files; expected 25.") }
 $seenTopics = @{}
 $utf8Strict = [System.Text.UTF8Encoding]::new($false, $true)
-$requiredSections = @('## Overview','## Core ideas','## Principles and mental models','## Recommended practices','## Examples and stories','## Tensions and contradictions','## Caveats','## Sources')
+$requiredSections = @('## Overview','## Core ideas','## Principles and mental models','## Recommended practices','## Examples and stories','## Tensions and contradictions','## Caveats')
+$githubBlobBase = 'https://github.com/adityabhandari781/Musa-KB/blob/master'
 
 foreach ($file in $files) {
     try { $text = $utf8Strict.GetString([System.IO.File]::ReadAllBytes($file.FullName)) } catch { $errors.Add("$($file.Name): invalid UTF-8."); continue }
@@ -40,23 +41,23 @@ foreach ($file in $files) {
     if ($text -match '\[Paragraph with citations\]|\[Bullets/Paragraphs with citations\]|I need to synthesize the (provided )?notes|Check against constraints') { $errors.Add("$($file.Name): contains model-generation boilerplate or placeholders.") }
     if ($text -match '(?s)^# [^\r\n]+\s*\r?\n\s*## Overview\s*\r?\n## ') { $errors.Add("$($file.Name): Overview section is empty.") }
     foreach ($section in $requiredSections) { if ($text -notmatch [regex]::Escape($section)) { $errors.Add("$($file.Name): missing $section.") } }
+    if ($text -match '(?m)^## Sources\s*$') { $errors.Add("$($file.Name): contains a deprecated Sources section.") }
+    $countMatch = [regex]::Match($text, '(?m)^source_count:\s*(\d+)\s*$')
+    if (-not $countMatch.Success -or [int]$countMatch.Groups[1].Value -ne $expectedSourceCounts[$topicId]) { $errors.Add("$($file.Name): source_count does not match its primary source-map entries.") }
 
-    $sourceLines = @([regex]::Matches($text, '(?m)^- \[(S\d{4})\]\(\.\./([^\)]+)\)$') | ForEach-Object { [pscustomobject]@{ id=$_.Groups[1].Value; path=$_.Groups[2].Value } })
-    $allSourceLines = @([regex]::Matches($text, '(?m)^- \[S\d{4}\]\(.*$'))
-    if ($sourceLines.Count -ne $allSourceLines.Count) { $errors.Add("$($file.Name): malformed source link(s).") }
-    $actualIds = @($sourceLines | Select-Object -ExpandProperty id | Sort-Object -Unique)
-    if ($actualIds.Count -ne $sourceLines.Count) { $errors.Add("$($file.Name): duplicate source IDs in Sources.") }
-    if (Compare-Object $expectedSourceIds[$topicId] $actualIds) { $errors.Add("$($file.Name): Sources do not exactly match its primary source-map entries.") }
-    foreach ($sourceLine in $sourceLines) {
-        if (-not (Test-Path -LiteralPath (Join-Path $repo $sourceLine.path))) { $errors.Add("$($file.Name): missing cited path $($sourceLine.path).") }
-        if (-not $sourceById.ContainsKey($sourceLine.id)) { $errors.Add("$($file.Name): unknown source $($sourceLine.id).") }
-        elseif (-not $sourceById[$sourceLine.id].included_in_synthesis) { $errors.Add("$($file.Name): excluded duplicate or empty source $($sourceLine.id) was cited.") }
-    }
-    $body = ($text -split '(?m)^## Sources\s*$')[0]
-    $inline = @([regex]::Matches($body, '\[S\d{4}\]') | ForEach-Object { $_.Value.Trim('[',']') } | Sort-Object -Unique)
+    $citationLinks = @([regex]::Matches($text, '\[(S\d{4})\]\((https://github\.com/adityabhandari781/Musa-KB/blob/master/[^\)]+)\)') | ForEach-Object { [pscustomobject]@{ id=$_.Groups[1].Value; url=$_.Groups[2].Value } })
+    $inline = @([regex]::Matches($text, '\[S\d{4}\]') | ForEach-Object { $_.Value.Trim('[',']') } | Sort-Object -Unique)
     if ($inline.Count -eq 0) { $warnings.Add("$($file.Name): no inline source citations.") }
-    if (@($inline | Where-Object { $_ -notin $actualIds }).Count) { $errors.Add("$($file.Name): inline citation absent from Sources.") }
-    $documentResults.Add([ordered]@{ topic_id=$topicId; file=$file.Name; source_links=$actualIds.Count; inline_citations=$inline.Count; bytes=$text.Length })
+    if ($citationLinks.Count -ne @([regex]::Matches($text, '\[S\d{4}\]')).Count) { $errors.Add("$($file.Name): every inline citation must be a GitHub link.") }
+    foreach ($citation in $citationLinks) {
+        if (-not $sourceById.ContainsKey($citation.id)) { $errors.Add("$($file.Name): unknown source $($citation.id).") }
+        elseif (-not $sourceById[$citation.id].included_in_synthesis) { $errors.Add("$($file.Name): excluded duplicate or empty source $($citation.id) was cited.") }
+        else {
+            $expectedUrl = "$githubBlobBase/$(([string]$sourceById[$citation.id].relative_path).Replace('\\','/'))"
+            if ($citation.url -ne $expectedUrl) { $errors.Add("$($file.Name): citation $($citation.id) does not link to its canonical GitHub source.") }
+        }
+    }
+    $documentResults.Add([ordered]@{ topic_id=$topicId; file=$file.Name; source_links=$citationLinks.Count; inline_citations=$inline.Count; bytes=$text.Length })
 }
 foreach ($topicId in 1..25) { if (-not $seenTopics.ContainsKey($topicId)) { $errors.Add("Missing KB document for topic $topicId.") } }
 

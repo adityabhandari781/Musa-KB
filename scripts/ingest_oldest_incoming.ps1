@@ -230,21 +230,57 @@ function Get-TopicFile {
     return $file
 }
 
-function Get-SourceIdsFromDocument {
-    param([Parameter(Mandatory)][string]$Text)
-    return @([regex]::Matches($Text, '(?m)^- \[(S\d{4})\]\(\.\./[^\)]+\)$') | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique)
-}
-
 function Get-TopicBody {
     param([Parameter(Mandatory)][string]$Document)
     $withoutHeader = [regex]::Replace($Document, '(?s)\A---.*?---\s*\r?\n\r?\n# .*?\r?\n\r?\n', '')
     return ([regex]::Split($withoutHeader, '(?m)^## Sources\s*$')[0]).Trim()
 }
 
-function Assert-TopicBody {
-    param([Parameter(Mandatory)][string]$Body, [Parameter(Mandatory)][string[]]$ValidSourceIds)
+function Remove-CitationsForGroq {
+    param([Parameter(Mandatory)][string]$Text)
+    # Groq receives no source identifiers or links.
+    $citation = '\[S\d{4}\](?:\([^\)]*\))?'
+    $Text = [regex]::Replace($Text, "\s*\((?:\s*$citation\s*,?)+\s*\)", '')
+    $Text = [regex]::Replace($Text, "\s*$citation", '')
+    $Text = [regex]::Replace($Text, '[ \t]+([,.;:!?])', '$1')
+    return [regex]::Replace($Text, '(?m)[ \t]+$', '')
+}
+
+function Format-LinkedCitationRuns {
+    param([Parameter(Mandatory)][string]$Text)
+
+    $citationLink = '\[S\d{4}\]\(https://github\.com/adityabhandari781/Musa-KB/blob/master/[^\)]+\)'
+    $separator = '[ \t\u00A0\u202F]*'
+    # Unwrap a pre-existing citation-only list before formatting, so retries or
+    # resumed ingestions never add a second set of parentheses.
+    $Text = [regex]::Replace($Text, "(?<!\\w)\\($separator($citationLink(?:$separator,$separator$citationLink)*)$separator\\)", {
+        param($match)
+        $match.Groups[1].Value
+    })
+    return [regex]::Replace($Text, "(?<![\\(\\w])($citationLink(?:$separator$citationLink)*)", {
+        param($match)
+        $links = @([regex]::Matches($match.Groups[1].Value, $citationLink) | ForEach-Object Value)
+        '(' + ($links -join ', ') + ')'
+    })
+}
+
+function Convert-CitationsForKb {
+    param([Parameter(Mandatory)][string]$Text, [Parameter(Mandatory)]$SourceById)
+    $linked = [regex]::Replace($Text, '\[(S\d{4})\](?:\([^\)]*\))?', {
+        param($match)
+        $id = $match.Groups[1].Value
+        if (-not $SourceById.ContainsKey($id)) { throw "Cannot link unknown source $id." }
+        $relative = ([string]$SourceById[$id].relative_path).Replace('\\', '/')
+        return "[$id]($script:GitHubBlobBase/$relative)"
+    })
+    return Format-LinkedCitationRuns -Text $linked
+}
+
+function Assert-CitationFreeTopicBody {
+    param([Parameter(Mandatory)][string]$Body)
     $sections = @('## Overview', '## Core ideas', '## Principles and mental models', '## Recommended practices', '## Examples and stories', '## Tensions and contradictions', '## Caveats')
     if ($Body -match '<think>|</think>|```') { throw 'The KB update response contains forbidden model markup.' }
+    if ($Body -match '\[S\d{4}\]|github\.com/') { throw 'The KB update response must not contain citations or source links.' }
     $positions = @()
     foreach ($section in $sections) {
         $match = [regex]::Match($Body, "(?m)^$([regex]::Escape($section))\s*$")
@@ -254,10 +290,99 @@ function Assert-TopicBody {
     $sortedPositions = (@($positions | Sort-Object) -join ',')
     $declaredPositions = ($positions -join ',')
     if ($sortedPositions -ne $declaredPositions) { throw 'The KB update response has sections out of order.' }
-    $citations = @([regex]::Matches($Body, '\[S\d{4}\]') | ForEach-Object { $_.Value.Trim('[', ']') } | Sort-Object -Unique)
-    if ($citations.Count -eq 0) { throw 'The KB update response has no inline citations.' }
-    $invalid = @($citations | Where-Object { $_ -notin $ValidSourceIds })
-    if ($invalid.Count) { throw "The KB update response cites unknown source(s): $($invalid -join ', ')." }
+}
+
+function Get-ComparisonKey {
+    param([Parameter(Mandatory)][string]$Line)
+    $withoutCitations = Remove-CitationsForGroq -Text $Line
+    return [regex]::Replace($withoutCitations.Trim(), '\s+', ' ')
+}
+
+function Test-SubstantiveContentLine {
+    param([Parameter(Mandatory)][string]$Line)
+    $trimmed = $Line.Trim()
+    return $trimmed.Length -gt 0 -and $trimmed -notmatch '^#{1,6}\s' -and $trimmed -notmatch '^(---|\*\*\*|___)$'
+}
+
+function Get-LineDifferenceSummary {
+    param([Parameter(Mandatory)][string]$OriginalBody, [Parameter(Mandatory)][string]$UpdatedBody)
+
+    $counts = @{}
+    $originalCount = 0
+    foreach ($line in [regex]::Split($OriginalBody, "\r?\n")) {
+        if (-not (Test-SubstantiveContentLine -Line $line)) { continue }
+        $key = Get-ComparisonKey -Line $line
+        if (-not $key) { continue }
+        $originalCount++
+        if (-not $counts.ContainsKey($key)) { $counts[$key] = 0 }
+        $counts[$key]++
+    }
+    $added = 0
+    foreach ($line in [regex]::Split($UpdatedBody, "\r?\n")) {
+        if (-not (Test-SubstantiveContentLine -Line $line)) { continue }
+        $key = Get-ComparisonKey -Line $line
+        if ($key -and $counts.ContainsKey($key) -and $counts[$key] -gt 0) { $counts[$key]-- }
+        else { $added++ }
+    }
+    $removed = @($counts.Values | ForEach-Object { [int]$_ } | Measure-Object -Sum).Sum
+    if ($null -eq $removed) { $removed = 0 }
+    return [pscustomobject]@{ original_count=$originalCount; added=$added; removed=[int]$removed; changed=($added + [int]$removed) }
+}
+
+function Assert-MinimalLineEdits {
+    param([Parameter(Mandatory)][string]$OriginalBody, [Parameter(Mandatory)][string]$UpdatedBody)
+
+    $summary = Get-LineDifferenceSummary -OriginalBody $OriginalBody -UpdatedBody $UpdatedBody
+    $limit = [math]::Max(5, [math]::Ceiling($summary.original_count * 0.25))
+    if ($summary.changed -gt $limit) {
+        throw "The KB update rewrote too much of the document ($($summary.changed) changed/deleted substantive lines; limit $limit). Refusing to attach the incoming source citation broadly."
+    }
+}
+
+function Add-SourceCitationToLine {
+    param([Parameter(Mandatory)][string]$Line, [Parameter(Mandatory)][string]$Citation)
+
+    $trailingMatch = [regex]::Match($Line, '[ \t]*$')
+    $trailing = $trailingMatch.Value
+    $content = $Line.Substring(0, $Line.Length - $trailing.Length)
+    $punctuationMatch = [regex]::Match($content, '^(.*?)([.!?])$')
+    if ($punctuationMatch.Success) { return "$($punctuationMatch.Groups[1].Value) $Citation$($punctuationMatch.Groups[2].Value)$trailing" }
+    return "$content $Citation$trailing"
+}
+
+function Restore-DeterministicCitations {
+    param(
+        [Parameter(Mandatory)][string]$OriginalBody,
+        [Parameter(Mandatory)][string]$UpdatedBody,
+        [Parameter(Mandatory)][string]$NewSourceId,
+        [Parameter(Mandatory)]$SourceById
+    )
+
+    if (-not $SourceById.ContainsKey($NewSourceId)) { throw "Cannot build a citation for unknown source $NewSourceId." }
+    $relative = ([string]$SourceById[$NewSourceId].relative_path).Replace('\\', '/')
+    $newCitation = "([$NewSourceId]($script:GitHubBlobBase/$relative))"
+    $originalByKey = @{}
+    foreach ($line in [regex]::Split($OriginalBody, "\r?\n")) {
+        $key = Get-ComparisonKey -Line $line
+        if (-not $key) { continue }
+        if (-not $originalByKey.ContainsKey($key)) {
+            $originalByKey[$key] = [System.Collections.Generic.Queue[string]]::new()
+        }
+        $originalByKey[$key].Enqueue($line)
+    }
+
+    $restored = foreach ($line in [regex]::Split($UpdatedBody, "\r?\n")) {
+        $key = Get-ComparisonKey -Line $line
+        if ($key -and $originalByKey.ContainsKey($key) -and $originalByKey[$key].Count -gt 0) {
+            # An unchanged line is restored byte-for-byte, including its prior citations.
+            $originalByKey[$key].Dequeue()
+        } elseif (Test-SubstantiveContentLine -Line $line) {
+            Add-SourceCitationToLine -Line $line -Citation $newCitation
+        } else {
+            $line
+        }
+    }
+    return ($restored -join [Environment]::NewLine).Trim()
 }
 
 function Write-TopicDocument {
@@ -266,16 +391,10 @@ function Write-TopicDocument {
         [Parameter(Mandatory)][int]$TopicId,
         [Parameter(Mandatory)][string]$Title,
         [Parameter(Mandatory)][string]$Body,
-        [Parameter(Mandatory)][string[]]$SourceIds,
-        [Parameter(Mandatory)]$SourceById
+        [Parameter(Mandatory)][int]$SourceCount
     )
-    $links = @($SourceIds | Sort-Object | ForEach-Object {
-        $source = $SourceById[$_]
-        if ($null -eq $source) { throw "Cannot render missing source $_." }
-        "- [$_](../$(([string]$source.relative_path).Replace('\\', '/')))"
-    })
-    $header = "---`ntopic_id: $TopicId`ntitle: $Title`nstatus: synthesized`nsource_count: $($SourceIds.Count)`nsource_scope:`n  - data/texts`n  - data/transcripts`n---`n`n# $Title`n`n"
-    [System.IO.File]::WriteAllText($Path, $header + $Body.Trim() + "`n`n## Sources`n`n" + ($links -join "`n") + "`n", [System.Text.UTF8Encoding]::new($false))
+    $header = "---`ntopic_id: $TopicId`ntitle: $Title`nstatus: synthesized`nsource_count: $SourceCount`nsource_scope:`n  - data/texts`n  - data/transcripts`n---`n`n# $Title`n`n"
+    [System.IO.File]::WriteAllText($Path, $header + $Body.Trim() + "`n", [System.Text.UTF8Encoding]::new($false))
 }
 
 $repo = (Resolve-Path -LiteralPath $RepositoryRoot).Path
@@ -296,6 +415,7 @@ $sourcePath = Join-Path $longtermPath 'source-manifest.jsonl'
 $passagePath = Join-Path $longtermPath 'passage-manifest.jsonl'
 $mapPath = Join-Path $longtermPath 'kb-source-map.jsonl'
 $envPath = Join-Path $repo '.env'
+$script:GitHubBlobBase = 'https://github.com/adityabhandari781/Musa-KB/blob/master'
 $apiKeyNames = @('GROQ_API_KEY', 'GROQ_API_KEY2', 'GROQ_API_KEY3', 'GROQ_API_KEY4', 'GROQ_API_KEY5', 'GROQ_API_KEY6')
 $models = @('openai/gpt-oss-120b', 'openai/gpt-oss-20b', 'qwen/qwen3.6-27b')
 
@@ -473,24 +593,25 @@ if ($state.stage -eq 'source_mapped') {
     $topicTitle = [string]$topicRows[0].topic_title
     $topicFile = Get-TopicFile -KbPath $kbPath -TopicId ([int]$state.primary_topic_id)
     $currentDocument = Get-Content -LiteralPath $topicFile.FullName -Raw -Encoding UTF8
-    $sourceIds = @((@(Get-SourceIdsFromDocument -Text $currentDocument) + @([string]$state.source_id)) | Sort-Object -Unique)
-    $validSourceIds = @($sourceIds)
+    $originalBody = Get-TopicBody -Document $currentDocument
+    $currentBody = Remove-CitationsForGroq -Text $originalBody
+    $topicSourceCount = @($topicRows | Select-Object -ExpandProperty source_id -Unique).Count
     $updateSystem = @'
-Return JSON only: {"markdown":"..."}. Update the supplied knowledge-base document with the supplied new source text. Preserve useful existing information; integrate the new source only where it genuinely belongs. The markdown value must start with "## Overview" and contain exactly these sections in order: Overview, Core ideas, Principles and mental models, Recommended practices, Examples and stories, Tensions and contradictions, Caveats. Use inline [S0001] citations only from the existing source IDs plus the new source ID. Do not include YAML, a document title, a Sources section, code fences, or reasoning. Do not invent facts. Attribute contested claims to the creator; label speculative health/scientific claims, strongly gendered framing, political claims, and unsafe advice appropriately.
+Return JSON only: {"markdown":"..."}. Update the supplied knowledge-base document with the supplied new source text. The markdown value must start with "## Overview" and contain exactly these sections in order: Overview, Core ideas, Principles and mental models, Recommended practices, Examples and stories, Tensions and contradictions, Caveats. Make the smallest possible line-level change: retain every unaffected line verbatim, and add or revise a line only when the new source directly supports it. Do not rewrite, reorder, summarize, or polish unaffected material. Do not include citations, source IDs, links, YAML, a document title, a Sources section, code fences, or reasoning. Do not invent facts. Attribute contested claims to the creator; label speculative health/scientific claims, strongly gendered framing, political claims, and unsafe advice appropriately.
 '@
     $updateInput = @"
-TOPIC: $topicTitle
-NEW SOURCE ID: $($state.source_id)
-NEW SOURCE TEXT:
+INCOMING TEXT:
 $($state.normalized_text)
 
-CURRENT TOPIC DOCUMENT:
-$currentDocument
+CURRENT KB DOCUMENT:
+$currentBody
 "@
     $updateRequest = Invoke-GroqJson -KeyEntries $keyEntries -ModelNames $models -System $updateSystem -User $updateInput -WorkLabel "KB update for topic $($state.primary_topic_id)"
     $body = [string]$updateRequest.value.markdown
-    Assert-TopicBody -Body $body -ValidSourceIds $validSourceIds
-    Write-TopicDocument -Path $topicFile.FullName -TopicId ([int]$state.primary_topic_id) -Title $topicTitle -Body $body -SourceIds $sourceIds -SourceById $sourceById
+    Assert-CitationFreeTopicBody -Body $body
+    Assert-MinimalLineEdits -OriginalBody $currentBody -UpdatedBody $body
+    $linkedBody = Restore-DeterministicCitations -OriginalBody $originalBody -UpdatedBody $body -NewSourceId $state.source_id -SourceById $sourceById
+    Write-TopicDocument -Path $topicFile.FullName -TopicId ([int]$state.primary_topic_id) -Title $topicTitle -Body $linkedBody -SourceCount $topicSourceCount
     $state.kb_update_model = $updateRequest.model
     $state.kb_update_api_key_name = $updateRequest.api_key_name
     $state.stage = 'kb_updated'
