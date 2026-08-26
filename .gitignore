@@ -2,3 +2,8 @@ data/media/*
 .env
 /build/useful/telegram_export.session*
 /telegram_export.session*
+
+.venv/
+__pycache__/
+*.pyc
+workspace/
