@@ -158,6 +158,13 @@ function Invoke-GroqAttempt {
     finally { $process.Dispose() }
 }
 
+function Get-DisplayTopicTitle {
+    param([Parameter(Mandatory)][int]$TopicId, [Parameter(Mandatory)][string]$CanonicalTitle)
+    $property = $script:TopicEmojis.PSObject.Properties[[string]$TopicId]
+    $emoji = if ($null -eq $property) { '' } else { [string]$property.Value }
+    return "$emoji $CanonicalTitle".Trim()
+}
+
 function Invoke-GroqJson {
     param(
         [Parameter(Mandatory)]$KeyEntries,
@@ -437,6 +444,7 @@ $passagePath = Join-Path $longtermPath 'passage-manifest.jsonl'
 $mapPath = Join-Path $longtermPath 'kb-source-map.jsonl'
 $envPath = Join-Path $repo '.env'
 $script:SourceAppendix = '26-all-texts.md'
+$script:TopicEmojis = Get-Content -LiteralPath (Join-Path $repo 'artifacts\topic-emojis.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 $apiKeyNames = @('GROQ_API_KEY', 'GROQ_API_KEY2', 'GROQ_API_KEY3', 'GROQ_API_KEY4', 'GROQ_API_KEY5', 'GROQ_API_KEY6')
 $models = @('openai/gpt-oss-120b', 'openai/gpt-oss-20b', 'qwen/qwen3.6-27b')
 
@@ -624,7 +632,7 @@ if ($state.stage -eq 'classified') {
 if ($state.stage -eq 'source_mapped') {
     $maps = Read-JsonLines -Path $mapPath
     $topicRows = @($maps | Where-Object { [int]$_.topic_id -eq [int]$state.primary_topic_id -and $_.assignment_role -eq 'primary' })
-    $topicTitle = [string]$topicRows[0].topic_title
+    $topicTitle = Get-DisplayTopicTitle -TopicId ([int]$state.primary_topic_id) -CanonicalTitle ([string]$topicRows[0].topic_title)
     $topicFile = Get-TopicFile -KbPath $kbPath -TopicId ([int]$state.primary_topic_id)
     $currentDocument = Get-Content -LiteralPath $topicFile.FullName -Raw -Encoding UTF8
     $originalBody = Get-TopicBody -Document $currentDocument

@@ -6,7 +6,7 @@ import argparse
 import re
 from collections import defaultdict
 
-from kb_common import read_jsonl, repository_root, utc_now, write_json
+from kb_common import display_topic_title, read_jsonl, repository_root, utc_now, write_json
 
 
 def main() -> None:
@@ -21,7 +21,7 @@ def main() -> None:
     expected_counts = {}
     for topic in range(1, 26):
         rows = [row for row in maps if int(row["topic_id"]) == topic]
-        expected_titles[topic] = rows[0]["topic_title"]
+        expected_titles[topic] = display_topic_title(repo, topic, rows[0]["topic_title"])
         expected_counts[topic] = len({row["source_id"] for row in rows if row["assignment_role"] == "primary"})
     source_by_id = {row["source_id"]: row for row in sources}
     errors: list[str] = []

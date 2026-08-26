@@ -25,6 +25,7 @@ function Invoke-Groq([string]$Key,[string]$Model,[string]$System,[string]$User,[
 }
 function Read-JsonLines([string]$Path){return @(Get-Content -LiteralPath $Path -Encoding UTF8|Where-Object {$_.Trim()}|ForEach-Object {$_|ConvertFrom-Json})}
 function Get-KbFiles([string]$Path){$files=@{};foreach($file in (Get-ChildItem -LiteralPath $Path -Filter '*.md')){$line=Get-Content -LiteralPath $file.FullName -Encoding UTF8 -TotalCount 8|Where-Object {$_ -match '^topic_id:\s*\d+\s*$'}|Select-Object -First 1;if($line -notmatch '^topic_id:\s*(\d+)\s*$'){throw "Missing topic_id in $($file.Name)"};$files[[int]$Matches[1]]=$file.FullName};if($files.Count -ne 25){throw 'kb/ must contain exactly 25 topic files.'};return $files}
+function Get-DisplayTopicTitle([int]$TopicId,[string]$CanonicalTitle){$property=$script:topicEmojis.PSObject.Properties[[string]$TopicId];$emoji=if($null -eq $property){''}else{[string]$property.Value};return "$emoji $CanonicalTitle".Trim()}
 function Format-LinkedCitationRuns([string]$Text){
     $citationLink='\[S\d{4}\]\([^\)]+\)';$gap='[ \t\u00A0\u202F]*'
     $cluster='(?<!\w)\(*'+$gap+$citationLink+'(?:'+$gap+'\)*'+$gap+'(?:,'+$gap+')?\(*'+$gap+$citationLink+')*'+$gap+'\)*'
@@ -35,7 +36,8 @@ function Write-TopicDocument([string]$Path,$Topic,[string]$Body,$Rows){
     $body=($Body.Trim() -replace '^```(?:markdown|md)?\s*','' -replace '\s*```\s*$','').Trim()
     $body=[regex]::Replace($body,'\[(S\d{4})\](?:\([^\)]*\))?',{param($match)$id=$match.Groups[1].Value;"[$id]($script:SourceAppendix#$($id.ToLowerInvariant()))"})
     $body=Format-LinkedCitationRuns $body
-    $header="---`ntopic_id: $($Topic.topic_id)`ntitle: $($Topic.topic_title)`nsource_count: $count`nsource_scope:`n  - data/texts`n  - data/transcripts`n---`n`n# $($Topic.topic_title)`n`n"
+    $title=Get-DisplayTopicTitle ([int]$Topic.topic_id) ([string]$Topic.topic_title)
+    $header="---`ntopic_id: $($Topic.topic_id)`ntitle: $title`nsource_count: $count`nsource_scope:`n  - data/texts`n  - data/transcripts`n---`n`n# $title`n`n"
     [System.IO.File]::WriteAllText($Path,$header+$body+"`n",[System.Text.UTF8Encoding]::new($false))
 }
 function Split-TopicRows($Rows,[int]$Limit){$chunks=[System.Collections.Generic.List[object]]::new();$current=[System.Collections.Generic.List[object]]::new();$words=0;$index=1;foreach($row in ($Rows|Sort-Object source_id,segment_index)){$rowWords=[int]$row.passage_word_count;if($current.Count -gt 0 -and $words+$rowWords -gt $Limit){$chunks.Add([pscustomobject]@{index=$index;rows=$current.ToArray()});$index++;$current=[System.Collections.Generic.List[object]]::new();$words=0};$current.Add($row);$words+=$rowWords};if($current.Count){$chunks.Add([pscustomobject]@{index=$index;rows=$current.ToArray()})};return @($chunks.ToArray())}
@@ -50,7 +52,7 @@ function Invoke-ResilientText([string]$WorkId,[int]$TopicId,[string]$System,[str
     }
 }
 
-$repo=(Resolve-Path -LiteralPath $RepositoryRoot).Path;$script:SourceAppendix=$SourceAppendix;$build=Join-Path $repo 'build';$kbPath=Join-Path $repo 'kb';$envPath=Join-Path $repo '.env';$mapPath=Join-Path $build 'kb-source-map.jsonl';$checkpointPath=Join-Path $build 'llm-kb-hierarchical-synthesis-checkpoint.jsonl';$logPath=Join-Path $build 'groq-kb-hierarchical-synthesis-requests.jsonl'
+$repo=(Resolve-Path -LiteralPath $RepositoryRoot).Path;$script:SourceAppendix=$SourceAppendix;$script:topicEmojis=Get-Content -LiteralPath (Join-Path $repo 'artifacts\topic-emojis.json') -Raw -Encoding UTF8|ConvertFrom-Json;$build=Join-Path $repo 'build';$kbPath=Join-Path $repo 'kb';$envPath=Join-Path $repo '.env';$mapPath=Join-Path $build 'kb-source-map.jsonl';$checkpointPath=Join-Path $build 'llm-kb-hierarchical-synthesis-checkpoint.jsonl';$logPath=Join-Path $build 'groq-kb-hierarchical-synthesis-requests.jsonl'
 foreach($path in @($envPath,$mapPath,$kbPath)){if(-not(Test-Path -LiteralPath $path)){throw "Required input is missing: $path"}}
 $script:keys=@('GROQ_API_KEY6'|ForEach-Object {$key=Get-EnvValue $envPath $_;if([string]::IsNullOrWhiteSpace($key)){throw "Missing $_ in .env."};$key});$script:models=@('openai/gpt-oss-120b','openai/gpt-oss-20b','qwen/qwen3.6-27b');$kbFiles=Get-KbFiles $kbPath;$mapRows=Read-JsonLines $mapPath
 $topicRows=@{};foreach($topicId in 1..25){$topicRows[$topicId]=@($mapRows|Where-Object {[int]$_.topic_id -eq $topicId -and $_.assignment_role -eq 'primary'});if($topicRows[$topicId].Count -eq 0){throw "No primary passages for topic $topicId"}}

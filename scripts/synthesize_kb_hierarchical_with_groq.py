@@ -7,7 +7,7 @@ import json
 import re
 
 from groq_client import PairRotator, completion, content, retry_seconds
-from kb_common import env_value, read_jsonl, repository_root, utc_now, word_count, write_jsonl
+from kb_common import display_topic_title, env_value, read_jsonl, repository_root, utc_now, word_count, write_jsonl
 
 
 EVIDENCE_SYSTEM = "Return concise Markdown evidence notes from the supplied source passages. Every bullet must retain one or more inline [S0001] citations. Capture claims, practices, examples, contradictions, and cautions; distinguish the creator's claims from established facts. Do not add facts or advice. Do not write a title, front matter, Sources section, or code fence."
@@ -43,12 +43,13 @@ def format_citation_runs(text: str) -> str:
     return CLUSTER.sub(lambda match: "(" + ", ".join(re.findall(LINK, match.group())) + ")", text)
 
 
-def write_topic(path, topic, body, rows, source_appendix: str) -> None:
+def write_topic(path, topic, body, rows, source_appendix: str, repo) -> None:
     body = re.sub(r"^```(?:markdown|md)?\s*|\s*```$", "", body.strip())
     sources = {row["source_id"]: row["relative_path"].replace("\\", "/") for row in rows}
     body = re.sub(r"\[(S\d{4})\](?:\([^)]*\))?", lambda match: f"[{match.group(1)}]({source_appendix}#{match.group(1).lower()})", body)
     body = format_citation_runs(body)
-    header = f"---\ntopic_id: {topic['topic_id']}\ntitle: {topic['topic_title']}\nsource_count: {len(sources)}\nsource_scope:\n  - data/texts\n  - data/transcripts\n---\n\n# {topic['topic_title']}\n\n"
+    title = display_topic_title(repo, int(topic["topic_id"]), topic["topic_title"])
+    header = f"---\ntopic_id: {topic['topic_id']}\ntitle: {title}\nsource_count: {len(sources)}\nsource_scope:\n  - data/texts\n  - data/transcripts\n---\n\n# {title}\n\n"
     path.write_text(header + body + "\n", encoding="utf-8", newline="\n")
 
 
@@ -91,7 +92,7 @@ def main() -> None:
     done = {row["work_id"]: row for row in read_jsonl(checkpoint)} if checkpoint.is_file() else {}
     for topic in range(1, 26):
         final_id = f"T{topic:02d}-FINAL"
-        if final_id in done: write_topic(files[topic], topic_rows[topic][0], done[final_id]["content"], topic_rows[topic], args.source_appendix)
+        if final_id in done: write_topic(files[topic], topic_rows[topic][0], done[final_id]["content"], topic_rows[topic], args.source_appendix, repo)
     rotator = PairRotator([key], ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.6-27b"])
     for topic_id in range(1, 26):
         rows = topic_rows[topic_id]; topic = rows[0]; pieces = chunks(rows, 800 if topic_id == 25 else args.evidence_chunk_words)
@@ -114,7 +115,7 @@ def main() -> None:
         final_id = f"T{topic_id:02d}-FINAL"
         if final_id in done: continue
         text, pair = request(rotator, log, final_id, topic_id, FINAL_SYSTEM, f"Topic {topic_id}: {topic['topic_title']}\n\nCited evidence notes:\n\n" + "\n\n---\n\n".join(evidence), rows, 3000, SECTIONS)
-        write_topic(files[topic_id], topic, text, rows, args.source_appendix)
+        write_topic(files[topic_id], topic, text, rows, args.source_appendix, repo)
         entry = {"work_id": final_id, "kind": "final", "topic_id": topic_id, "content": text, "model": pair["model"], "key_slot": pair["slot"], "completed_at": utc_now()}; write_jsonl(checkpoint, [entry], append=True); done[final_id] = entry
         print(f"Synthesized topic {topic_id}/25 with key slot {pair['slot']} on {pair['model']}.")
     print("Hierarchical LLM KB synthesis complete.")

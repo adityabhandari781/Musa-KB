@@ -55,3 +55,15 @@ def env_value(path: Path, name: str) -> str | None:
                 value = value[1:-1]
             return value
     return None
+
+
+def display_topic_title(repo: Path, topic_id: int, canonical_title: str) -> str:
+    """Add the configured decorative emoji without changing the canonical title."""
+    path = repo / "artifacts" / "topic-emojis.json"
+    try:
+        emoji = json.loads(path.read_text(encoding="utf-8")).get(str(topic_id), "")
+    except FileNotFoundError:
+        emoji = ""
+    if not isinstance(emoji, str):
+        raise ValueError(f"Emoji for topic {topic_id} must be a string.")
+    return f"{emoji} {canonical_title}".strip()

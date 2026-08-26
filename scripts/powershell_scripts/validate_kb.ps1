@@ -5,16 +5,22 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
 function Read-JsonLines([string]$Path) { @(Get-Content -LiteralPath $Path -Encoding UTF8 | Where-Object { $_.Trim() } | ForEach-Object { $_ | ConvertFrom-Json }) }
+function Get-DisplayTopicTitle([int]$TopicId, [string]$CanonicalTitle) {
+    $property = $script:topicEmojis.PSObject.Properties[[string]$TopicId]
+    $emoji = if ($null -eq $property) { '' } else { [string]$property.Value }
+    return "$emoji $CanonicalTitle".Trim()
+}
 
 $repo = (Resolve-Path -LiteralPath $RepositoryRoot).Path
 $kb = Join-Path $repo 'kb'
+$script:topicEmojis = Get-Content -LiteralPath (Join-Path $repo 'artifacts\topic-emojis.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 # Long-lived corpus artifacts were separated from transient run files.  Retain a
 # flat build/ fallback so existing clones made before that reorganization work too.
 $artifactRoot = if (Test-Path -LiteralPath (Join-Path $repo 'build\longterm\kb-source-map.jsonl')) { Join-Path $repo 'build\longterm' } else { Join-Path $repo 'build' }
 $mapRows = Read-JsonLines (Join-Path $artifactRoot 'kb-source-map.jsonl')
 $sourceRows = Read-JsonLines (Join-Path $artifactRoot 'source-manifest.jsonl')
 $expectedTopics = @{}
-foreach ($topicId in 1..25) { $expectedTopics[$topicId] = @($mapRows | Where-Object { [int]$_.topic_id -eq $topicId })[0].topic_title }
+foreach ($topicId in 1..25) { $expectedTopics[$topicId] = Get-DisplayTopicTitle $topicId ([string]@($mapRows | Where-Object { [int]$_.topic_id -eq $topicId })[0].topic_title) }
 $expectedSourceCounts = @{}
 foreach ($topicId in 1..25) { $expectedSourceCounts[$topicId] = @($mapRows | Where-Object { [int]$_.topic_id -eq $topicId -and $_.assignment_role -eq 'primary' } | Select-Object -ExpandProperty source_id -Unique).Count }
 $sourceById = @{}

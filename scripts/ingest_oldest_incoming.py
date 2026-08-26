@@ -14,7 +14,7 @@ from datetime import datetime
 from pathlib import Path
 
 from groq_client import PairRotator, completion, content, retry_seconds
-from kb_common import env_value, read_jsonl, repository_root, utc_now, word_count, write_json, write_jsonl
+from kb_common import display_topic_title, env_value, read_jsonl, repository_root, utc_now, word_count, write_json, write_jsonl
 
 
 SECTIONS = ["## Overview", "## Core ideas", "## Principles and mental models", "## Recommended practices", "## Examples and stories", "## Tensions and contradictions", "## Caveats"]
@@ -207,7 +207,7 @@ def main() -> None:
             write_jsonl(map_path, [{"topic_id": state["primary_topic_id"], "topic_title": template["topic_title"], "assignment_role": "primary", "assignment_method": "llm_single_classification", "routing": "non_substantive" if state["primary_topic_id"] == 25 else "substantive", "confidence": state["confidence"], "rationale": state["rationale"], "passage_id": state["passage_id"], "passage_text": state["normalized_text"], "passage_word_count": word_count(state["normalized_text"]), "segment_index": 1, "source_id": source["source_id"], "source_type": source["source_type"], "relative_path": source["relative_path"], "recorded_at": source.get("recorded_at"), "source_sha256": source["file_hash_sha256"], "reviewed_model": state["classification_model"], "reviewed_at": utc_now()}], append=True)
         state["stage"] = "source_mapped"; atomic_json(state_path, state)
     if state["stage"] == "source_mapped":
-        maps = read_jsonl(map_path); topic_rows = [item for item in maps if int(item["topic_id"]) == state["primary_topic_id"] and item["assignment_role"] == "primary"]; title = topic_rows[0]["topic_title"]; file = topic_file(kb, state["primary_topic_id"])
+        maps = read_jsonl(map_path); topic_rows = [item for item in maps if int(item["topic_id"]) == state["primary_topic_id"] and item["assignment_role"] == "primary"]; title = display_topic_title(repo, state["primary_topic_id"], topic_rows[0]["topic_title"]); file = topic_file(kb, state["primary_topic_id"])
         original = body(file.read_text(encoding="utf-8")); current = strip_citations(original); source_count = len({item["source_id"] for item in topic_rows})
         system = 'Return JSON only: {"markdown":"..."}. Update the supplied knowledge-base document with the supplied new source text. The markdown value must start with "## Overview" and contain exactly these sections in order: Overview, Core ideas, Principles and mental models, Recommended practices, Examples and stories, Tensions and contradictions, Caveats. Make the smallest possible line-level change: retain every unaffected line verbatim, and add or revise a line only when the new source directly supports it. Do not rewrite, reorder, summarize, or polish unaffected material. Use the KB\'s established editorial voice: integrate claims directly, and never write source-note phrasing such as "the source states," "the source asserts," or "this source explains." Do not include citations, source IDs, links, YAML, a document title, a Sources section, code fences, or reasoning. Do not invent facts. Attribute contested claims to the creator; label speculative health/scientific claims, strongly gendered framing, political claims, and unsafe advice appropriately.'
         result, pair = groq_json(keys, system, f"INCOMING TEXT:\n{state['normalized_text']}\n\nCURRENT KB DOCUMENT:\n{current}", f"KB update for topic {state['primary_topic_id']}"); updated = result.get("markdown", "")
