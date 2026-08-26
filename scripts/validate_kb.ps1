@@ -21,12 +21,20 @@ $sourceById = @{}
 foreach ($source in $sourceRows) { $sourceById[$source.source_id] = $source }
 
 $errors = [System.Collections.Generic.List[string]]::new(); $warnings = [System.Collections.Generic.List[string]]::new(); $documentResults = [System.Collections.Generic.List[object]]::new()
-$files = @(Get-ChildItem -LiteralPath $kb -Filter '*.md' | Where-Object { $_.Name -match '^\d{2}-.+\.md$' } | Sort-Object Name)
+$files = @(Get-ChildItem -LiteralPath $kb -Filter '*.md' | Where-Object { $_.Name -match '^(0[1-9]|1\d|2[0-5])-.+\.md$' } | Sort-Object Name)
 if ($files.Count -ne 25) { $errors.Add("kb/ contains $($files.Count) Markdown files; expected 25.") }
 $seenTopics = @{}
 $utf8Strict = [System.Text.UTF8Encoding]::new($false, $true)
 $requiredSections = @('## Overview','## Core ideas','## Principles and mental models','## Recommended practices','## Examples and stories','## Tensions and contradictions','## Caveats')
-$githubBlobBase = 'https://github.com/adityabhandari781/Musa-KB/blob/master'
+$sourceAppendixName = '26-all-texts.md'
+$sourceAppendixPath = Join-Path $kb $sourceAppendixName
+$sourceAppendixText = ''
+if (-not (Test-Path -LiteralPath $sourceAppendixPath)) {
+    $errors.Add("Missing source appendix: kb/$sourceAppendixName.")
+} else {
+    try { $sourceAppendixText = $utf8Strict.GetString([System.IO.File]::ReadAllBytes($sourceAppendixPath)) }
+    catch { $errors.Add("$($sourceAppendixName): invalid UTF-8.") }
+}
 
 foreach ($file in $files) {
     try { $text = $utf8Strict.GetString([System.IO.File]::ReadAllBytes($file.FullName)) } catch { $errors.Add("$($file.Name): invalid UTF-8."); continue }
@@ -45,16 +53,17 @@ foreach ($file in $files) {
     $countMatch = [regex]::Match($text, '(?m)^source_count:\s*(\d+)\s*$')
     if (-not $countMatch.Success -or [int]$countMatch.Groups[1].Value -ne $expectedSourceCounts[$topicId]) { $errors.Add("$($file.Name): source_count does not match its primary source-map entries.") }
 
-    $citationLinks = @([regex]::Matches($text, '\[(S\d{4})\]\((https://github\.com/adityabhandari781/Musa-KB/blob/master/[^\)]+)\)') | ForEach-Object { [pscustomobject]@{ id=$_.Groups[1].Value; url=$_.Groups[2].Value } })
+    $citationLinks = @([regex]::Matches($text, '\[(S\d{4})\]\((26-all-texts\.md#s\d{4})\)') | ForEach-Object { [pscustomobject]@{ id=$_.Groups[1].Value; url=$_.Groups[2].Value } })
     $inline = @([regex]::Matches($text, '\[S\d{4}\]') | ForEach-Object { $_.Value.Trim('[',']') } | Sort-Object -Unique)
     if ($inline.Count -eq 0) { $warnings.Add("$($file.Name): no inline source citations.") }
-    if ($citationLinks.Count -ne @([regex]::Matches($text, '\[S\d{4}\]')).Count) { $errors.Add("$($file.Name): every inline citation must be a GitHub link.") }
+    if ($citationLinks.Count -ne @([regex]::Matches($text, '\[S\d{4}\]')).Count) { $errors.Add("$($file.Name): every inline citation must link to the source appendix.") }
     foreach ($citation in $citationLinks) {
         if (-not $sourceById.ContainsKey($citation.id)) { $errors.Add("$($file.Name): unknown source $($citation.id).") }
         elseif (-not $sourceById[$citation.id].included_in_synthesis) { $errors.Add("$($file.Name): excluded duplicate or empty source $($citation.id) was cited.") }
         else {
-            $expectedUrl = "$githubBlobBase/$(([string]$sourceById[$citation.id].relative_path).Replace('\\','/'))"
-            if ($citation.url -ne $expectedUrl) { $errors.Add("$($file.Name): citation $($citation.id) does not link to its canonical GitHub source.") }
+            $expectedUrl = "$sourceAppendixName#$($citation.id.ToLowerInvariant())"
+            if ($citation.url -ne $expectedUrl) { $errors.Add("$($file.Name): citation $($citation.id) does not link to its source appendix anchor.") }
+            elseif ($sourceAppendixText -notmatch [regex]::Escape("<a id=""$($citation.id.ToLowerInvariant())""></a>")) { $errors.Add("$($file.Name): citation $($citation.id) has no matching appendix anchor.") }
         }
     }
     $documentResults.Add([ordered]@{ topic_id=$topicId; file=$file.Name; source_links=$citationLinks.Count; inline_citations=$inline.Count; bytes=$text.Length })

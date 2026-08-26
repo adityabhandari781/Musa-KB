@@ -274,7 +274,7 @@ function Remove-CitationsForGroq {
 function Format-LinkedCitationRuns {
     param([Parameter(Mandatory)][string]$Text)
 
-    $citationLink = '\[S\d{4}\]\(https://github\.com/adityabhandari781/Musa-KB/blob/master/[^\)]+\)'
+    $citationLink = '\[S\d{4}\]\([^\)]+\)'
     $separator = '[ \t\u00A0\u202F]*'
     # Unwrap a pre-existing citation-only list before formatting, so retries or
     # resumed ingestions never add a second set of parentheses.
@@ -295,8 +295,7 @@ function Convert-CitationsForKb {
         param($match)
         $id = $match.Groups[1].Value
         if (-not $SourceById.ContainsKey($id)) { throw "Cannot link unknown source $id." }
-        $relative = ([string]$SourceById[$id].relative_path).Replace('\\', '/')
-        return "[$id]($script:GitHubBlobBase/$relative)"
+        return "[$id]($script:SourceAppendix#$($id.ToLowerInvariant()))"
     })
     return Format-LinkedCitationRuns -Text $linked
 }
@@ -384,8 +383,7 @@ function Restore-DeterministicCitations {
     )
 
     if (-not $SourceById.ContainsKey($NewSourceId)) { throw "Cannot build a citation for unknown source $NewSourceId." }
-    $relative = ([string]$SourceById[$NewSourceId].relative_path).Replace('\\', '/')
-    $newCitation = "([$NewSourceId]($script:GitHubBlobBase/$relative))"
+    $newCitation = "([$NewSourceId]($script:SourceAppendix#$($NewSourceId.ToLowerInvariant()))"
     $originalByKey = @{}
     foreach ($line in [regex]::Split($OriginalBody, "\r?\n")) {
         $key = Get-ComparisonKey -Line $line
@@ -440,7 +438,7 @@ $sourcePath = Join-Path $longtermPath 'source-manifest.jsonl'
 $passagePath = Join-Path $longtermPath 'passage-manifest.jsonl'
 $mapPath = Join-Path $longtermPath 'kb-source-map.jsonl'
 $envPath = Join-Path $repo '.env'
-$script:GitHubBlobBase = 'https://github.com/adityabhandari781/Musa-KB/blob/master'
+$script:SourceAppendix = '26-all-texts.md'
 $apiKeyNames = @('GROQ_API_KEY', 'GROQ_API_KEY2', 'GROQ_API_KEY3', 'GROQ_API_KEY4', 'GROQ_API_KEY5', 'GROQ_API_KEY6')
 $models = @('openai/gpt-oss-120b', 'openai/gpt-oss-20b', 'qwen/qwen3.6-27b')
 
@@ -559,6 +557,12 @@ if ($state.stage -eq 'moved') {
         $state.stage = if ($canonical.Count) { 'duplicate_skipped' } else { 'source_recorded' }
     }
     Write-JsonAtomic -Path $statePath -Value $state
+}
+
+# Rebuild the citation target as soon as the source file is recorded, including
+# exact duplicates that are not sent to the LLM.
+if ($state.stage -in @('source_recorded', 'duplicate_skipped')) {
+    & (Join-Path $repo 'scripts\build_all_texts.ps1') -RepositoryRoot $repo
 }
 
 if ($state.stage -eq 'duplicate_skipped') {

@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
     [string]$RepositoryRoot = (Split-Path -Parent $PSScriptRoot),
-    [string]$GitHubBlobBase = 'https://github.com/adityabhandari781/Musa-KB/blob/master'
+    [string]$SourceAppendix = '26-all-texts.md'
 )
 
 Set-StrictMode -Version Latest
@@ -14,7 +14,7 @@ function Read-JsonLines([string]$Path) {
 function Format-LinkedCitationRuns {
     param([Parameter(Mandatory)][string]$Text)
 
-    $citationLink = '\[S\d{4}\]\(https://github\.com/adityabhandari781/Musa-KB/blob/master/[^\)]+\)'
+    $citationLink = '\[S\d{4}\]\([^\)]+\)'
     $separator = '[ \t\u00A0\u202F]*'
     # First unwrap a citation-only parenthetical list so the formatter remains
     # idempotent when the script is run again.
@@ -36,7 +36,7 @@ $sourceRows = Read-JsonLines (Join-Path $artifactRoot 'source-manifest.jsonl')
 $sourceById = @{}
 foreach ($source in $sourceRows) { $sourceById[$source.source_id] = $source }
 
-$files = @(Get-ChildItem -LiteralPath $kbPath -File -Filter '*.md' | Where-Object { $_.Name -match '^\d{2}-.+\.md$' } | Sort-Object Name)
+$files = @(Get-ChildItem -LiteralPath $kbPath -File -Filter '*.md' | Where-Object { $_.Name -match '^(0[1-9]|1\d|2[0-5])-.+\.md$' } | Sort-Object Name)
 if ($files.Count -ne 25) { throw "Expected 25 numbered topic documents; found $($files.Count)." }
 
 foreach ($file in $files) {
@@ -48,8 +48,7 @@ foreach ($file in $files) {
         param($match)
         $id = $match.Groups[1].Value
         if (-not $sourceById.ContainsKey($id)) { $unknown.Add($id); return $match.Value }
-        $relative = ([string]$sourceById[$id].relative_path).Replace('\\', '/')
-        return "[$id]($GitHubBlobBase/$relative)"
+        return "[$id]($SourceAppendix#$($id.ToLowerInvariant()))"
     })
     $text = Format-LinkedCitationRuns -Text $text
     if ($unknown.Count) { throw "$($file.Name) contains unknown source ID(s): $($unknown -join ', ')." }

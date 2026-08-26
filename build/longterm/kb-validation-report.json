@@ -1,5 +1,5 @@
 {
-    "generated_at":  "2026-08-26T14:16:17.5779821Z",
+    "generated_at":  "2026-08-26T14:32:15.2355582Z",
     "status":  "passed",
     "source_manifest_summary":  {
                                     "canonical_sources":  1655,
@@ -276,175 +276,175 @@
                           "file":  "17-brotherhood-friendship-and-loyalty.md",
                           "source_links":  22,
                           "inline_citations":  11,
-                          "bytes":  7037
+                          "bytes":  5458
                       },
                       {
                           "topic_id":  18,
                           "file":  "18-family-and-fatherhood.md",
                           "source_links":  36,
                           "inline_citations":  14,
-                          "bytes":  9370
+                          "bytes":  6856
                       },
                       {
                           "topic_id":  19,
                           "file":  "19-marriage-women-and-gender-dynamics.md",
                           "source_links":  29,
                           "inline_citations":  8,
-                          "bytes":  6108
+                          "bytes":  4019
                       },
                       {
                           "topic_id":  14,
                           "file":  "14-health-testosterone-and-vitality.md",
                           "source_links":  30,
                           "inline_citations":  21,
-                          "bytes":  11237
+                          "bytes":  8975
                       },
                       {
                           "topic_id":  15,
                           "file":  "15-youth-energy-and-aging.md",
                           "source_links":  9,
                           "inline_citations":  5,
-                          "bytes":  6331
+                          "bytes":  5700
                       },
                       {
                           "topic_id":  16,
                           "file":  "16-masculinity-responsibility-and-power.md",
                           "source_links":  21,
                           "inline_citations":  14,
-                          "bytes":  9426
+                          "bytes":  7926
                       },
                       {
                           "topic_id":  23,
                           "file":  "23-learning-and-thinking-skills.md",
                           "source_links":  36,
                           "inline_citations":  18,
-                          "bytes":  9469
+                          "bytes":  6740
                       },
                       {
                           "topic_id":  24,
                           "file":  "24-community-and-alternative-living.md",
                           "source_links":  167,
                           "inline_citations":  78,
-                          "bytes":  23291
+                          "bytes":  11575
                       },
                       {
                           "topic_id":  25,
                           "file":  "25-non-substantive-material.md",
                           "source_links":  8,
                           "inline_citations":  4,
-                          "bytes":  3367
+                          "bytes":  2861
                       },
                       {
                           "topic_id":  20,
                           "file":  "20-spirituality-and-consciousness.md",
                           "source_links":  36,
                           "inline_citations":  20,
-                          "bytes":  10373
+                          "bytes":  7636
                       },
                       {
                           "topic_id":  21,
                           "file":  "21-technology-algorithms-and-attention.md",
                           "source_links":  18,
                           "inline_citations":  7,
-                          "bytes":  5088
+                          "bytes":  3641
                       },
                       {
                           "topic_id":  22,
                           "file":  "22-social-conditioning-and-genjutsu.md",
                           "source_links":  28,
                           "inline_citations":  17,
-                          "bytes":  9714
+                          "bytes":  7468
                       },
                       {
                           "topic_id":  13,
                           "file":  "13-fitness-and-physical-capability.md",
                           "source_links":  31,
                           "inline_citations":  20,
-                          "bytes":  9525
+                          "bytes":  7218
                       },
                       {
                           "topic_id":  4,
                           "file":  "04-discipline-execution-and-productivity.md",
                           "source_links":  36,
                           "inline_citations":  17,
-                          "bytes":  7640
+                          "bytes":  5015
                       },
                       {
                           "topic_id":  5,
                           "file":  "05-professionalism-and-mastery-of-craft.md",
                           "source_links":  49,
                           "inline_citations":  19,
-                          "bytes":  10781
+                          "bytes":  7130
                       },
                       {
                           "topic_id":  6,
                           "file":  "06-resilience-and-adversity.md",
                           "source_links":  60,
                           "inline_citations":  35,
-                          "bytes":  13770
+                          "bytes":  9537
                       },
                       {
                           "topic_id":  1,
                           "file":  "01-identity-and-self-reinvention.md",
                           "source_links":  29,
                           "inline_citations":  18,
-                          "bytes":  9344
+                          "bytes":  7191
                       },
                       {
                           "topic_id":  2,
                           "file":  "02-ghost-mode-and-environmental-separation.md",
                           "source_links":  37,
                           "inline_citations":  27,
-                          "bytes":  10024
+                          "bytes":  7197
                       },
                       {
                           "topic_id":  3,
                           "file":  "03-vision-purpose-and-goal-setting.md",
                           "source_links":  66,
                           "inline_citations":  37,
-                          "bytes":  14061
+                          "bytes":  8990
                       },
                       {
                           "topic_id":  10,
                           "file":  "10-personal-branding-and-audience-building.md",
                           "source_links":  34,
                           "inline_citations":  13,
-                          "bytes":  9481
+                          "bytes":  6957
                       },
                       {
                           "topic_id":  11,
                           "file":  "11-persuasion-and-communication.md",
                           "source_links":  37,
                           "inline_citations":  25,
-                          "bytes":  9130
+                          "bytes":  6309
                       },
                       {
                           "topic_id":  12,
                           "file":  "12-networking-and-social-hierarchy.md",
                           "source_links":  39,
                           "inline_citations":  11,
-                          "bytes":  9747
+                          "bytes":  6691
                       },
                       {
                           "topic_id":  7,
                           "file":  "07-confidence-boldness-and-action.md",
                           "source_links":  29,
                           "inline_citations":  12,
-                          "bytes":  8563
+                          "bytes":  6456
                       },
                       {
                           "topic_id":  8,
                           "file":  "08-money-and-entrepreneurship.md",
                           "source_links":  49,
                           "inline_citations":  23,
-                          "bytes":  11086
+                          "bytes":  7080
                       },
                       {
                           "topic_id":  9,
                           "file":  "09-youtube-and-content-businesses.md",
                           "source_links":  42,
                           "inline_citations":  25,
-                          "bytes":  10770
+                          "bytes":  7425
                       }
                   ],
     "errors":  [
