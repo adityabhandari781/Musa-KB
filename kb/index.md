@@ -1,4 +1,4 @@
-# Musa's Gems
+# 💎 Musa's Gems
 
 A structured knowledge base aggregated from Musa's telegram channels [@MusaRAW](https://t.me/MusaRAW) and [@UnchainedReality](https://t.me/UnchainedReality).
 
