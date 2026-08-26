@@ -380,7 +380,7 @@ function Restore-DeterministicCitations {
     )
 
     if (-not $SourceById.ContainsKey($NewSourceId)) { throw "Cannot build a citation for unknown source $NewSourceId." }
-    $newCitation = "([$NewSourceId]($script:SourceAppendix#$($NewSourceId.ToLowerInvariant()))"
+    $newCitation = "([$NewSourceId]($script:SourceAppendix#$($NewSourceId.ToLowerInvariant())))"
     $originalByKey = @{}
     foreach ($line in [regex]::Split($OriginalBody, "\r?\n")) {
         $key = Get-ComparisonKey -Line $line

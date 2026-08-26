@@ -57,6 +57,9 @@ foreach ($file in $files) {
     $inline = @([regex]::Matches($text, '\[S\d{4}\]') | ForEach-Object { $_.Value.Trim('[',']') } | Sort-Object -Unique)
     if ($inline.Count -eq 0) { $warnings.Add("$($file.Name): no inline source citations.") }
     if ($citationLinks.Count -ne @([regex]::Matches($text, '\[S\d{4}\]')).Count) { $errors.Add("$($file.Name): every inline citation must link to the source appendix.") }
+    $citationGroup = '\(\[S\d{4}\]\(26-all-texts\.md#s\d{4}\)(?:, \[S\d{4}\]\(26-all-texts\.md#s\d{4}\))*\)'
+    $withoutCitationGroups = [regex]::Replace($text, $citationGroup, '')
+    if ($withoutCitationGroups -match '\[S\d{4}\]\(26-all-texts\.md#s\d{4}\)') { $errors.Add("$($file.Name): citations must be enclosed in one complete comma-separated group.") }
     foreach ($citation in $citationLinks) {
         if (-not $sourceById.ContainsKey($citation.id)) { $errors.Add("$($file.Name): unknown source $($citation.id).") }
         elseif (-not $sourceById[$citation.id].included_in_synthesis) { $errors.Add("$($file.Name): excluded duplicate or empty source $($citation.id) was cited.") }
