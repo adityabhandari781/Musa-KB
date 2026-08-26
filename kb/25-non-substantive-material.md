@@ -17,7 +17,7 @@ This document records the material intentionally excluded from the substantive k
 ## Core ideas
 
 - The category preserves source traceability without promoting short, context-dependent, or engagement-driven material into a general principle.
-- It separates announcements, giveaways, jokes, reactions, and incomplete media from passages whose substantive lesson belongs in one of Topics 1â€“24.
+- It separates announcements, giveaways, jokes, reactions, and incomplete media from passages whose substantive lesson belongs in one of Topics 1—24.
 - A topical reference may be useful only when its broader lesson is explicit; otherwise it remains here as contextual material.
 
 ## Principles and mental models
