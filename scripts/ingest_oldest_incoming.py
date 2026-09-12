@@ -12,6 +12,7 @@ import sys
 import unicodedata
 from datetime import datetime
 from pathlib import Path
+from typing import Callable
 
 from groq_client import PairRotator, completion, content, retry_seconds
 from kb_common import display_topic_title, env_value, read_jsonl, repository_root, utc_now, word_count, write_json, write_jsonl
@@ -54,7 +55,7 @@ def topic_file(kb: Path, topic: int) -> Path:
 
 
 def body(document: str) -> str:
-    document = re.sub(r"(?s)\A---.*?---\s*\r?\n\r?\n# .*?\r?\n\r?\n", "", document)
+    document = re.sub(r"(?s)\A---\r?\n.*?\r?\n---\r?\n(?:\r?\n)?# [^\r\n]*\r?\n(?:\r?\n)?", "", document)
     return re.split(r"(?m)^## Sources\s*$", document)[0].strip()
 
 
@@ -105,17 +106,28 @@ def restore_citations(original: str, updated: str, source_id: str) -> str:
     return "\n".join(result).strip()
 
 
-def groq_json(keys: list[str], system: str, user: str, label: str) -> tuple[dict, dict]:
+def groq_json(keys: list[str], system: str, user: str, label: str, validate: Callable[[dict], None] | None = None) -> tuple[dict, dict]:
     # A logical request starts from key 1 / GPT-OSS 120B.  This is deliberately
     # separate from the previous request's pair selection.
     rotator = PairRotator(keys, ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.6-27b"])
     errors = []
     transport_failures = 0
+    validation_failures = 0
     while True:
         pair = rotator.next(); response = completion(pair["key"], pair["model"], system, user, max_tokens=5000, json_output=True)
         if 200 <= response.status < 300:
-            try: value = json.loads(content(response)); return value, pair
+            try: value = json.loads(content(response))
             except Exception: rotator.cool(pair, 300); errors.append(f"{pair['slot']}/{pair['model']}: invalid JSON"); continue
+            if validate:
+                try: validate(value)
+                except ValueError as error:
+                    validation_failures += 1; errors.append(f"{pair['slot']}/{pair['model']}: {error}")
+                    print(f"Rejected invalid model output from GROQ_API_KEY{'' if pair['slot'] == 1 else pair['slot']} / {pair['model']}; trying another pair.")
+                    rotator.advance(pair)
+                    if validation_failures >= len(rotator.pairs):
+                        raise RuntimeError(f"Every Groq key/model pair returned an invalid response for {label}. {' | '.join(errors)}") from error
+                    continue
+            return value, pair
         if response.status in (408, 429, 599) or response.status >= 500:
             rotator.cool(pair, retry_seconds(response.headers))
             errors.append(f"{pair['slot']}/{pair['model']}: HTTP {response.status}")
@@ -134,11 +146,18 @@ def groq_json(keys: list[str], system: str, user: str, label: str) -> tuple[dict
 def assert_citation_free_topic_body(value: str) -> None:
     if re.search(r"<think>|</think>|```|\[S\d{4}\]|github\.com/", value):
         raise ValueError("The KB update response contains forbidden model markup, citations, or source links.")
-    headings = re.findall(r"(?m)^## .+?[ \t]*$", value)
+    headings = [heading.rstrip() for heading in re.findall(r"(?m)^## .+?[ \t]*$", value)]
     if headings != SECTIONS:
         raise ValueError("The KB update response must contain exactly the seven required sections in order.")
     if not value.lstrip().startswith("## Overview"):
         raise ValueError("The KB update response must begin with ## Overview.")
+
+
+def assert_minimal_topic_update(current: str, value: str) -> None:
+    assert_citation_free_topic_body(value)
+    total, changed = difference(current, value)
+    if changed > max(5, int(total * .25 + .999)):
+        raise ValueError("The KB update rewrote too much of the document.")
 
 
 def main() -> None:
@@ -210,10 +229,7 @@ def main() -> None:
         maps = read_jsonl(map_path); topic_rows = [item for item in maps if int(item["topic_id"]) == state["primary_topic_id"] and item["assignment_role"] == "primary"]; title = display_topic_title(repo, state["primary_topic_id"], topic_rows[0]["topic_title"]); file = topic_file(kb, state["primary_topic_id"])
         original = body(file.read_text(encoding="utf-8")); current = strip_citations(original); source_count = len({item["source_id"] for item in topic_rows})
         system = 'Return JSON only: {"markdown":"..."}. Update the supplied knowledge-base document with the supplied new source text. The markdown value must start with "## Overview" and contain exactly these sections in order: Overview, Core ideas, Principles and mental models, Recommended practices, Examples and stories, Tensions and contradictions, Caveats. Make the smallest possible line-level change: retain every unaffected line verbatim, and add or revise a line only when the new source directly supports it. Do not rewrite, reorder, summarize, or polish unaffected material. Use the KB\'s established editorial voice: integrate claims directly, and never write source-note phrasing such as "the source states," "the source asserts," or "this source explains." Do not include citations, source IDs, links, YAML, a document title, a Sources section, code fences, or reasoning. Do not invent facts. Attribute contested claims to the creator; label speculative health/scientific claims, strongly gendered framing, political claims, and unsafe advice appropriately.'
-        result, pair = groq_json(keys, system, f"INCOMING TEXT:\n{state['normalized_text']}\n\nCURRENT KB DOCUMENT:\n{current}", f"KB update for topic {state['primary_topic_id']}"); updated = result.get("markdown", "")
-        assert_citation_free_topic_body(updated)
-        total, changed = difference(current, updated)
-        if changed > max(5, int(total * .25 + .999)): raise ValueError("The KB update rewrote too much of the document.")
+        result, pair = groq_json(keys, system, f"INCOMING TEXT:\n{state['normalized_text']}\n\nCURRENT KB DOCUMENT:\n{current}", f"KB update for topic {state['primary_topic_id']}", validate=lambda value: assert_minimal_topic_update(current, value.get("markdown", ""))); updated = result["markdown"]
         linked = restore_citations(original, updated, state["source_id"])
         header = f"---\ntopic_id: {state['primary_topic_id']}\ntitle: {title}\nsource_count: {source_count}\nsource_scope:\n  - data/texts\n  - data/transcripts\n---\n\n# {title}\n\n"
         file.write_text(header + linked + "\n", encoding="utf-8", newline="\n"); state.update({"kb_update_model": pair["model"], "kb_update_api_key_slot": pair["slot"], "stage": "kb_updated"}); atomic_json(state_path, state)

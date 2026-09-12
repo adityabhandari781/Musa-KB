@@ -7,4 +7,4 @@ imageio-ffmpeg
 # Required only for scripts/local_transcription.py
 # openai-whisper
 # torch
-numpy
+# numpy
