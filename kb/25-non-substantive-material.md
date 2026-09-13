@@ -1,16 +1,21 @@
 ---
 topic_id: 25
 title: 🚫 Non-substantive material
-source_count: 580
+source_count: 582
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
 # 🚫 Non-substantive material
+
 ## Overview
 
 This document records the material intentionally excluded from the substantive knowledge base: promotions, engagement requests, banter, low-context media, and topical commentary that does not contain a self-contained lesson. It remains traceable to the source corpus, but is not presented as practical, scientific, financial, or relationship guidance. ([S0002](26-all-texts.md#s0002), [S0003](26-all-texts.md#s0003), [S0004](26-all-texts.md#s0004), [S0005](26-all-texts.md#s0005))
+
+The linked episode is described as “Really good,” “Highly recommended listening,” and claimed to “increase the scope of your ambition & upgrade your mindset.” ([S1695](26-all-texts.md#s1695))
+
+Messages such as "Listen to this if you feel like life feels empty, or you feel like you lack purpose ❤️" are retained here as contextual material rather than substantive guidance ([S1687](26-all-texts.md#s1687)).
 
 ## Core ideas
 

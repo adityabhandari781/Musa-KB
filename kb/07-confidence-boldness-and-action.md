@@ -1,13 +1,14 @@
 ---
 topic_id: 7
 title: ⚡ Confidence, boldness, and action
-source_count: 101
+source_count: 102
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
 # ⚡ Confidence, boldness, and action
+
 ## Overview  
 Musa repeatedly links confidence, boldness, and immediate action to personal power, respect, and success. Central to the narrative is the idea that hesitation invites domination, while decisive, aggressive moves generate emotion, deter opponents, and produce results. Boldness is framed as both a spiritual inheritance and a practical strategy for navigating risk, criticism, and failure.
 
@@ -19,6 +20,7 @@ Musa repeatedly links confidence, boldness, and immediate action to personal pow
 - **Zero hesitation doctrine:** A mindset of “no hesitation, no retreat, 100 % pressure” is presented as essential for confronting perceived “coward hyenas” and maintaining dominance ([S0312](26-all-texts.md#s0312)).  
 - **Humiliation as a metric:** Experiencing public defeat is portrayed as proof of boldness; avoiding humiliation signals insufficient daring ([S0339](26-all-texts.md#s0339)).  
 - **Judgment as a tool:** Evaluating people by how they respond to mistakes—rather than the mistakes themselves—reinforces a bold, action‑oriented worldview ([S0503](26-all-texts.md#s0503)).
+- **Justified boldness:** Until boldness is justified by success, it will always be a target for criticism by the mediocre ([S1694](26-all-texts.md#s1694)).
 
 ## Principles and mental models  
 1. **Motion‑creates‑emotion model:** Physical or strategic movement generates the emotional confidence needed for further action ([S0109](26-all-texts.md#s0109)).  

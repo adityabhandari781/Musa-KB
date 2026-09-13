@@ -1,17 +1,19 @@
 ---
 topic_id: 16
 title: 🦁 Masculinity, responsibility, and power
-source_count: 64
+source_count: 65
 source_scope:
   - data/texts
   - data/transcripts
 ---
 
 # 🦁 Masculinity, responsibility, and power
+
 ## Overview
 - Musa frames masculinity around reclaiming a "wild," undomesticated nature against societal pressures that seek to tame men [S0020, S0021, S0565].
 - Manhood is defined by a balance of raw power, intellectual development, and responsibility, rejecting both fragile intellectualism and unrefined savagery [S0041, S0898].
 - Power is presented as a prerequisite for freedom and respect, with responsibility framed as a beneficial trade-off for male resilience and potential [S0323, S0710, S0711, S0777].
+- Wealth is portrayed as encompassing both financial resources and personal character, emphasizing that financial success without integrity is insufficient ([S1683](26-all-texts.md#s1683)).
 
 ## Core ideas
 - **The Wild vs. Domesticated Man:** Society, particularly women, attempts to "domesticate" men, but true masculinity requires preserving an internal "wild man" and rejecting conventional constraints [S0020, S0021, S0565].
