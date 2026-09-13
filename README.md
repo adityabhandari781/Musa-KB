@@ -122,6 +122,37 @@ Production check:
 mkdocs build --strict
 ```
 
+## Knowledge-base chat
+
+The chat feature is split into the static MkDocs interface and a small Python API
+service. This is required because GitHub Pages cannot keep `GROQ_API_KEY` secret.
+The API sends Groq only the user's **current** question and relevant excerpts
+retrieved from `kb/*.md`; it stores neither conversation history nor messages.
+
+For local development, use two terminals:
+
+```bash
+python scripts/chat_server.py
+mkdocs serve
+```
+
+Set `window.MUSA_CHAT_API_URL` in `kb/javascripts/chat-config.js` to
+`http://127.0.0.1:8001/api/chat` for that setup. For a deployed site, host
+`scripts/chat_server.py` on a Python-capable service, set `GROQ_API_KEY` there
+(never in GitHub Pages), set `CHAT_ALLOWED_ORIGINS` to the Pages URL, and replace
+the same value with the service's public `/api/chat` URL.
+
+The server enforces one request per minute for both the browser-generated client
+ID and the requesting IP address. The browser also persists the visible countdown
+across reloads. The cooldown is deliberately applied before the LLM call, so failed
+requests also protect the API limit. It is in-memory, which is correct for a single
+service process; use a shared store such as Redis if deploying multiple instances
+or if cooldowns must survive service restarts.
+
+Chat defaults to Groq's `openai/gpt-oss-120b`. On a timeout, provider error, or
+invalid/empty response, it retries once with `openai/gpt-oss-20b`. Override either
+model with `GROQ_CHAT_MODEL` or `GROQ_CHAT_FALLBACK_MODEL` in the service environment.
+
 GitHub Actions deploys changes under `kb/` to GitHub Pages.
 
 ## Resumability and API usage

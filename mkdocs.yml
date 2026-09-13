@@ -34,6 +34,13 @@ theme:
 plugins:
   - search
 
+extra_javascript:
+  - javascripts/chat-config.js
+  - javascripts/kb-chat.js
+
+extra_css:
+  - stylesheets/kb-chat.css
+
 markdown_extensions:
   - admonition
   - attr_list

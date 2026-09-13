@@ -1,0 +1,14 @@
+.kb-chat { margin: 0 0 2rem; padding: 1.2rem; border: 1px solid var(--md-default-fg-color--lighter); border-radius: .2rem; }
+.kb-chat h2 { margin-top: 0; }
+.kb-chat__intro, .kb-chat__notice { color: var(--md-default-fg-color--light); }
+.kb-chat__form { display: grid; gap: .7rem; }
+.kb-chat textarea { width: 100%; min-height: 5rem; padding: .7rem; color: var(--md-default-fg-color); background: var(--md-code-bg-color); border: 1px solid var(--md-default-fg-color--lighter); border-radius: .15rem; font: inherit; resize: vertical; }
+.kb-chat button { justify-self: start; padding: .6rem 1rem; color: var(--md-primary-bg-color); background: var(--md-primary-fg-color); border: 0; border-radius: .15rem; font: inherit; cursor: pointer; }
+.kb-chat button:disabled { opacity: .6; cursor: wait; }
+.kb-chat__answer { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--md-default-fg-color--lighter); }
+.kb-chat__answer h3 { margin-bottom: .3rem; }
+.kb-chat__answer ol { margin-top: .3rem; }
+.kb-chat__table-wrap { overflow-x: auto; margin: 1rem 0; }
+.kb-chat__table-wrap table { width: 100%; border-collapse: collapse; }
+.kb-chat__table-wrap th, .kb-chat__table-wrap td { padding: .55rem .7rem; text-align: left; border: 1px solid var(--md-default-fg-color--lighter); vertical-align: top; }
+.kb-chat__table-wrap th { background: var(--md-code-bg-color); }
