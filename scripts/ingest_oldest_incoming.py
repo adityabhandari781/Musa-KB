@@ -186,13 +186,20 @@ def main() -> None:
             index = incoming / "transcripts" / "media-index.jsonl"; entries = [item for item in read_jsonl(index) if item["transcript_relative_path"] == state["incoming_relative_path"]]
             if not entries: raise ValueError(f"Transcript {file.name} has no media-index entry.")
             source_media = repo / entries[-1]["media_relative_path"]; destination_media = media / source_media.name
-            if not source_media.is_file() or destination_media.exists(): raise FileExistsError("Transcript media is missing or its destination exists.")
-            state.update({"media_incoming_path": str(source_media), "media_relative_path": f"data/media/audio and video/{source_media.name}", "media_destination_path": str(destination_media)})
+            if not source_media.is_file(): raise FileNotFoundError("Transcript media is missing from data/incoming/media.")
+            media_already_archived = False
+            if destination_media.exists():
+                if not destination_media.is_file() or hashlib.sha256(source_media.read_bytes()).digest() != hashlib.sha256(destination_media.read_bytes()).digest():
+                    raise FileExistsError(f"Transcript media destination conflicts with a different file: {destination_media}")
+                media_already_archived = True
+            state.update({"media_incoming_path": str(source_media), "media_relative_path": f"data/media/audio and video/{source_media.name}", "media_destination_path": str(destination_media), "media_already_archived": media_already_archived})
         atomic_json(state_path, state)
     if state["stage"] == "selected":
         source, destination = Path(state["incoming_path"]), Path(state["destination_path"])
         if source.exists(): shutil.move(str(source), str(destination))
-        if state.get("media_incoming_path") and Path(state["media_incoming_path"]).exists(): shutil.move(state["media_incoming_path"], state["media_destination_path"])
+        if state.get("media_incoming_path") and (source_media := Path(state["media_incoming_path"])).exists():
+            if state.get("media_already_archived"): source_media.unlink()
+            else: shutil.move(str(source_media), state["media_destination_path"])
         state["stage"] = "moved"; atomic_json(state_path, state)
     sources = read_jsonl(source_path); source_by_id = {item["source_id"]: item for item in sources}
     if state["stage"] == "moved":
