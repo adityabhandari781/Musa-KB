@@ -7,6 +7,17 @@ A structured knowledge base aggregated from Musa's telegram channels [@MusaRAW](
 Use the navigation menu or search to explore topics covering identity,
 discipline, business, communication, fitness, relationships, and more.
 
+## About this project
+
+The knowledge base is generated from source material collected,
+transcribed, classified, and synthesized by the Musa-KB pipeline.
+
+Each article includes references back to its underlying source material.
+
+Made by Aditya Bhandari. Check me out on [Telegram](https://t.me/aditya_bhandari), [Instagram](https://instagram.com/adityabhandari781), [GitHub](https://github.com/adityabhandari781), [LinkedIn](https://linkedin.com/in/adityabhandari781), [Discord (@aditya_bhandari)](https://discord.com/), [Reddit](https://reddit.com/user/machinegun2187) and [X](https://x.com/machinegun2187_).
+
+Make sure to [star this repo on GitHub](https://github.com/adityabhandari781/Musa-KB) if you find this useful. Thanks ❤️
+
 <section class="musa-chat" data-musa-chat aria-labelledby="musa-chat-title">
 <h2 id="musa-chat-title">Ask Musa's Gems</h2>
 <p class="musa-chat__intro">Ask a question and get a concise answer grounded in the knowledge base. Relevant excerpts and your question are sent to Puter AI; Puter may ask you to sign in, and its user-pays terms apply.</p>
@@ -42,14 +53,3 @@ discipline, business, communication, fitness, relationships, and more.
 
 <p class="musa-chat__fallback" data-chat-fallback>JavaScript is required for chat. Use the <a href="search/">site search</a> to browse the knowledge base.</p>
 </section>
-
-## About this project
-
-The knowledge base is generated from source material collected,
-transcribed, classified, and synthesized by the Musa-KB pipeline.
-
-Each article includes references back to its underlying source material.
-
-Made by Aditya Bhandari. Check me out on [Telegram](https://t.me/aditya_bhandari), [Instagram](https://instagram.com/adityabhandari781), [GitHub](https://github.com/adityabhandari781), [LinkedIn](https://linkedin.com/in/adityabhandari781), [Discord (@aditya_bhandari)](https://discord.com/), [Reddit](https://reddit.com/user/machinegun2187) and [X](https://x.com/machinegun2187_). 
-
-Make sure to [star this repo on GitHub](https://github.com/adityabhandari781/Musa-KB) if you find this useful. Thanks ❤️
