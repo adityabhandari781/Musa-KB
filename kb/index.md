@@ -19,13 +19,13 @@ Made by Aditya Bhandari. Check me out on [Telegram](https://t.me/aditya_bhandari
 Make sure to [star this repo on GitHub](https://github.com/adityabhandari781/Musa-KB) if you find this useful. Thanks ❤️
 
 <section class="musa-chat" data-musa-chat aria-labelledby="musa-chat-title">
-<h2 id="musa-chat-title">Ask Musa's Gems</h2>
+<h2 id="musa-chat-title">Ask AI on Musa's Gems</h2>
 <p class="musa-chat__intro">Ask a question and get a concise answer grounded in the knowledge base. Relevant excerpts and your question are sent to Puter AI; Puter may ask you to sign in, and its user-pays terms apply.</p>
 
 <div data-chat-interactive hidden>
 <form data-chat-form>
-<label for="musa-chat-input">What do you want to explore?</label>
-<textarea id="musa-chat-input" data-chat-input name="question" rows="4" maxlength="500" placeholder="How do I overcome my fears?" aria-describedby="musa-chat-help"></textarea>
+<!-- <label for="musa-chat-input">What do you want to explore?</label> -->
+<textarea id="musa-chat-input" data-chat-input name="question" rows="4" maxlength="500" placeholder="E.g. how do I overcome my fears?" aria-describedby="musa-chat-help"></textarea>
 <p id="musa-chat-help" class="musa-chat__help">Press Ctrl+Enter (or Cmd+Enter) to submit. Keep questions under 500 characters.</p>
 <button type="submit" data-chat-submit>Ask the knowledge base</button>
 </form>
