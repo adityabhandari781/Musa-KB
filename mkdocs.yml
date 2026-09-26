@@ -34,6 +34,13 @@ theme:
 plugins:
   - search
 
+extra_css:
+  - assets/stylesheets/chat.css
+
+extra_javascript:
+  - path: assets/javascripts/chat.js
+    type: module
+
 markdown_extensions:
   - admonition
   - attr_list

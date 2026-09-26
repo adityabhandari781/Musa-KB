@@ -1,0 +1,180 @@
+.musa-chat {
+  margin: 2rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  background: var(--md-code-bg-color);
+}
+
+.musa-chat__intro,
+.musa-chat__help,
+.musa-chat__status {
+  color: var(--md-default-fg-color);
+}
+
+.musa-chat__intro {
+  max-width: 48rem;
+}
+
+.musa-chat form {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 48rem;
+}
+
+.musa-chat label {
+  font-weight: 700;
+}
+
+.musa-chat textarea {
+  width: 100%;
+  min-height: 7rem;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  resize: vertical;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 0.25rem;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  font: inherit;
+}
+
+.musa-chat textarea:focus-visible,
+.musa-chat button:focus-visible,
+.musa-chat a:focus-visible,
+.musa-chat dialog:focus-visible {
+  outline: 0.15rem solid var(--md-primary-fg-color);
+  outline-offset: 0.15rem;
+}
+
+.musa-chat button {
+  width: fit-content;
+  padding: 0.6rem 0.9rem;
+  border: 0;
+  border-radius: 0.25rem;
+  color: var(--md-primary-bg-color);
+  background: var(--md-primary-fg-color);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.musa-chat button:hover:not(:disabled) {
+  filter: brightness(0.9);
+}
+
+.musa-chat button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.musa-chat__dialog {
+  width: min(32rem, calc(100% - 2rem));
+  padding: 1.25rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+}
+
+.musa-chat__dialog::backdrop {
+  background: rgb(0 0 0 / 55%);
+}
+
+.musa-chat__dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.musa-chat__dialog-actions [data-chat-dialog-cancel] {
+  color: var(--md-default-fg-color);
+  background: transparent;
+  border: 1px solid var(--md-default-fg-color--light);
+}
+
+.musa-chat__help {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.musa-chat__status {
+  min-height: 1.5rem;
+  margin: 1rem 0 0;
+}
+
+.musa-chat__status[data-state='error'] {
+  color: var(--md-typeset-color);
+  font-weight: 700;
+}
+
+.musa-chat__answer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.musa-chat__answer-text {
+  overflow-wrap: anywhere;
+}
+
+.musa-chat__answer-text p,
+.musa-chat__answer-text h4,
+.musa-chat__answer-text h5,
+.musa-chat__answer-text h6 {
+  margin: 0.75rem 0;
+}
+
+.musa-chat__answer-text p:first-child,
+.musa-chat__answer-text h4:first-child,
+.musa-chat__answer-text h5:first-child,
+.musa-chat__answer-text h6:first-child,
+.musa-chat__answer-text ul:first-child,
+.musa-chat__answer-text ol:first-child {
+  margin-top: 0;
+}
+
+.musa-chat__answer-text ul,
+.musa-chat__answer-text ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.musa-chat__answer-text li > p {
+  margin: 0;
+}
+
+.musa-chat__answer-text code {
+  padding: 0.1rem 0.25rem;
+  border-radius: 0.2rem;
+  background: var(--md-code-bg-color);
+  font-size: 0.9em;
+}
+
+.musa-chat__sources h4 {
+  margin-bottom: 0.25rem;
+}
+
+.musa-chat__sources ul {
+  margin-top: 0;
+}
+
+.musa-chat__fallback {
+  margin: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 40rem) {
+  .musa-chat {
+    margin: 1.5rem 0;
+    padding: 1rem;
+  }
+
+  .musa-chat button {
+    width: 100%;
+  }
+}
