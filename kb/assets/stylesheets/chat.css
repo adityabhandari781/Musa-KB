@@ -126,6 +126,15 @@
   margin: 0.75rem 0;
 }
 
+.musa-chat__answer-text h4,
+.musa-chat__answer-text h5,
+.musa-chat__answer-text h6 {
+  color: var(--md-typeset-color);
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: none;
+}
+
 .musa-chat__answer-text p:first-child,
 .musa-chat__answer-text h4:first-child,
 .musa-chat__answer-text h5:first-child,
